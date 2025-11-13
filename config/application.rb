@@ -24,8 +24,10 @@ Bundler.require(*Rails.groups)
 
 module TradeTariffClassificationExamples
   class Application < Rails::Application
+    config.log_level = ENV.fetch('RAILS_LOG_LEVEL', 'info')
+    config.active_support.deprecation = :silence
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 8.0
+    config.load_defaults 8.1
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
@@ -49,6 +51,5 @@ module TradeTariffClassificationExamples
       end
     end
 
-    config.log_level = ENV.fetch('RAILS_LOG_LEVEL', 'info')
   end
 end

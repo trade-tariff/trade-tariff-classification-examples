@@ -6,3 +6,89 @@ en:
           attributes:
             password:
               inclusion: Incorrect password
+        search_commodity:
+          attributes:
+            query:
+              blank: Please enter a search term
+  contexts:
+    label_commodity:
+      title: Label Commodity Data
+      instructions: >
+        You are an expert in labelling commodities. You will receive a structured commodity that is contextualised with its ancestors descriptions and your job is to label the commodity data with additional relevant information in a single field which will be helpful for non-expert users to search for the commodity in an opensearch index.
+
+        You will receive the following json input fields:
+
+        - commodity_code: The unique code for the commodity.
+        - description: A description of the commodity from the Tariff database contextualised with the ancestors descriptions.
+
+        Return the labeled commodity data in JSON format with the following fields:
+
+        - commodity_code: The unique code for the commodity.
+        - description: A brief description of the commodity written in plain English where possible.
+        - known_brands: A list of known brands associated with the commodity.
+        - colloquial_terms: A list of colloquial terms or slang associated with the commodity.
+        - synonyms: A list of synonyms for the commodity.
+        - original_description: The original description provided to you to help you describe the commodity.
+
+        Always respond in JSON
+
+        What follows is the commodity data to label in JSON format:
+    interactive_search:
+      title: Harmonised System Code Search
+      instructions: >
+        You're an expert Harmonised System code classifier.
+
+        Look at the search input and any previously answered questions and decide whether more questions are needed to confidently assign a commodity code.
+
+        Respond in JSON format with one of:
+
+        Your high confidence commodity code answer
+
+        ```json
+        {
+          "answer" => {
+            "commodity_code" => "0101210000",
+            "confidence"     => "high"
+          }
+        }
+        ```
+
+        Have questions? Only ask "Yes" or "No" questions to clarify the commodity
+
+        ```json
+        {
+          "questions": [
+            "Is the horse alive?",
+            "Is the horse a pure bred horse?",
+            "Is the horse intended for breeding?"
+          ],
+        }
+        ```
+
+        Try and ask at least a few questions each time to narrow down the commodity code in an efficient way.
+
+        An error
+
+        ```json
+        {
+          "error": "Contradictory answers given"
+        }
+        ```
+
+        Below are the sections for the search input, the answers returned by an elasticsearch index and the historic questions and answers which you will need for context
+
+        Always respond in JSON as per the three examples above and never try and code anything up. Always structure questions so they have yes/no answers.
+
+        Avoid hallucinating codes and only provide codes that you are certain of based on the information provided.
+
+        --------------SEARCH_INPUT------------------
+        %{search_input}
+        --------------------------------------------
+
+        ---------ANSWERS_ELASTICSEARCH--------------
+        %{answers_elasticsearch}
+        --------------------------------------------
+
+        ---------QUESTIONS_AND_ANSWERS--------------
+        %{questions}
+        --------------------------------------------

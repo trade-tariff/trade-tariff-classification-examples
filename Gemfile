@@ -6,11 +6,14 @@ ruby file: ".ruby-version"
 
 gem "rails"
 
+gem "csv"
 gem "faraday"
+gem "hashie"
 gem "importmap-rails"
 gem "propshaft"
 gem "puma"
 gem "rack-cors"
+gem "ruby-progressbar"
 
 # GovUK
 gem "govuk-components"

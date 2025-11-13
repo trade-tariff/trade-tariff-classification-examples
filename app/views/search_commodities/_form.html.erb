@@ -1,0 +1,37 @@
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <% if flash[:error] %>
+      <div class="govuk-error-summary">
+        <h2 class="govuk-error-summary__title">There was a problem</h2>
+        <div class="govuk-error-summary__body">
+          <p><%= flash[:error] %></p>
+        </div>
+      </div>
+    <% end %>
+
+    <%= govuk_form_for @search_commodity, method: :get do |form| %>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+          <h1 class="govuk-heading-xl">
+            Search for a commodity
+          </h1>
+
+          <p class="govuk-body">
+            When you search, include:
+          </p>
+
+          <%= govuk_list [
+            'the type of product',
+            'what the product is used for',
+            'the materials used to make it',
+            'the way its packaged',
+          ], type: :bullet %>
+
+        <%= form.govuk_text_field :query, label: nil, hint: { text: 'Enter the description of the goods or commodity code' } %>
+
+          <%= form.govuk_submit 'Search for commodity' %>
+        </div>
+      </div>
+    <% end %>
+  </main>
+</div>
