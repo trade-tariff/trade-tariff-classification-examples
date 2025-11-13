@@ -40,6 +40,8 @@ en:
 
         Look at the search input and any previously answered questions and decide whether more questions are needed to confidently assign a commodity code.
 
+        If elasticsearch answers are available, use them to help formulate your questions and answers - don't exceed questions not asked by these answers.
+
         Respond in JSON format with one of:
 
         Your high confidence commodity code answer

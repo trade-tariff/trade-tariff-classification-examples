@@ -14,7 +14,6 @@ class GeminiShellClient
       "gemini",
       "-m #{model}",
       "-p #{context.inspect}",
-      "-s",
     ]
 
     stdout, stderr, status = Open3.capture3(command.join(" "))

@@ -1,26 +1,36 @@
 # rubocop:disable Rails/SaveBang
 class FetchRecords
-  COMMODITIES_FILE = Rails.root.join("data/CN2025_SelfText_EN_DE_FR.csv").freeze
+  SELF_TEXT_FILE = Rails.root.join("data/CN2025_SelfText_EN_DE_FR.csv").freeze
   COMMODITY_CODE_REGEX = /\A\d{6,8}\z/
 
-  COMMODITIES = CSV.parse(
-    File.read(COMMODITIES_FILE, mode: "rb:UTF-8").gsub(/\r?\n/, "\r\n"),
+  ALL_GOODS_NOMENCLATURES = CSV.parse(
+    File.read(SELF_TEXT_FILE, mode: "rb:UTF-8").gsub(/\r?\n/, "\r\n"),
     headers: true,
   ).each_with_object([]) { |row, acc|
     commodity_code = row[0]
-    cn_code = row[1].split(" ").join("")
+    row[1].split(" ").join("")
     description = row[2]
+    goods_nomenclature_item_id = commodity_code[0..9]
     pls = commodity_code[-2..]
 
-    next unless cn_code.match?(COMMODITY_CODE_REGEX)
-    next if pls != "80"
-
     acc << {
-      goods_nomenclature_item_id: commodity_code[0..9],
+      goods_nomenclature_item_id: "#{goods_nomenclature_item_id}-#{pls}",
       description: description,
     }
   }.freeze
 
+  COMMODITIES = ALL_GOODS_NOMENCLATURES.each_with_object([]) do |entry, acc|
+    commodity_code = entry[:goods_nomenclature_item_id]
+    goods_nomenclature_item_id, pls = commodity_code.split("-")
+
+    next unless goods_nomenclature_item_id.match?(COMMODITY_CODE_REGEX)
+    next if pls != "80"
+
+    acc << {
+      goods_nomenclature_item_id: goods_nomenclature_item_id,
+      description: description,
+    }
+  end
   BATCH_SIZE = 100
 
   def initialize(client = build_client)
@@ -42,7 +52,7 @@ class FetchRecords
       Thread.new do
         result = label_commodities(batch)
         mutex.synchronize { progress.increment }
-        result # Return for later collection via thread.value
+        result
       end
     end
 

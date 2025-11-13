@@ -19,7 +19,7 @@ end.parse!.join(" ").presence || "pure bred breeding horses"
 
 ARGV.clear
 
-question_collection = QuestionCollection.new(search_input: search_input)
+interactive_memory = QuestionCollection.new(search_input: search_input)
 
 def yes_no_prompt(question_text, default: 'Yes')
   default_str = default == 'Yes' ? 'y' : 'n'
@@ -34,16 +34,16 @@ def yes_no_prompt(question_text, default: 'Yes')
 end
 
 loop do
-  InteractiveSearch.new(question_collection).call
+  InteractiveSearch.new(interactive_memory).call
 
-  if question_collection.final_commodity_code_answer.present?
-    puts "Final HS Code: https://www.trade-tariff.service.gov.uk/commodities/#{question_collection.final_commodity_code_answer}"
-    puts "Description: #{question_collection.final_commodity_code_description}" if question_collection.final_commodity_code_description
+  if interactive_memory.final_commodity_code_answer.present?
+    puts "Final HS Code: https://www.trade-tariff.service.gov.uk/commodities/#{interactive_memory.final_commodity_code_answer}"
+    puts "Description: #{interactive_memory.final_commodity_code_description}" if interactive_memory.final_commodity_code_description
     break
   end
 
-  if question_collection.questions_unanswered?
-    question_collection.unanswered_questions.each do |question|
+  if interactive_memory.questions_unanswered?
+    interactive_memory.unanswered_questions.each do |question|
       answer = yes_no_prompt("Answer for: #{question.text}")
 
       if %w[Yes No].include?(answer)

@@ -2,6 +2,15 @@
 
 module TradeTariffClassificationExamples
   class << self
+    def ai_client
+      @ai_client ||= case ENV.fetch("AI_CLIENT", "openai")
+                     when "openai"
+                       OpenaiClient
+                     when "gemini_shell"
+                       GeminiShellClient
+                     end
+    end
+
     def govuk_app_domain
       @govuk_app_domain ||= ENV.fetch(
         "GOVUK_APP_DOMAIN",
@@ -44,6 +53,18 @@ module TradeTariffClassificationExamples
       [
         CommodityIndex.new,
       ]
+    end
+
+    def fpo_search_api_key
+      @fpo_search_api_key ||= ENV["FPO_SEARCH_API_KEY"]
+    end
+
+    def openai_api_key
+      @openai_api_key ||= ENV["OPENAI_API_KEY"]
+    end
+
+    def openai_user
+      @openai_user ||= ENV["OPENAI_USER"]
     end
 
   private

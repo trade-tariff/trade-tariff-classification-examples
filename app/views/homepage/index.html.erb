@@ -1,29 +1,110 @@
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
     <h1 class="govuk-heading-l">Tariff Classification Experiments Service</h1>
 
     <p class="govuk-body">
-      Welcome to the official GOV.UK Tariff Classification Experiment
+      Welcome to the official GOV.UK Tariff Classification Experiments Service
     </p>
 
     <h3 class="govuk-heading-m">Available Experiments</h3>
 
     <%= govuk_list type: :bullet  do %>
       <%= tag.li do %>
-        <%= tag.strong("Q&A Search") %> – Search for a commodity with enhanced opensearch and AI-driven question and answer functionality.
+        <%= tag.strong("Enhanced Interactive Search") %> – Search using a standard elastic search backend enhanced with AI-generated labels whilst answering AI-generated questions.
+      <% end %>
+      <%= tag.li do %>
+        <%= tag.strong("Enhanced Non-Interactive search") %> – Search using a standard elastic search backend enhanced with AI-generated labels.
+      <% end %>
+      <%= tag.li do %>
+        <%= tag.strong("FPO Neural Net Search") %> – Search for a 6 or 8 digit commodity code using a standard search interface backed by a neural net.
+      <% end %>
+      <%= tag.li do %>
+        <%= tag.strong("Classic search") %> – Search using the classic search backend with postgres and opensearch.
       <% end %>
     <% end %>
 
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-    <h3 class="govuk-heading-m">Get started - Q&A Advanced Search Experience</h3>
+    <h3 class="govuk-heading-m">Enhanced Interactive Search</h3>
+
 
     <p class="govuk-body">
-      Click the button below to start using the Q&A Advanced Search experiment.
-
       This search experience guides users through a series of questions to help them find the most relevant commodity codes, leveraging AI to interpret and respond to user inputs effectively.
     </p>
 
-    <%= govuk_start_button(text: "Start now", href: search_commodities_path) %>
+    <p class="govuk-body">
+      The data source includes self-texts and everything in a Foundation Model's corpus.
+    </p>
+
+    <%= govuk_start_button(text: "Start now", href: search_commodities_path(search_type: "interactive")) %>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    <h3 class="govuk-heading-m">Enhanced Non-Interactive Search</h3>
+
+
+    <p class="govuk-body">
+      Uses elastic search with AI labels to improve search flexibility, including:
+    </p>
+
+    <%= govuk_list type: :bullet  do %>
+      <%= tag.li do %>
+        Human comprehensible descriptions
+      <% end %>
+      <%= tag.li do %>
+        Known brands
+      <% end %>
+      <%= tag.li do %>
+        Colloquial terms
+      <% end %>
+      <%= tag.li do %>
+        Synonyms
+      <% end %>
+    <% end %>
+
+    <%= govuk_start_button(text: "Start now", href: search_commodities_path(search_type: "non_interactive")) %>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    <h3 class="govuk-heading-m">FPO Neural Net Experience</h3>
+
+    <p class="govuk-body">
+      Search using a neural net trained on sentence embeddings to find the most relevant 6 or 8 digit commodity code and encapsulated behind API gateway.
+    </p>
+
+    <p class="govuk-body">
+      The data source includes:
+    </p>
+
+    <%= govuk_list [
+      "Descriptions from the Trade Tariff database",
+      "Curated search references",
+      "Excluded Vague terms",
+      "Millions of rows of trade data",
+    ], type: :bullet %>
+
+    <%= govuk_start_button(text: "Start now", href: search_commodities_path(search_type: "neural_net")) %>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    <h3 class="govuk-heading-m">Classic Search</h3>
+
+    <p class="govuk-body">
+      The classic search experience uses the existing search backend with Postgres and OpenSearch supported by:
+    </p>
+
+    <%= govuk_list type: :bullet  do %>
+      <%= tag.li do %>
+        Descriptions from the Trade Tariff database
+      <% end %>
+      <%= tag.li do %>
+        Search references
+      <% end %>
+      <%= tag.li do %>
+        Chemicals
+      <% end %>
+    <% end %>
+
+    <%= govuk_start_button(text: "Start now", href: search_commodities_path(search_type: "classic")) %>
   </div>
 </div>
