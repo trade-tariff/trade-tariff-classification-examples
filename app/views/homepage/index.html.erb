@@ -1,0 +1,29 @@
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Tariff Classification Experiments Service</h1>
+
+    <p class="govuk-body">
+      Welcome to the official GOV.UK Tariff Classification Experiment
+    </p>
+
+    <h3 class="govuk-heading-m">Available Experiments</h3>
+
+    <%= govuk_list type: :bullet  do %>
+      <%= tag.li do %>
+        <%= tag.strong("Q&A Search") %> – Search for a commodity with enhanced opensearch and AI-driven question and answer functionality.
+      <% end %>
+    <% end %>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    <h3 class="govuk-heading-m">Get started - Q&A Advanced Search Experience</h3>
+
+    <p class="govuk-body">
+      Click the button below to start using the Q&A Advanced Search experiment.
+
+      This search experience guides users through a series of questions to help them find the most relevant commodity codes, leveraging AI to interpret and respond to user inputs effectively.
+    </p>
+
+    <%= govuk_start_button(text: "Start now", href: "#tbc") %>
+  </div>
+</div>
