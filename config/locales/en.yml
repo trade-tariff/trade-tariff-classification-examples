@@ -1,0 +1,8 @@
+en:
+  activemodel:
+    errors:
+      models:
+        basic_session:
+          attributes:
+            password:
+              inclusion: Incorrect password
