@@ -2,6 +2,4 @@
 
 class AuthenticatedController < ApplicationController
   include BasicSessionAuth
-
-  protect_from_forgery with: :exception
 end
