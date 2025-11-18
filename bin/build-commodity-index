@@ -1,0 +1,9 @@
+#! /usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+require 'json'
+require_relative '../config/environment'
+require_relative '../app/services/fetch_records'
+
+CommodityIndex.build(Rails.root.join("data/labelled_commodities_gemini-2.5-flash_2025-11-17.json"))

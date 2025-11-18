@@ -1,0 +1,2458 @@
+[
+  {
+    "commodity_code": "0101210000",
+    "description": "Pure-bred horses intended for breeding purposes.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "stud",
+      "broodmare"
+    ],
+    "synonyms": [
+      "pedigree horse",
+      "thoroughbred breeding stock",
+      "purebred stallion",
+      "purebred mare"
+    ]
+  },
+  {
+    "commodity_code": "0101210000",
+    "description": "Pure-bred horses intended for breeding purposes.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "stud",
+      "broodmare"
+    ],
+    "synonyms": [
+      "pedigree horse",
+      "thoroughbred breeding stock",
+      "purebred stallion",
+      "purebred mare"
+    ]
+  },
+  {
+    "commodity_code": "0101291000",
+    "description": "Horses intended for human consumption.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "horse meat",
+      "chevaline"
+    ],
+    "synonyms": [
+      "slaughter horse",
+      "butcher horse"
+    ]
+  },
+  {
+    "commodity_code": "0101299000",
+    "description": "Live horses not intended for breeding or slaughter, such as those for riding, sport, or work.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "riding horse",
+      "workhorse",
+      "pony",
+      "show jumper"
+    ],
+    "synonyms": [
+      "equine",
+      "mount",
+      "charger",
+      "cob"
+    ]
+  },
+  {
+    "commodity_code": "0101300000",
+    "description": "Live asses, commonly known as donkeys.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "donkey",
+      "burro",
+      "jenny",
+      "jack"
+    ],
+    "synonyms": [
+      "Equus asinus"
+    ]
+  },
+  {
+    "commodity_code": "0101900000",
+    "description": "Live mules and hinnies, which are hybrid offspring of a male horse and a female donkey or a male donkey and a female horse.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "mule",
+      "hinny"
+    ]
+  },
+  {
+    "commodity_code": "0102211000",
+    "description": "Young female cattle (heifers) of a pure breed that have not yet given birth, intended for breeding.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "breeding heifer"
+    ],
+    "synonyms": [
+      "purebred heifer",
+      "maiden heifer",
+      "pedigree heifer"
+    ]
+  },
+  {
+    "commodity_code": "0102213000",
+    "description": "Adult female cattle (cows) of a pure breed, intended for breeding.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "brood cow",
+      "breeding cow"
+    ],
+    "synonyms": [
+      "purebred cow",
+      "pedigree cow",
+      "dam"
+    ]
+  },
+  {
+    "commodity_code": "0102219000",
+    "description": "Male cattle (bulls) of a pure breed, intended for breeding.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "stud bull"
+    ],
+    "synonyms": [
+      "purebred bull",
+      "breeding bull",
+      "sire"
+    ]
+  },
+  {
+    "commodity_code": "0102290500",
+    "description": "Live cattle belonging to the Bibos sub-genus (such as gaur and banteng) or the Poephagus sub-genus (such as yaks).",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "yak",
+      "gaur",
+      "banteng",
+      "wild cattle"
+    ]
+  },
+  {
+    "commodity_code": "0102291010",
+    "description": "Young male cattle, weighing no more than 80kg, intended to be raised for meat.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "feeder calves",
+      "veal calves",
+      "bull calves"
+    ],
+    "synonyms": [
+      "young male bovine animals for fattening"
+    ]
+  },
+  {
+    "commodity_code": "0102291020",
+    "description": "Young female cattle (heifers) of specific mountain breeds (Grey, Brown, Yellow, Pinzgau), weighing no more than 80kg, not intended for meat production.",
+    "known_brands": [
+      "Grey Mountain",
+      "Brown Mountain",
+      "Yellow Mountain",
+      "Pinzgau"
+    ],
+    "colloquial_terms": [
+      "replacement heifers",
+      "breeding heifers"
+    ],
+    "synonyms": [
+      "young female cattle for breeding"
+    ]
+  },
+  {
+    "commodity_code": "0102291030",
+    "description": "Young female cattle (heifers) of Schwyz and Fribourg breeds, weighing no more than 80kg, not intended for meat production.",
+    "known_brands": [
+      "Schwyz",
+      "Fribourg"
+    ],
+    "colloquial_terms": [
+      "replacement heifers",
+      "breeding heifers"
+    ],
+    "synonyms": [
+      "young female cattle for breeding"
+    ]
+  },
+  {
+    "commodity_code": "0102291040",
+    "description": "Young female cattle (heifers) of the spotted Simmental breed, weighing no more than 80kg, not intended for meat production.",
+    "known_brands": [
+      "Simmental"
+    ],
+    "colloquial_terms": [
+      "replacement heifers",
+      "breeding heifers"
+    ],
+    "synonyms": [
+      "young female cattle for breeding"
+    ]
+  },
+  {
+    "commodity_code": "0102291050",
+    "description": "Male cattle (bulls) of Schwyz, Fribourg, and spotted Simmental breeds, weighing no more than 80kg, not intended for meat production.",
+    "known_brands": [
+      "Schwyz",
+      "Fribourg",
+      "Simmental"
+    ],
+    "colloquial_terms": [
+      "breeding bulls",
+      "bull calves"
+    ],
+    "synonyms": [
+      "young male cattle for breeding"
+    ]
+  },
+  {
+    "commodity_code": "0102291090",
+    "description": "Other live cattle weighing no more than 80kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "calves"
+    ],
+    "synonyms": [
+      "young cattle",
+      "bovine animals"
+    ]
+  },
+  {
+    "commodity_code": "0102292100",
+    "description": "Cattle weighing between 80kg and 160kg, intended for slaughter.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "feeder cattle",
+      "butcher cattle",
+      "fat cattle"
+    ],
+    "synonyms": [
+      "cattle for meat production"
+    ]
+  },
+  {
+    "commodity_code": "0102292100",
+    "description": "Cattle weighing between 80kg and 160kg, intended for slaughter.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "feeder cattle",
+      "butcher cattle",
+      "fat cattle"
+    ],
+    "synonyms": [
+      "cattle for meat production"
+    ]
+  },
+  {
+    "commodity_code": "0102292910",
+    "description": "Young male cattle, weighing between 80kg and 160kg, intended to be raised for meat.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "feeder calves",
+      "steers",
+      "bullocks"
+    ],
+    "synonyms": [
+      "young male bovine animals for fattening"
+    ]
+  },
+  {
+    "commodity_code": "0102292920",
+    "description": "Young female cattle (heifers) of specific mountain breeds (Grey, Brown, Yellow, Pinzgau), weighing between 80kg and 160kg.",
+    "known_brands": [
+      "Grey Mountain",
+      "Brown Mountain",
+      "Yellow Mountain",
+      "Pinzgau"
+    ],
+    "colloquial_terms": [
+      "replacement heifers",
+      "yearling heifers"
+    ],
+    "synonyms": [
+      "young female cattle"
+    ]
+  },
+  {
+    "commodity_code": "0102294950",
+    "description": "Live bulls of the Schwyz, Fribourg, and spotted Simmental breeds, weighing between 160 kg and 300 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals"
+    ]
+  },
+  {
+    "commodity_code": "0102294990",
+    "description": "Live cattle (excluding specific bull breeds like Schwyz, Fribourg, and Simmental) weighing between 160 kg and 300 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows",
+      "bullocks",
+      "steers"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals"
+    ]
+  },
+  {
+    "commodity_code": "0102295110",
+    "description": "Young female cattle (heifers) for slaughter, without permanent teeth, weighing between 320 kg and 470 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows",
+      "beef cattle"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals",
+      "heifers"
+    ]
+  },
+  {
+    "commodity_code": "0102295190",
+    "description": "Female cattle (heifers) for slaughter, weighing over 300 kg, not meeting specific age or weight criteria for younger animals.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows",
+      "beef cattle"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals",
+      "heifers"
+    ]
+  },
+  {
+    "commodity_code": "0102295911",
+    "description": "Young female cattle (heifers) of grey, brown, yellow mountain, or spotted Pinzgau breeds, not for slaughter, without permanent teeth, and weighing between 320 kg and 470 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows",
+      "dairy cattle",
+      "breeding stock"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals",
+      "heifers"
+    ]
+  },
+  {
+    "commodity_code": "0102295911",
+    "description": "Young female cattle (heifers) of grey, brown, yellow mountain, or spotted Pinzgau breeds, not for slaughter, without permanent teeth, and weighing between 320 kg and 470 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows",
+      "dairy cattle",
+      "breeding stock"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals",
+      "heifers"
+    ]
+  },
+  {
+    "commodity_code": "0102295919",
+    "description": "Female cattle (heifers) of grey, brown, yellow mountain, or spotted Pinzgau breeds, not for slaughter, weighing over 300 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows",
+      "dairy cattle",
+      "breeding stock"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals",
+      "heifers"
+    ]
+  },
+  {
+    "commodity_code": "0102295921",
+    "description": "Young female cattle (heifers) of Schwyz and Fribourg breeds, not for slaughter, without permanent teeth, and weighing between 320 kg and 470 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows",
+      "dairy cattle",
+      "breeding stock"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals",
+      "heifers"
+    ]
+  },
+  {
+    "commodity_code": "0102295921",
+    "description": "Young female cattle (heifers) of Schwyz and Fribourg breeds, not for slaughter, without permanent teeth, and weighing between 320 kg and 470 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows",
+      "dairy cattle",
+      "breeding stock"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals",
+      "heifers"
+    ]
+  },
+  {
+    "commodity_code": "0102295929",
+    "description": "Female cattle (heifers) of Schwyz and Fribourg breeds, not for slaughter, weighing over 300 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "livestock",
+      "cows",
+      "dairy cattle",
+      "breeding stock"
+    ],
+    "synonyms": [
+      "cattle",
+      "bovine animals",
+      "heifers"
+    ]
+  },
+  {
+    "commodity_code": "0102295931",
+    "description": "Young female Simmental cattle, weighing between 320kg and 470kg, that have not yet calved or developed permanent teeth.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "young cow",
+      "maiden heifer"
+    ],
+    "synonyms": [
+      "Simmental heifer",
+      "young female bovine",
+      "yearling heifer"
+    ]
+  },
+  {
+    "commodity_code": "0102295931",
+    "description": "Young female Simmental cattle, weighing between 320kg and 470kg, that have not yet calved or developed permanent teeth.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "young cow",
+      "maiden heifer"
+    ],
+    "synonyms": [
+      "Simmental heifer",
+      "young female bovine",
+      "yearling heifer"
+    ]
+  },
+  {
+    "commodity_code": "0102295939",
+    "description": "Female Simmental cattle, weighing over 300kg, that have not yet calved. This category is for cattle that do not meet more specific criteria like age or weight ranges.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "maiden heifer"
+    ],
+    "synonyms": [
+      "Simmental heifer",
+      "female bovine"
+    ]
+  },
+  {
+    "commodity_code": "0102295991",
+    "description": "Young female cattle from breeds other than the spotted Simmental, weighing between 320kg and 470kg, that have not yet calved or developed permanent teeth.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "young cow",
+      "maiden heifer"
+    ],
+    "synonyms": [
+      "heifer",
+      "young female bovine",
+      "yearling heifer"
+    ]
+  },
+  {
+    "commodity_code": "0102295991",
+    "description": "Young female cattle from breeds other than the spotted Simmental, weighing between 320kg and 470kg, that have not yet calved or developed permanent teeth.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "young cow",
+      "maiden heifer"
+    ],
+    "synonyms": [
+      "heifer",
+      "young female bovine",
+      "yearling heifer"
+    ]
+  },
+  {
+    "commodity_code": "0102295999",
+    "description": "Female cattle from breeds other than the spotted Simmental, weighing over 300kg, that have not yet calved and do not fall into other specific subcategories.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "maiden heifer"
+    ],
+    "synonyms": [
+      "heifer",
+      "female bovine"
+    ]
+  },
+  {
+    "commodity_code": "0102296100",
+    "description": "Adult female cattle, weighing over 300kg, intended for slaughter.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "beef cow",
+      "cull cow",
+      "butcher cow"
+    ],
+    "synonyms": [
+      "slaughter cow",
+      "cow for meat"
+    ]
+  },
+  {
+    "commodity_code": "0102296100",
+    "description": "Adult female cattle, weighing over 300kg, intended for slaughter.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "beef cow",
+      "cull cow",
+      "butcher cow"
+    ],
+    "synonyms": [
+      "slaughter cow",
+      "cow for meat"
+    ]
+  },
+  {
+    "commodity_code": "0102296910",
+    "description": "Heifers of specific mountain breeds (Grey, Brown, Yellow) or the spotted Pinzgau breed, weighing over 300kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "mountain cattle"
+    ],
+    "synonyms": [
+      "Alpine cattle heifer",
+      "Pinzgauer heifer",
+      "Grey Alpine heifer",
+      "Brown mountain heifer",
+      "Yellow mountain heifer"
+    ]
+  },
+  {
+    "commodity_code": "0102296920",
+    "description": "Cows of the Schwyz or Fribourg breeds, weighing over 300kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Swiss cattle"
+    ],
+    "synonyms": [
+      "Schwyz cow",
+      "Fribourg cow",
+      "Swiss Brown cow"
+    ]
+  },
+  {
+    "commodity_code": "0102296930",
+    "description": "Cows of the spotted Simmental breed, weighing over 300 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Simmental cow"
+    ],
+    "synonyms": [
+      "Fleckvieh cow",
+      "Pie Rouge cow"
+    ]
+  },
+  {
+    "commodity_code": "0102296990",
+    "description": "Cows, other than for slaughter, weighing over 300 kg, not of a specified breed.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Cow",
+      "Heifer"
+    ],
+    "synonyms": [
+      "Female bovine animal"
+    ]
+  },
+  {
+    "commodity_code": "0102299110",
+    "description": "Young cattle for slaughter, with no permanent teeth, weighing between 350 kg and 500 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Young beef cattle",
+      "Feeder cattle",
+      "Fat cattle"
+    ],
+    "synonyms": [
+      "Young bovine animals for slaughter"
+    ]
+  },
+  {
+    "commodity_code": "0102299190",
+    "description": "Cattle for slaughter, weighing over 300 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Beef cattle",
+      "Slaughter cattle",
+      "Cull cattle"
+    ],
+    "synonyms": [
+      "Bovine animals for slaughter"
+    ]
+  },
+  {
+    "commodity_code": "0102299921",
+    "description": "Young bulls of the Schwyz, Fribourg, or spotted Simmental breeds, with no permanent teeth, weighing between 350 kg and 500 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Young bull",
+      "Simmental bull",
+      "Schwyz bull",
+      "Fribourg bull"
+    ],
+    "synonyms": [
+      "Young male bovine animal of specified breeds"
+    ]
+  },
+  {
+    "commodity_code": "0102299921",
+    "description": "Young bulls of the Schwyz, Fribourg, or spotted Simmental breeds, with no permanent teeth, weighing between 350 kg and 500 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Young bull",
+      "Simmental bull",
+      "Schwyz bull",
+      "Fribourg bull"
+    ],
+    "synonyms": [
+      "Young male bovine animal of specified breeds"
+    ]
+  },
+  {
+    "commodity_code": "0102299929",
+    "description": "Bulls of the Schwyz, Fribourg, or spotted Simmental breeds, weighing over 300 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Bull",
+      "Simmental bull",
+      "Schwyz bull",
+      "Fribourg bull"
+    ],
+    "synonyms": [
+      "Male bovine animal of specified breeds"
+    ]
+  },
+  {
+    "commodity_code": "0102299991",
+    "description": "Other young cattle, with no permanent teeth, weighing between 350 kg and 500 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Young cattle",
+      "Feeder cattle"
+    ],
+    "synonyms": [
+      "Young bovine animals"
+    ]
+  },
+  {
+    "commodity_code": "0102299991",
+    "description": "Other young cattle, with no permanent teeth, weighing between 350 kg and 500 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Young cattle",
+      "Feeder cattle"
+    ],
+    "synonyms": [
+      "Young bovine animals"
+    ]
+  },
+  {
+    "commodity_code": "0102299999",
+    "description": "Other cattle weighing over 300 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Cattle",
+      "Bovines"
+    ],
+    "synonyms": [
+      "Bovine animals"
+    ]
+  },
+  {
+    "commodity_code": "0102310000",
+    "description": "Pure-bred breeding buffalo.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "breeding stock"
+    ],
+    "synonyms": [
+      "live pure-bred breeding buffalo",
+      "water buffalo for breeding"
+    ]
+  },
+  {
+    "commodity_code": "0102310000",
+    "description": "Pure-bred breeding buffalo.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "breeding stock"
+    ],
+    "synonyms": [
+      "live pure-bred breeding buffalo",
+      "water buffalo for breeding"
+    ]
+  },
+  {
+    "commodity_code": "0102391010",
+    "description": "Domestic buffalo, not for breeding, weighing more than 160 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "slaughter buffalo",
+      "heavy buffalo"
+    ],
+    "synonyms": [
+      "live domestic buffalo over 160kg"
+    ]
+  },
+  {
+    "commodity_code": "0102391090",
+    "description": "Domestic buffalo, not for breeding, weighing 160 kg or less.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "young buffalo",
+      "light buffalo"
+    ],
+    "synonyms": [
+      "live domestic buffalo up to 160kg"
+    ]
+  },
+  {
+    "commodity_code": "0102399000",
+    "description": "Wild buffalo, not intended for breeding.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "live wild buffalo"
+    ]
+  },
+  {
+    "commodity_code": "0102902000",
+    "description": "Pure-bred breeding cattle (excluding buffalo).",
+    "known_brands": [
+      "Aberdeen Angus",
+      "Hereford",
+      "Holstein-Friesian",
+      "Charolais",
+      "Limousin",
+      "Simmental"
+    ],
+    "colloquial_terms": [
+      "breeding stock",
+      "pedigree cattle"
+    ],
+    "synonyms": [
+      "live pure-bred breeding bovine animals (not buffalo)"
+    ]
+  },
+  {
+    "commodity_code": "0102909110",
+    "description": "Domestic cattle, not for breeding, weighing more than 160 kg (excluding buffalo).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "slaughter cattle",
+      "beef cattle",
+      "fat cattle"
+    ],
+    "synonyms": [
+      "live domestic cattle over 160kg (not buffalo)"
+    ]
+  },
+  {
+    "commodity_code": "0102909190",
+    "description": "Domestic cattle, not for breeding, weighing 160 kg or less (excluding buffalo).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "calves",
+      "veal calves",
+      "young cattle"
+    ],
+    "synonyms": [
+      "live domestic cattle up to 160kg (not buffalo)"
+    ]
+  },
+  {
+    "commodity_code": "0102909900",
+    "description": "Wild cattle, not for breeding (excluding buffalo).",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "live wild bovine animals (not buffalo)"
+    ]
+  },
+  {
+    "commodity_code": "0103100000",
+    "description": "Pure-bred breeding pigs (swine).",
+    "known_brands": [
+      "Duroc",
+      "Landrace",
+      "Yorkshire",
+      "Hampshire",
+      "Berkshire"
+    ],
+    "colloquial_terms": [
+      "breeding hogs",
+      "breeding pigs",
+      "pedigree pigs"
+    ],
+    "synonyms": [
+      "live pure-bred breeding swine"
+    ]
+  },
+  {
+    "commodity_code": "0103911000",
+    "description": "Live domestic pig, weighing less than 50 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "piglet",
+      "weaner pig",
+      "feeder pig"
+    ],
+    "synonyms": [
+      "young domestic pig",
+      "small domestic pig"
+    ]
+  },
+  {
+    "commodity_code": "0103919000",
+    "description": "Live wild pig, weighing less than 50 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "wild boar piglet",
+      "young boar"
+    ],
+    "synonyms": [
+      "young wild pig",
+      "small wild pig"
+    ]
+  },
+  {
+    "commodity_code": "0103921100",
+    "description": "Live adult female domestic pig (sow) that has given birth and weighs at least 160 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "breeding sow",
+      "mother pig"
+    ],
+    "synonyms": [
+      "adult female pig",
+      "brood sow"
+    ]
+  },
+  {
+    "commodity_code": "0103921100",
+    "description": "Live adult female domestic pig (sow) that has given birth and weighs at least 160 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "breeding sow",
+      "mother pig"
+    ],
+    "synonyms": [
+      "adult female pig",
+      "brood sow"
+    ]
+  },
+  {
+    "commodity_code": "0103921900",
+    "description": "Live domestic pig, weighing 50 kg or more.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "finishing pig",
+      "market hog",
+      "butcher hog",
+      "boar"
+    ],
+    "synonyms": [
+      "adult domestic pig",
+      "large domestic pig"
+    ]
+  },
+  {
+    "commodity_code": "0103929000",
+    "description": "Live wild pig, weighing 50 kg or more.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "wild boar",
+      "adult boar"
+    ],
+    "synonyms": [
+      "adult wild pig",
+      "large wild pig"
+    ]
+  },
+  {
+    "commodity_code": "0104101000",
+    "description": "Live pure-bred sheep for breeding purposes.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "pedigree sheep",
+      "stud ram",
+      "stud ewe"
+    ],
+    "synonyms": [
+      "breeding sheep",
+      "purebred sheep"
+    ]
+  },
+  {
+    "commodity_code": "0104103000",
+    "description": "Live lamb, up to one year old.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "young sheep",
+      "feeder lamb"
+    ],
+    "synonyms": [
+      "lamb"
+    ]
+  },
+  {
+    "commodity_code": "0104103000",
+    "description": "Live lamb, up to one year old.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "young sheep",
+      "feeder lamb"
+    ],
+    "synonyms": [
+      "lamb"
+    ]
+  },
+  {
+    "commodity_code": "0104108000",
+    "description": "Live adult sheep, not for pure-bred breeding.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "mutton sheep",
+      "hogget",
+      "cull sheep"
+    ],
+    "synonyms": [
+      "adult sheep",
+      "market sheep"
+    ]
+  },
+  {
+    "commodity_code": "0105140000",
+    "description": "Live geese, each weighing not more than 185 grams.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "goslings"
+    ],
+    "synonyms": [
+      "young geese",
+      "baby geese"
+    ]
+  },
+  {
+    "commodity_code": "0105150000",
+    "description": "Live guinea fowls, each weighing not more than 185 grams.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "keets",
+      "guinea keets"
+    ],
+    "synonyms": [
+      "young guinea fowls",
+      "baby guinea fowls"
+    ]
+  },
+  {
+    "commodity_code": "0105940000",
+    "description": "Live domestic chickens.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "chickens",
+      "chooks",
+      "hens",
+      "roosters",
+      "biddy"
+    ],
+    "synonyms": [
+      "Gallus domesticus",
+      "domestic fowl",
+      "poultry"
+    ]
+  },
+  {
+    "commodity_code": "0105940000",
+    "description": "Live domestic chickens.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "chickens",
+      "chooks",
+      "hens",
+      "roosters",
+      "biddy"
+    ],
+    "synonyms": [
+      "Gallus domesticus",
+      "domestic fowl",
+      "poultry"
+    ]
+  },
+  {
+    "commodity_code": "0105991000",
+    "description": "Live ducks.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "ducklings"
+    ],
+    "synonyms": [
+      "waterfowl"
+    ]
+  },
+  {
+    "commodity_code": "0105992000",
+    "description": "Live geese.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "goslings"
+    ],
+    "synonyms": [
+      "waterfowl"
+    ]
+  },
+  {
+    "commodity_code": "0105993000",
+    "description": "Live turkeys.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "poults"
+    ],
+    "synonyms": [
+      "gobblers"
+    ]
+  },
+  {
+    "commodity_code": "0105995000",
+    "description": "Live guinea fowls.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "keets"
+    ],
+    "synonyms": [
+      "helmeted guineafowl",
+      "pet speckled hen"
+    ]
+  },
+  {
+    "commodity_code": "0106110000",
+    "description": "Live primates, such as monkeys, apes, and lemurs.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "monkeys",
+      "apes"
+    ],
+    "synonyms": [
+      "simians",
+      "prosimians"
+    ]
+  },
+  {
+    "commodity_code": "0106110000",
+    "description": "Live primates, such as monkeys, apes, and lemurs.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "monkeys",
+      "apes"
+    ],
+    "synonyms": [
+      "simians",
+      "prosimians"
+    ]
+  },
+  {
+    "commodity_code": "0106120000",
+    "description": "Live marine mammals such as whales, dolphins, porpoises, manatees, dugongs, seals, sea lions, and walruses.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "sea cows"
+    ],
+    "synonyms": [
+      "cetaceans",
+      "sirenians",
+      "pinnipeds",
+      "marine mammals"
+    ]
+  },
+  {
+    "commodity_code": "0106130000",
+    "description": "Live camels and related animals like llamas, alpacas, vicuñas, and guanacos.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "dromedary",
+      "bactrian camel",
+      "llama",
+      "alpaca",
+      "vicuña",
+      "guanaco",
+      "camelids"
+    ]
+  },
+  {
+    "commodity_code": "0106141000",
+    "description": "Live domesticated rabbits, often kept as pets.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "bunny",
+      "bunny rabbit"
+    ],
+    "synonyms": [
+      "pet rabbit",
+      "house rabbit",
+      "domestic rabbit"
+    ]
+  },
+  {
+    "commodity_code": "0106149000",
+    "description": "Live non-domesticated rabbits and hares.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "jackrabbit"
+    ],
+    "synonyms": [
+      "wild rabbit",
+      "cottontail",
+      "leveret"
+    ]
+  },
+  {
+    "commodity_code": "0106190000",
+    "description": "Other live mammals not covered in other categories.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": []
+  },
+  {
+    "commodity_code": "0106200000",
+    "description": "Live reptiles, a class of animals that includes snakes, turtles, lizards, crocodiles, and alligators.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "herps"
+    ],
+    "synonyms": [
+      "lizards",
+      "crocodiles",
+      "alligators",
+      "tortoises",
+      "terrapins",
+      "snakes",
+      "turtles"
+    ]
+  },
+  {
+    "commodity_code": "0106310000",
+    "description": "Live birds of prey, also known as raptors, which hunt for food. Includes eagles, hawks, falcons, and owls.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "raptors"
+    ],
+    "synonyms": [
+      "eagles",
+      "hawks",
+      "falcons",
+      "owls",
+      "vultures",
+      "kites"
+    ]
+  },
+  {
+    "commodity_code": "0106310000",
+    "description": "Live birds of prey, also known as raptors, which hunt for food. Includes eagles, hawks, falcons, and owls.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "raptors"
+    ],
+    "synonyms": [
+      "eagles",
+      "hawks",
+      "falcons",
+      "owls",
+      "vultures",
+      "kites"
+    ]
+  },
+  {
+    "commodity_code": "0106320000",
+    "description": "Live birds from the Psittaciformes order, which includes parrots, parakeets, macaws, and cockatoos.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "hookbills"
+    ],
+    "synonyms": [
+      "parrots",
+      "parakeets",
+      "macaws",
+      "cockatoos",
+      "parrot-like birds"
+    ]
+  },
+  {
+    "commodity_code": "0106330000",
+    "description": "Live ostriches and emus, which are large, flightless birds.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "ratites"
+    ]
+  },
+  {
+    "commodity_code": "0106391000",
+    "description": "Live pigeons.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "rock dove",
+      "homing pigeon"
+    ],
+    "synonyms": [
+      "dove"
+    ]
+  },
+  {
+    "commodity_code": "0106398000",
+    "description": "Other live birds, not including pigeons, birds of prey, or parrots.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "finches",
+      "canaries",
+      "songbirds"
+    ]
+  },
+  {
+    "commodity_code": "0106410000",
+    "description": "Live bees, typically for pollination or honey production.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "honeybee"
+    ],
+    "synonyms": [
+      "apis mellifera"
+    ]
+  },
+  {
+    "commodity_code": "0106410000",
+    "description": "Live bees, typically for pollination or honey production.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "honeybee"
+    ],
+    "synonyms": [
+      "apis mellifera"
+    ]
+  },
+  {
+    "commodity_code": "0106490000",
+    "description": "Other live insects, not including bees. This can include insects for food, research, or as pets.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "bugs"
+    ],
+    "synonyms": [
+      "crickets",
+      "mealworms",
+      "silkworms",
+      "ladybugs"
+    ]
+  },
+  {
+    "commodity_code": "0106900010",
+    "description": "Live frogs that are suitable for eating.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "frog legs"
+    ],
+    "synonyms": [
+      "edible frogs"
+    ]
+  },
+  {
+    "commodity_code": "0106900010",
+    "description": "Live frogs that are suitable for eating.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "frog legs"
+    ],
+    "synonyms": [
+      "edible frogs"
+    ]
+  },
+  {
+    "commodity_code": "0106900019",
+    "description": "Live frogs not intended for human consumption, such as for pets or research.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "pet frogs",
+      "ornamental frogs",
+      "laboratory frogs"
+    ]
+  },
+  {
+    "commodity_code": "0106900090",
+    "description": "Other live animals not specified elsewhere. This can include a wide range of animals such as reptiles, spiders, or worms.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "live reptiles",
+      "live spiders",
+      "live worms",
+      "snails"
+    ]
+  },
+  {
+    "commodity_code": "8703101100",
+    "description": "Snowmobiles with a diesel or gasoline engine.",
+    "known_brands": [
+      "Ski-Doo",
+      "Polaris",
+      "Arctic Cat",
+      "Yamaha"
+    ],
+    "colloquial_terms": [
+      "snowmachine",
+      "sled"
+    ],
+    "synonyms": [
+      "motor sledge",
+      "snow scooter"
+    ]
+  },
+  {
+    "commodity_code": "8703101800",
+    "description": "Other vehicles specially designed for travelling on snow, golf cars and similar vehicles.",
+    "known_brands": [
+      "E-Z-GO",
+      "Club Car",
+      "Yamaha",
+      "Polaris",
+      "Ski-Doo",
+      "Arctic Cat"
+    ],
+    "colloquial_terms": [
+      "golf cart",
+      "golf buggy",
+      "snowmobile",
+      "snow machine",
+      "sled"
+    ],
+    "synonyms": [
+      "all-terrain vehicle",
+      "off-road vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703211000",
+    "description": "New passenger cars with a petrol engine capacity up to 1000cc.",
+    "known_brands": [
+      "Fiat",
+      "Ford",
+      "Toyota",
+      "Nissan",
+      "Honda",
+      "Volkswagen",
+      "Hyundai",
+      "Kia"
+    ],
+    "colloquial_terms": [
+      "city car",
+      "small car",
+      "hatchback",
+      "supermini"
+    ],
+    "synonyms": [
+      "automobile",
+      "motor car",
+      "vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703219000",
+    "description": "Used or second-hand passenger cars with a petrol engine capacity up to 1000cc.",
+    "known_brands": [
+      "Fiat",
+      "Ford",
+      "Toyota",
+      "Nissan",
+      "Honda",
+      "Volkswagen",
+      "Hyundai",
+      "Kia"
+    ],
+    "colloquial_terms": [
+      "used car",
+      "second-hand car",
+      "pre-owned car"
+    ],
+    "synonyms": [
+      "automobile",
+      "motor car",
+      "vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703221000",
+    "description": "New passenger cars with a petrol engine capacity between 1000cc and 1500cc.",
+    "known_brands": [
+      "Ford",
+      "Volkswagen",
+      "Toyota",
+      "Honda",
+      "Vauxhall",
+      "Peugeot",
+      "Renault"
+    ],
+    "colloquial_terms": [
+      "family car",
+      "hatchback",
+      "saloon",
+      "sedan"
+    ],
+    "synonyms": [
+      "automobile",
+      "motor car",
+      "vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703229000",
+    "description": "Used or second-hand passenger cars with a petrol engine capacity between 1000cc and 1500cc.",
+    "known_brands": [
+      "Ford",
+      "Volkswagen",
+      "Toyota",
+      "Honda",
+      "Vauxhall",
+      "Peugeot",
+      "Renault"
+    ],
+    "colloquial_terms": [
+      "used car",
+      "second-hand car",
+      "pre-owned car"
+    ],
+    "synonyms": [
+      "automobile",
+      "motor car",
+      "vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703231100",
+    "description": "New motor caravans, such as campervans or motorhomes, with a petrol engine capacity between 1500cc and 3000cc.",
+    "known_brands": [
+      "Winnebago",
+      "Hymer",
+      "Adria",
+      "Swift",
+      "Auto-Trail",
+      "Westfalia"
+    ],
+    "colloquial_terms": [
+      "campervan",
+      "motorhome",
+      "RV",
+      "recreational vehicle",
+      "camper"
+    ],
+    "synonyms": [
+      "caravanette",
+      "motor caravan"
+    ]
+  },
+  {
+    "commodity_code": "8703231900",
+    "description": "New passenger cars (excluding motor caravans) with a petrol engine capacity between 1500cc and 3000cc.",
+    "known_brands": [
+      "BMW",
+      "Mercedes-Benz",
+      "Audi",
+      "Jaguar",
+      "Land Rover",
+      "Volvo",
+      "Lexus"
+    ],
+    "colloquial_terms": [
+      "executive car",
+      "luxury car",
+      "SUV",
+      "4x4",
+      "saloon",
+      "sedan",
+      "estate"
+    ],
+    "synonyms": [
+      "automobile",
+      "motor car",
+      "vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703239000",
+    "description": "Used or second-hand passenger cars with a petrol engine capacity between 1500cc and 3000cc.",
+    "known_brands": [
+      "BMW",
+      "Mercedes-Benz",
+      "Audi",
+      "Jaguar",
+      "Land Rover",
+      "Volvo",
+      "Lexus"
+    ],
+    "colloquial_terms": [
+      "used car",
+      "second-hand car",
+      "pre-owned car"
+    ],
+    "synonyms": [
+      "automobile",
+      "motor car",
+      "vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703241000",
+    "description": "New passenger cars with a large petrol engine capacity over 3000cc.",
+    "known_brands": [
+      "Porsche",
+      "Ferrari",
+      "Lamborghini",
+      "Aston Martin",
+      "Bentley",
+      "Rolls-Royce",
+      "Maserati"
+    ],
+    "colloquial_terms": [
+      "sports car",
+      "supercar",
+      "hypercar",
+      "high-performance car",
+      "luxury car"
+    ],
+    "synonyms": [
+      "automobile",
+      "motor car",
+      "vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703249000",
+    "description": "Used cars with a spark-ignition (petrol) engine over 3000cc.",
+    "known_brands": [
+      "BMW",
+      "Mercedes-Benz",
+      "Audi",
+      "Jaguar",
+      "Land Rover",
+      "Lexus",
+      "Porsche",
+      "Ford",
+      "Chevrolet",
+      "Dodge"
+    ],
+    "colloquial_terms": [
+      "second-hand car",
+      "used car",
+      "gas guzzler"
+    ],
+    "synonyms": [
+      "used vehicle",
+      "pre-owned automobile",
+      "used motor car"
+    ]
+  },
+  {
+    "commodity_code": "8703311000",
+    "description": "New cars with a diesel engine up to 1500cc.",
+    "known_brands": [
+      "Volkswagen",
+      "Ford",
+      "Peugeot",
+      "Citroën",
+      "Renault",
+      "Fiat",
+      "Vauxhall",
+      "Opel",
+      "Skoda"
+    ],
+    "colloquial_terms": [
+      "new car",
+      "diesel car",
+      "small diesel"
+    ],
+    "synonyms": [
+      "new vehicle",
+      "new automobile",
+      "diesel-powered car"
+    ]
+  },
+  {
+    "commodity_code": "8703319000",
+    "description": "Used cars with a diesel engine up to 1500cc.",
+    "known_brands": [
+      "Volkswagen",
+      "Ford",
+      "Peugeot",
+      "Citroën",
+      "Renault",
+      "Fiat",
+      "Vauxhall",
+      "Opel",
+      "Skoda"
+    ],
+    "colloquial_terms": [
+      "second-hand car",
+      "used car",
+      "small diesel"
+    ],
+    "synonyms": [
+      "used vehicle",
+      "pre-owned automobile",
+      "used diesel car"
+    ]
+  },
+  {
+    "commodity_code": "8703321100",
+    "description": "New motor caravans (motorhomes) with a diesel engine between 1500cc and 2500cc.",
+    "known_brands": [
+      "Hymer",
+      "Swift",
+      "Adria",
+      "Auto-Trail",
+      "Bailey",
+      "Chausson",
+      "Dethleffs",
+      "Rapido",
+      "Westfalia"
+    ],
+    "colloquial_terms": [
+      "campervan",
+      "RV",
+      "recreational vehicle",
+      "camper"
+    ],
+    "synonyms": [
+      "motorhome",
+      "camper van",
+      "mobile home"
+    ]
+  },
+  {
+    "commodity_code": "8703321100",
+    "description": "New motor caravans (motorhomes) with a diesel engine between 1500cc and 2500cc.",
+    "known_brands": [
+      "Hymer",
+      "Swift",
+      "Adria",
+      "Auto-Trail",
+      "Bailey",
+      "Chausson",
+      "Dethleffs",
+      "Rapido",
+      "Westfalia"
+    ],
+    "colloquial_terms": [
+      "campervan",
+      "RV",
+      "recreational vehicle",
+      "camper"
+    ],
+    "synonyms": [
+      "motorhome",
+      "camper van",
+      "mobile home"
+    ]
+  },
+  {
+    "commodity_code": "8703321900",
+    "description": "New diesel vehicles (not motor caravans) with an engine between 1500cc and 2500cc. This includes SUVs, vans, and larger cars.",
+    "known_brands": [
+      "Ford",
+      "Volkswagen",
+      "BMW",
+      "Mercedes-Benz",
+      "Audi",
+      "Land Rover",
+      "Toyota",
+      "Nissan",
+      "Volvo"
+    ],
+    "colloquial_terms": [
+      "new car",
+      "diesel SUV",
+      "diesel van",
+      "family car"
+    ],
+    "synonyms": [
+      "new vehicle",
+      "new automobile",
+      "diesel-powered vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703329000",
+    "description": "Used diesel vehicles with an engine between 1500cc and 2500cc. This can include cars, SUVs, and vans.",
+    "known_brands": [
+      "Ford",
+      "Volkswagen",
+      "BMW",
+      "Mercedes-Benz",
+      "Audi",
+      "Land Rover",
+      "Toyota",
+      "Nissan",
+      "Vauxhall",
+      "Volvo"
+    ],
+    "colloquial_terms": [
+      "second-hand car",
+      "used car",
+      "used diesel"
+    ],
+    "synonyms": [
+      "used vehicle",
+      "pre-owned automobile",
+      "used diesel vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703331100",
+    "description": "New motor caravans (motorhomes) with a diesel engine over 2500cc.",
+    "known_brands": [
+      "Winnebago",
+      "Hymer",
+      "Swift",
+      "Adria",
+      "Auto-Trail",
+      "Bailey",
+      "Carthago",
+      "Morelo",
+      "Niesmann + Bischoff"
+    ],
+    "colloquial_terms": [
+      "campervan",
+      "RV",
+      "recreational vehicle",
+      "A-class motorhome",
+      "luxury camper"
+    ],
+    "synonyms": [
+      "motorhome",
+      "camper van",
+      "luxury motorhome"
+    ]
+  },
+  {
+    "commodity_code": "8703331100",
+    "description": "New motor caravans (motorhomes) with a diesel engine over 2500cc.",
+    "known_brands": [
+      "Winnebago",
+      "Hymer",
+      "Swift",
+      "Adria",
+      "Auto-Trail",
+      "Bailey",
+      "Carthago",
+      "Morelo",
+      "Niesmann + Bischoff"
+    ],
+    "colloquial_terms": [
+      "campervan",
+      "RV",
+      "recreational vehicle",
+      "A-class motorhome",
+      "luxury camper"
+    ],
+    "synonyms": [
+      "motorhome",
+      "camper van",
+      "luxury motorhome"
+    ]
+  },
+  {
+    "commodity_code": "8703331900",
+    "description": "New diesel vehicles (not motor caravans) with an engine over 2500cc. This includes large SUVs, trucks, and vans.",
+    "known_brands": [
+      "Land Rover",
+      "Mercedes-Benz",
+      "BMW",
+      "Audi",
+      "Ford",
+      "Chevrolet",
+      "Ram",
+      "GMC",
+      "Toyota",
+      "Jeep"
+    ],
+    "colloquial_terms": [
+      "new car",
+      "large diesel SUV",
+      "pickup truck",
+      "diesel truck",
+      "4x4"
+    ],
+    "synonyms": [
+      "new vehicle",
+      "new automobile",
+      "heavy-duty diesel",
+      "off-road vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703339000",
+    "description": "Used passenger vehicle with a diesel or semi-diesel engine larger than 2500cc.",
+    "known_brands": [
+      "Land Rover",
+      "Mercedes-Benz",
+      "BMW",
+      "Audi",
+      "Jeep",
+      "Toyota",
+      "Ford",
+      "Nissan",
+      "Mitsubishi"
+    ],
+    "colloquial_terms": [
+      "used car",
+      "second-hand car",
+      "diesel car",
+      "large diesel 4x4"
+    ],
+    "synonyms": [
+      "pre-owned vehicle",
+      "used automobile"
+    ]
+  },
+  {
+    "commodity_code": "8703401010",
+    "description": "New hybrid passenger vehicle with a petrol engine 1000cc or smaller, which cannot be plugged in to charge.",
+    "known_brands": [
+      "Toyota",
+      "Honda",
+      "Hyundai",
+      "Kia",
+      "Ford",
+      "Lexus",
+      "Suzuki"
+    ],
+    "colloquial_terms": [
+      "hybrid car",
+      "self-charging hybrid",
+      "mild hybrid",
+      "small hybrid"
+    ],
+    "synonyms": [
+      "hybrid electric vehicle (HEV)",
+      "petrol-electric hybrid"
+    ]
+  },
+  {
+    "commodity_code": "8703401090",
+    "description": "New hybrid passenger vehicle with a petrol engine larger than 1000cc, which cannot be plugged in to charge.",
+    "known_brands": [
+      "Toyota",
+      "Honda",
+      "Hyundai",
+      "Kia",
+      "Ford",
+      "Lexus",
+      "BMW",
+      "Mercedes-Benz",
+      "Nissan"
+    ],
+    "colloquial_terms": [
+      "hybrid car",
+      "self-charging hybrid",
+      "mild hybrid"
+    ],
+    "synonyms": [
+      "hybrid electric vehicle (HEV)",
+      "petrol-electric hybrid"
+    ]
+  },
+  {
+    "commodity_code": "8703409010",
+    "description": "Used hybrid passenger vehicle with a petrol engine 1000cc or smaller, which cannot be plugged in to charge.",
+    "known_brands": [
+      "Toyota",
+      "Honda",
+      "Hyundai",
+      "Kia",
+      "Ford",
+      "Lexus",
+      "Suzuki"
+    ],
+    "colloquial_terms": [
+      "used hybrid",
+      "second-hand hybrid",
+      "self-charging hybrid",
+      "mild hybrid"
+    ],
+    "synonyms": [
+      "pre-owned hybrid electric vehicle (HEV)",
+      "used petrol-electric hybrid"
+    ]
+  },
+  {
+    "commodity_code": "8703409090",
+    "description": "Used hybrid passenger vehicle with a petrol engine larger than 1000cc, which cannot be plugged in to charge.",
+    "known_brands": [
+      "Toyota",
+      "Honda",
+      "Hyundai",
+      "Kia",
+      "Ford",
+      "Lexus",
+      "BMW",
+      "Mercedes-Benz",
+      "Nissan"
+    ],
+    "colloquial_terms": [
+      "used hybrid",
+      "second-hand hybrid",
+      "self-charging hybrid",
+      "mild hybrid"
+    ],
+    "synonyms": [
+      "pre-owned hybrid electric vehicle (HEV)",
+      "used petrol-electric hybrid"
+    ]
+  },
+  {
+    "commodity_code": "8703500000",
+    "description": "Hybrid passenger vehicle with a diesel or semi-diesel engine, which cannot be plugged in to charge.",
+    "known_brands": [
+      "Mercedes-Benz",
+      "Audi",
+      "Peugeot",
+      "Citroen",
+      "DS",
+      "Volvo",
+      "Kia",
+      "Hyundai"
+    ],
+    "colloquial_terms": [
+      "diesel hybrid",
+      "self-charging diesel hybrid",
+      "mild diesel hybrid"
+    ],
+    "synonyms": [
+      "diesel-electric hybrid vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703601010",
+    "description": "New plug-in hybrid passenger vehicle (PHEV) with a petrol engine 1000cc or smaller.",
+    "known_brands": [
+      "Mercedes-Benz",
+      "BMW",
+      "Renault",
+      "Kia"
+    ],
+    "colloquial_terms": [
+      "PHEV",
+      "plug-in hybrid",
+      "small plug-in hybrid"
+    ],
+    "synonyms": [
+      "plug-in hybrid electric vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703601090",
+    "description": "New plug-in hybrid passenger vehicle (PHEV) with a petrol engine larger than 1000cc.",
+    "known_brands": [
+      "BMW",
+      "Mercedes-Benz",
+      "Volkswagen",
+      "Ford",
+      "Kia",
+      "Hyundai",
+      "Toyota",
+      "Volvo",
+      "Land Rover",
+      "Porsche",
+      "Audi"
+    ],
+    "colloquial_terms": [
+      "PHEV",
+      "plug-in hybrid"
+    ],
+    "synonyms": [
+      "plug-in hybrid electric vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703609010",
+    "description": "Used plug-in hybrid passenger vehicle (PHEV) with a petrol engine 1000cc or smaller.",
+    "known_brands": [
+      "Mercedes-Benz",
+      "BMW",
+      "Renault",
+      "Kia"
+    ],
+    "colloquial_terms": [
+      "used PHEV",
+      "second-hand plug-in hybrid",
+      "small plug-in hybrid"
+    ],
+    "synonyms": [
+      "pre-owned plug-in hybrid electric vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703609090",
+    "description": "Used plug-in hybrid passenger vehicle (PHEV) with a petrol engine larger than 1000cc.",
+    "known_brands": [
+      "BMW",
+      "Mercedes-Benz",
+      "Volkswagen",
+      "Ford",
+      "Kia",
+      "Hyundai",
+      "Toyota",
+      "Volvo",
+      "Land Rover",
+      "Porsche",
+      "Audi",
+      "Mitsubishi"
+    ],
+    "colloquial_terms": [
+      "used PHEV",
+      "second-hand plug-in hybrid"
+    ],
+    "synonyms": [
+      "pre-owned plug-in hybrid electric vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703700000",
+    "description": "Plug-in hybrid electric vehicle (PHEV) with a diesel engine that can be charged from an external power source.",
+    "known_brands": [
+      "Audi",
+      "BMW",
+      "Mercedes-Benz",
+      "Volvo",
+      "Ford",
+      "Peugeot",
+      "Citroen",
+      "Range Rover"
+    ],
+    "colloquial_terms": [
+      "Plug-in hybrid",
+      "Diesel hybrid car"
+    ],
+    "synonyms": [
+      "PHEV",
+      "Diesel plug-in hybrid",
+      "Diesel electric hybrid"
+    ]
+  },
+  {
+    "commodity_code": "8703801010",
+    "description": "New battery-powered electric car for transporting up to nine people. Can include models with a small petrol engine to extend range (range extender).",
+    "known_brands": [
+      "Tesla",
+      "Nissan",
+      "BMW",
+      "Chevrolet",
+      "Hyundai",
+      "Kia",
+      "Volkswagen",
+      "Ford",
+      "Audi",
+      "Polestar",
+      "Rivian"
+    ],
+    "colloquial_terms": [
+      "Electric car",
+      "EV",
+      "BEV",
+      "Electric vehicle"
+    ],
+    "synonyms": [
+      "Battery Electric Vehicle",
+      "Pure electric vehicle",
+      "Range-Extended Electric Vehicle (REEV)",
+      "E-REV"
+    ]
+  },
+  {
+    "commodity_code": "8703801090",
+    "description": "Other new vehicles powered only by an electric motor, not covered in other specific categories. This can include electric quadricycles or other small electric vehicles for passenger transport.",
+    "known_brands": [
+      "Renault (Twizy)",
+      "Citroën (Ami)",
+      "G-Wiz",
+      "Mahindra (e2o)",
+      "Silence (S04)"
+    ],
+    "colloquial_terms": [
+      "Electric quadricycle",
+      "City car",
+      "Microcar",
+      "Bubble car"
+    ],
+    "synonyms": [
+      "Light electric vehicle",
+      "Neighborhood Electric Vehicle (NEV)",
+      "L-category electric vehicle"
+    ]
+  },
+  {
+    "commodity_code": "8703809000",
+    "description": "Used or second-hand vehicles that are powered only by an electric motor.",
+    "known_brands": [
+      "Tesla",
+      "Nissan",
+      "BMW",
+      "Chevrolet",
+      "Hyundai",
+      "Kia",
+      "Volkswagen",
+      "Ford",
+      "Audi",
+      "Renault"
+    ],
+    "colloquial_terms": [
+      "Used electric car",
+      "Second-hand EV",
+      "Used EV"
+    ],
+    "synonyms": [
+      "Pre-owned electric vehicle",
+      "Used Battery Electric Vehicle",
+      "Second-hand BEV"
+    ]
+  },
+  {
+    "commodity_code": "8703900000",
+    "description": "Passenger vehicles with alternative propulsion systems not classified elsewhere, such as hydrogen fuel cell vehicles, compressed air vehicles, or solar-powered cars.",
+    "known_brands": [
+      "Toyota (Mirai)",
+      "Hyundai (Nexo)",
+      "Honda (Clarity)"
+    ],
+    "colloquial_terms": [
+      "Hydrogen car",
+      "Fuel cell car"
+    ],
+    "synonyms": [
+      "Fuel Cell Electric Vehicle (FCEV)",
+      "Alternative fuel vehicle",
+      "Hydrogen Fuel Cell Vehicle (HFCV)"
+    ]
+  },
+  {
+    "commodity_code": "2811110000",
+    "description": "Hydrogen fluoride, a highly corrosive inorganic acid, also known as hydrofluoric acid. It is used in the production of refrigerants, herbicides, pharmaceuticals, and for etching glass.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Glass etching acid",
+      "Rust remover"
+    ],
+    "synonyms": [
+      "Hydrofluoric acid",
+      "HF",
+      "Fluorhydric acid",
+      "Hydrogen fluoride"
+    ]
+  },
+  {
+    "commodity_code": "2811120000",
+    "description": "Hydrogen cyanide, a highly poisonous and volatile inorganic acid, also known as hydrocyanic acid. It is used in chemical synthesis, fumigation, and mining for gold extraction.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Prussic acid"
+    ],
+    "synonyms": [
+      "Hydrocyanic acid",
+      "HCN",
+      "Formonitrile",
+      "Cyanide"
+    ]
+  },
+  {
+    "commodity_code": "2811191000",
+    "description": "Hydrogen bromide, a strong inorganic acid also known as hydrobromic acid. It is used to produce bromide compounds and as a catalyst in chemical reactions.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "Hydrobromic acid",
+      "HBr",
+      "Hydrogen bromide"
+    ]
+  },
+  {
+    "commodity_code": "2811198040",
+    "description": "Arsenic acid, a toxic inorganic acid. It is primarily used for treating wood to prevent rot, as a finishing agent for glass, and in the synthesis of some dyes and organic arsenic compounds.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Wood preservative"
+    ],
+    "synonyms": [
+      "Orthoarsenic acid",
+      "H3AsO4",
+      "Arsenic (V) acid"
+    ]
+  },
+  {
+    "commodity_code": "2811198050",
+    "description": "High-purity Sulphamidic acid (also known as Sulfamic acid), a chemical compound that may contain a small amount of an anti-caking agent like silicon dioxide.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Amidosulfonic acid",
+      "Amidosulfuric acid",
+      "Aminosulfonic acid"
+    ],
+    "synonyms": [
+      "Sulfamic acid",
+      "Sulphamic acid"
+    ]
+  },
+  {
+    "commodity_code": "2811198060",
+    "description": "Phosphorous acid, also known as Phosphonic acid, available in solid or liquid (water-based) forms. It is a chemical compound used in various industrial applications, including as a reducing agent or in the production of phosphite salts.",
+    "known_brands": [
+      "Aliette",
+      "Fosphite",
+      "Phostrol"
+    ],
+    "colloquial_terms": [
+      "Phos acid"
+    ],
+    "synonyms": [
+      "Phosphonic acid",
+      "Orthophosphorous acid"
+    ]
+  },
+  {
+    "commodity_code": "2811198090",
+    "description": "A catch-all category for other inorganic acids that are not specifically listed under other commodity codes.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "Miscellaneous inorganic acids"
+    ]
+  },
+  {
+    "commodity_code": "2811210000",
+    "description": "Carbon dioxide (CO2), a gas commonly used for carbonating beverages, in fire extinguishers, and in its solid form as dry ice for cooling.",
+    "known_brands": [
+      "SodaStream (for consumer carbonation)",
+      "BOC",
+      "Air Liquide",
+      "Linde"
+    ],
+    "colloquial_terms": [
+      "CO2",
+      "Dry Ice (solid form)"
+    ],
+    "synonyms": [
+      "Carbonic acid gas",
+      "Carbonic anhydride"
+    ]
+  },
+  {
+    "commodity_code": "2811210000",
+    "description": "Carbon dioxide (CO2), a gas commonly used for carbonating beverages, in fire extinguishers, and in its solid form as dry ice for cooling.",
+    "known_brands": [
+      "SodaStream (for consumer carbonation)",
+      "BOC",
+      "Air Liquide",
+      "Linde"
+    ],
+    "colloquial_terms": [
+      "CO2",
+      "Dry Ice (solid form)"
+    ],
+    "synonyms": [
+      "Carbonic acid gas",
+      "Carbonic anhydride"
+    ]
+  },
+  {
+    "commodity_code": "2811220015",
+    "description": "A high-purity, fine powder of amorphous silicon dioxide (silica) with a very small and specific particle size. Used in applications requiring high-performance fillers or additives.",
+    "known_brands": [
+      "Cab-O-Sil",
+      "Aerosil"
+    ],
+    "colloquial_terms": [
+      "Fumed silica",
+      "Pyrogenic silica"
+    ],
+    "synonyms": [
+      "Amorphous silica",
+      "Synthetic amorphous silica"
+    ]
+  },
+  {
+    "commodity_code": "2811220040",
+    "description": "Granulated silicon dioxide (silica) with a purity of 97% or more, primarily used as a filler material in various manufacturing processes.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Silica filler",
+      "Silica beads"
+    ],
+    "synonyms": [
+      "Silicon dioxide granules",
+      "Granular silica"
+    ]
+  },
+  {
+    "commodity_code": "2811220080",
+    "description": "A specific grade of amorphous silicon dioxide powder with a larger particle size, specially designed for use in the manufacturing of vehicle tires to improve performance.",
+    "known_brands": [
+      "Ultrasil",
+      "Hi-Sil",
+      "Zeosil"
+    ],
+    "colloquial_terms": [
+      "Tire silica",
+      "Precipitated silica for tires"
+    ],
+    "synonyms": [
+      "Tire-grade silica",
+      "Reinforcing silica"
+    ]
+  },
+  {
+    "commodity_code": "2811220090",
+    "description": "A catch-all category for other forms of silicon dioxide that are not specifically listed under other commodity codes.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "Silica",
+      "Silicon dioxide"
+    ]
+  },
+  {
+    "commodity_code": "2811290500",
+    "description": "Sulphur dioxide (SO2), a gas used as a preservative in food and beverages like wine and dried fruits, and as a bleaching agent.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "SO2",
+      "E220"
+    ],
+    "synonyms": [
+      "Sulfur dioxide",
+      "Sulfurous anhydride",
+      "Sulfurous oxide"
+    ]
+  },
+  {
+    "commodity_code": "2811291010",
+    "description": "Diarsenic trioxide, an inorganic compound with the formula As2O3. It is a white solid and a commercially important precursor to other arsenic compounds.",
+    "known_brands": [
+      "Trisenox"
+    ],
+    "colloquial_terms": [
+      "Arsenic",
+      "White arsenic",
+      "Rat poison",
+      "Ratsbane",
+      "Arsenicum album"
+    ],
+    "synonyms": [
+      "Arsenous oxide",
+      "Arsenic(III) oxide",
+      "Arsenic sesquioxide",
+      "Arsenious oxide"
+    ]
+  },
+  {
+    "commodity_code": "2811291090",
+    "description": "Sulphur trioxide (sulfuric anhydride), a chemical compound with the formula SO3. It is a key precursor to sulfuric acid.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Sulfuric anhydride"
+    ],
+    "synonyms": [
+      "Sulfur trioxide",
+      "Sulphuric anhydride",
+      "Sulphur(VI) oxide"
+    ]
+  },
+  {
+    "commodity_code": "2811293000",
+    "description": "Nitrogen oxides are a group of highly reactive gases containing nitrogen and oxygen in varying amounts. Common examples include nitric oxide (NO) and nitrogen dioxide (NO2).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "NOx",
+      "laughing gas",
+      "Nos",
+      "nangs",
+      "hippy crack",
+      "whippets"
+    ],
+    "synonyms": [
+      "Oxides of nitrogen"
+    ]
+  },
+  {
+    "commodity_code": "2811299010",
+    "description": "Tellurium dioxide, an inorganic compound with the formula TeO2. It is a white solid used in optical materials and electronics.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "Tellurium(IV) oxide",
+      "Tellurous anhydride",
+      "Tellurite",
+      "Paratellurite"
+    ]
+  },
+  {
+    "commodity_code": "2811299020",
+    "description": "Diarsenic pentaoxide, an inorganic compound with the formula As2O5. It is a white, glassy, deliquescent solid.",
+    "known_brands": [],
+    "colloquial_terms": [],
+    "synonyms": [
+      "Arsenic pentoxide",
+      "Arsenic(V) oxide",
+      "Arsenic anhydride",
+      "Arsenic acid anhydride"
+    ]
+  },
+  {
+    "commodity_code": "2811299090",
+    "description": "A residual category for other inorganic oxygen compounds of non-metals not specified elsewhere.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "catch-all category",
+      "miscellaneous chemical compounds"
+    ],
+    "synonyms": [
+      "other non-metal oxides"
+    ]
+  }
+]
