@@ -23,7 +23,7 @@ private
   attr_reader :interactive_memory
 
   def needs_more_questions?
-    return false if interactive_memory.final_commodity_code_answer.present?
+    return false if interactive_memory.final_answer?
     return false if interactive_memory.questions_unanswered?
 
     true
@@ -48,11 +48,15 @@ private
 
     questions.each { |text| interactive_memory.add_question(text) } if questions.present?
 
-    code = extract_code(result)
+    answers = result.fetch("answers", {})
 
-    if code.present?
-      interactive_memory.final_commodity_code_answer = code
-      interactive_memory.final_commodity_code_description = lookup_description(code)
+    if answers.any?
+      interactive_memory.final_answers = answers.map do |answer|
+        {
+          commodity_code: answer["commodity_code"],
+          confidence: answer["confidence"].to_s.downcase,
+        }
+      end
     end
   end
 

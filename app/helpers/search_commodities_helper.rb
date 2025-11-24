@@ -79,9 +79,13 @@ module SearchCommoditiesHelper
 private
 
   def commodity_confidence(commodity, max_score)
-    level = max_score.to_f.positive? ? ((commodity.score.to_f / max_score) * 100).round : 0
-    level = "#{level}% confidence"
+    text = if commodity.confidence.present?
+             "#{commodity.confidence.to_s.upcase} confidence"
+           else
+             level = max_score.to_f.positive? ? ((commodity.score.to_f / max_score) * 100).round : 0
+             "#{level}% confidence"
+           end
 
-    govuk_tag(text: level, colour: "blue")
+    govuk_tag(text: text, colour: "blue")
   end
 end

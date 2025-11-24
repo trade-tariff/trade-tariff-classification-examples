@@ -65,11 +65,8 @@ en:
 
         ```json
         {
-          "answer" => {
-            "commodity_code" => "0101210000",
-            "confidence"     => "high"
-          },
-          "other_answers" => [
+          "answers" => [
+            { "commodity_code" => "0101210000", "confidence" => "high" },
             { "commodity_code" => "0101290000", "confidence" => "medium" },
             { "commodity_code" => "0101300000", "confidence" => "low" }
           ]
@@ -80,11 +77,12 @@ en:
 
         AVOID YES/NO QUESTIONS UNLESS THEY WILL HELP NARROW DOWN THE COMMODITY CODE BY WHOLE CATEGORIES - A USER CAN REVIEW EACH ELASTICSEARCH OPTION THEMSELVES AND ANSWER YES/NO SO YES/NO JUST MAKES THE UX WORSE.
 
+        Keep to one question per commodity code search.
+
         ```json
         {
           "questions": [
             { "question" => "What is the material of the clothing?", "options" => ["Cotton", "Wool", "Synthetic"] },
-            { "question" => "Which gender is the clothing intended for?", "options" => ["Male", "Female"] }
           ],
         }
         ```

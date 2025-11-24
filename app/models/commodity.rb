@@ -10,6 +10,7 @@ class Commodity
   attribute :colloquial_terms, array: true, default: []
   attribute :synonyms, array: true, default: []
   attribute :score, :float
+  attribute :confidence, :string, default: ""
 
   def searchable_description
     "#{description} #{searchable_brands} #{searchable_colloquial_terms} #{searchable_synonyms}".strip

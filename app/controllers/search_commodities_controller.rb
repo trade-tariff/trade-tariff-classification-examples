@@ -23,7 +23,7 @@ private
 
     if @search_commodity.unanswered_questions.any?
       @search_commodity.validate_answers
-      return []
+      return short_list
     end
 
     @interactive_memory = InteractiveSearch.new(interactive_memory).call
@@ -31,12 +31,12 @@ private
 
     unless @search_commodity.save
       flash.now[:alert] = "Encountered an error saving your answers. Please try again."
-      return []
+      return short_list
     end
 
-    return [] unless @interactive_memory.final_answer?
+    return short_list unless @interactive_memory.final_answer?
 
-    @interactive_memory.final_answer
+    @interactive_memory.final_commodities
   end
 
   def non_interactive_results
@@ -87,6 +87,10 @@ private
       elasticsearch_answers: non_interactive_results,
       questions: search_commodity.questions,
     )
+  end
+
+  def short_list
+    interactive_memory.elasticsearch_answers.sort_by { |c| -c.score }.first(10)
   end
 
   helper_method :results,

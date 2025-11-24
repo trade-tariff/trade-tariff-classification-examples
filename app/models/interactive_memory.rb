@@ -4,38 +4,41 @@ class InteractiveMemory
 
   validates :search_input, presence: true
 
-  validates :final_commodity_code_answer, format: { with: /\A\d{6,10}\z/, message: "must be 6 to 10 digits" }, allow_blank: true
-  validates :final_commodity_code_description, presence: true, if: -> { final_commodity_code_answer.present? }
-
   attribute :search_input
   attribute :elasticsearch_answers, default: []
   attribute :questions, default: []
-  attribute :final_commodity_code_answer, :string, default: ""
-  attribute :final_commodity_code_description, :string, default: ""
+  attribute :final_answers, default: []
+
+  CONFIDENCE_LEVELS = {
+    "high" => 3,
+    "medium" => 2,
+    "low" => 1,
+    "unknown" => 0,
+  }.freeze
 
   def final_answer?
-    final_commodity_code_answer.present?
+    final_answers.any?
   end
 
-  def final_answer
-    score = 100.0
-    elasticsearch_commodity = elasticsearch_answers.find do |result|
-      result.commodity_code.include?(final_commodity_code_answer)
-    end
+  def final_commodities
+    final_answers.each_with_object([]) do |answer, acc|
+      code = answer[:commodity_code]
+      description = lookup_description(code)
+      elasticsearch_commodity = elasticsearch_answers.find do |result|
+        result.commodity_code == code
+      end
 
-    Commodity.wrap(
-      Hashie::Mash.new(
-        _source: {
-          commodity_code: final_commodity_code_answer,
-          description: final_commodity_code_description,
-          score: score,
-          known_brands: elasticsearch_commodity&.known_brands || [],
-          colloquial_terms: elasticsearch_commodity&.colloquial_terms || [],
-          synonyms: elasticsearch_commodity&.synonyms || [],
-          original_description: elasticsearch_commodity&.original_description || "",
-        },
-      ),
-    )
+      acc << Commodity.new(
+        commodity_code: answer[:commodity_code],
+        description: description || "",
+        score: nil,
+        known_brands: elasticsearch_commodity&.known_brands || [],
+        colloquial_terms: elasticsearch_commodity&.colloquial_terms || [],
+        synonyms: elasticsearch_commodity&.synonyms || [],
+        original_description: elasticsearch_commodity&.original_description || "",
+        confidence: answer[:confidence] || "unknown",
+      )
+    end
   end
 
   def add_question(data, answer: nil)
@@ -62,6 +65,12 @@ class InteractiveMemory
   end
 
 private
+
+  def lookup_description(code)
+    FetchRecords::ALL_GOODS_NOMENCLATURES.find { |g|
+      g[:goods_nomenclature_item_id].include?(code)
+    }.try(:[], :description)
+  end
 
   def next_index
     questions.size
