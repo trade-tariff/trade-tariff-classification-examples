@@ -1,0 +1,64 @@
+#! /usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+require 'json'
+require_relative '../config/environment'
+require 'optparse'
+
+start_time = Time.zone.now
+
+search_input = OptionParser.new do |opts|
+  opts.banner = "Usage: validate-interactive-search.rb [search input]"
+
+  opts.on("-h", "--help", "Prints this help") do
+    puts opts
+    exit
+  end
+end.parse!.join(" ").presence || "pure bred breeding horses"
+
+ARGV.clear
+
+interactive_memory = QuestionCollection.new(search_input: search_input)
+
+def yes_no_prompt(question_text, default: 'Yes')
+  default_str = default == 'Yes' ? 'y' : 'n'
+  print "#{question_text} (y/n) [#{default_str}]: "
+  input = gets.to_s.chomp.strip.downcase
+
+  return default if input.empty?
+  return 'Yes' if %w[y yes].include?(input)
+  return 'No' if %w[n no].include?(input)
+
+  yes_no_prompt(question_text, default: true)
+end
+
+loop do
+  InteractiveSearch.new(interactive_memory).call
+
+  if interactive_memory.final_commodity_code_answer.present?
+    puts "Final HS Code: https://www.trade-tariff.service.gov.uk/commodities/#{interactive_memory.final_commodity_code_answer}"
+    puts "Description: #{interactive_memory.final_commodity_code_description}" if interactive_memory.final_commodity_code_description
+    break
+  end
+
+  if interactive_memory.questions_unanswered?
+    interactive_memory.unanswered_questions.each do |question|
+      answer = yes_no_prompt("Answer for: #{question.text}")
+
+      if %w[Yes No].include?(answer)
+        question.answer = answer == 'Yes'
+      else
+        puts "Invalid answer. Please enter 'Yes' or 'No'."
+        redo
+      end
+    end
+  else
+    puts "No more questions, but no final answer. Exiting."
+    break
+  end
+end
+
+end_time = Time.zone.now
+
+puts "Total time taken: #{end_time - start_time} seconds to resolution"

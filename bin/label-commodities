@@ -1,0 +1,17 @@
+#! /usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+require 'json'
+require_relative '../config/environment'
+require_relative '../app/services/fetch_records'
+
+result = FetchRecords.call
+
+date = Time.zone.now.strftime("%Y-%m-%d")
+model = TradeTariffClassificationExamples.ai_client::MODEL
+
+File.write(
+  Rails.root.join("data/labelled_commodities_#{model}_#{date}.json"),
+  JSON.pretty_generate(result),
+)

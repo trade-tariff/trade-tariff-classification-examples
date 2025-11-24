@@ -1,0 +1,1716 @@
+[
+  {
+    "id": "0101210000",
+    "commodity_code": "0101210000",
+    "description": "Pure-bred horses kept for breeding (registered breeding stock: stallions, mares used for producing purebred offspring).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "breeding horses",
+      "stud horses",
+      "studs",
+      "mares",
+      "stallions",
+      "purebred horses"
+    ],
+    "synonyms": [
+      "pure-bred breeding horses",
+      "registered breeding horses",
+      "stud animals"
+    ],
+    "original_description": "Pure-bred breeding horses"
+  },
+  {
+    "id": "0101291000",
+    "commodity_code": "0101291000",
+    "description": "Live horses intended for slaughter (sold for meat production).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "slaughter horses",
+      "butcher horses",
+      "horsemeat horses"
+    ],
+    "synonyms": [
+      "horses for slaughter",
+      "slaughter-bound horses",
+      "butchery horses"
+    ],
+    "original_description": "Horses for slaughter"
+  },
+  {
+    "id": "0101299000",
+    "commodity_code": "0101299000",
+    "description": "Live horses not covered by the above: not for slaughter and not pure-bred breeding stock (includes riding, work or non-purebred horses).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "riding horses",
+      "work horses",
+      "general-purpose horses",
+      "non-breeding horses",
+      "other live horses"
+    ],
+    "synonyms": [
+      "other live horses",
+      "non-breeding live horses",
+      "non-purebred live horses"
+    ],
+    "original_description": "Live horses (excl. for slaughter, pure-bred for breeding)"
+  },
+  {
+    "id": "0101300000",
+    "commodity_code": "0101300000",
+    "description": "Live asses (donkeys). Includes domestic donkeys and burros kept for work, riding, or breeding.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "donkeys",
+      "burros",
+      "asses",
+      "jacks",
+      "jennies"
+    ],
+    "synonyms": [
+      "asses",
+      "donkeys",
+      "burros"
+    ],
+    "original_description": "Live asses"
+  },
+  {
+    "id": "0101900000",
+    "commodity_code": "0101900000",
+    "description": "Live mules and hinnies — hybrids of horses and donkeys (mule: male donkey x female horse; hinny: male horse x female donkey).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "mules",
+      "hinnies",
+      "mule animals",
+      "work mules"
+    ],
+    "synonyms": [
+      "mules and hinnies",
+      "horse-donkey hybrids"
+    ],
+    "original_description": "Live mules and hinnies"
+  },
+  {
+    "id": "0102211000",
+    "commodity_code": "0102211000",
+    "description": "Pure-bred breeding heifers — female cattle of breeding stock that have never calved (young females kept for future breeding).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "heifers",
+      "breeding heifers",
+      "young breeding cows"
+    ],
+    "synonyms": [
+      "pure-bred breeding heifers",
+      "breeding heifers (never calved)",
+      "registered heifers"
+    ],
+    "original_description": "Pure-bred breeding heifers \"female bovines that have never calved\""
+  },
+  {
+    "id": "0102213000",
+    "commodity_code": "0102213000",
+    "description": "Pure-bred breeding cows — adult female cattle used for breeding (excludes heifers).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "breeding cows",
+      "cows",
+      "dams"
+    ],
+    "synonyms": [
+      "pure-bred breeding cows",
+      "breeding dams",
+      "registered breeding cows"
+    ],
+    "original_description": "Pure-bred breeding cows (excl. heifers)"
+  },
+  {
+    "id": "0102219000",
+    "commodity_code": "0102219000",
+    "description": "Other pure-bred cattle for breeding excluding heifers and cows — typically includes breeding bulls or other non-female breeding stock.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "breeding bulls",
+      "bulls",
+      "sires",
+      "pure-bred breeding stock (other)"
+    ],
+    "synonyms": [
+      "pure-bred cattle for breeding (other)",
+      "breeding bulls/sires",
+      "registered breeding males"
+    ],
+    "original_description": "Pure-bred cattle for breeding (excl. heifers and cows)"
+  },
+  {
+    "id": "0102290500",
+    "commodity_code": "0102290500",
+    "description": "Live cattle of the sub-genus Bibos or Poephagus (not pure-bred for breeding) — refers to certain regional cattle species grouped under those sub-genera (used in trade as non-purebred animals).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "Bibos cattle",
+      "Poephagus cattle",
+      "regional cattle species"
+    ],
+    "synonyms": [
+      "live cattle (Bibos/Poephagus)",
+      "non-purebred Bibos/Poephagus cattle"
+    ],
+    "original_description": "Live cattle of the sub-genus Bibos or Poephagus (excl. pure-bred for breeding)"
+  },
+  {
+    "id": "0102292100",
+    "commodity_code": "0102292100",
+    "description": "Live cattle intended for slaughter weighing over 80 kg and up to 160 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "slaughter cattle 80-160 kg",
+      "young slaughter cattle",
+      "feeder cattle (80–160 kg)"
+    ],
+    "synonyms": [
+      "cattle >80kg <=160kg for slaughter",
+      "slaughter cattle (80–160 kg)"
+    ],
+    "original_description": "Cattle of a weight > 80 kg but <= 160 kg, for slaughter"
+  },
+  {
+    "id": "0102294100",
+    "commodity_code": "0102294100",
+    "description": "Cattle intended for slaughter weighing more than 160 kg up to and including 300 kg (beef/slaughter cattle).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "beef cattle",
+      "slaughter cattle",
+      "steers",
+      "young bulls"
+    ],
+    "synonyms": [
+      "cattle 160-300 kg",
+      "slaughter cattle 160-300kg"
+    ],
+    "original_description": "Cattle of a weight > 160 kg but <= 300 kg, for slaughter"
+  },
+  {
+    "id": "0102296100",
+    "commodity_code": "0102296100",
+    "description": "Adult cows (excluding heifers) intended for slaughter, weighing more than 300 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "cull cows",
+      "beef cows",
+      "slaughter cows"
+    ],
+    "synonyms": [
+      "cows >300 kg for slaughter",
+      "slaughter cows >300kg"
+    ],
+    "original_description": "Cows of a weight > 300 kg, for slaughter (excl. heifers)"
+  },
+  {
+    "id": "0102310000",
+    "commodity_code": "0102310000",
+    "description": "Pure‑bred buffalo kept and supplied for breeding (breeding stock / stud animals).",
+    "known_brands": [
+      "Murrah",
+      "Nili-Ravi",
+      "Jaffarabadi",
+      "Mediterranean"
+    ],
+    "colloquial_terms": [
+      "breeding buffalo",
+      "stud buffalo",
+      "purebred buffalo"
+    ],
+    "synonyms": [
+      "pure-bred water buffalo for breeding",
+      "buffalo breeding stock"
+    ],
+    "original_description": "Pure-bred buffalo for breeding"
+  },
+  {
+    "id": "0102399000",
+    "commodity_code": "0102399000",
+    "description": "Live buffalo excluding domestic species and pure‑bred breeding stock (non-domestic or non‑purebred buffalo).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "wild buffalo",
+      "feral buffalo",
+      "non-breeding buffalo"
+    ],
+    "synonyms": [
+      "non-domestic buffalo",
+      "buffalo (not pure-bred for breeding)"
+    ],
+    "original_description": "Live buffalo (excl. domestic species and pure-bred for breeding)"
+  },
+  {
+    "id": "0102902000",
+    "commodity_code": "0102902000",
+    "description": "Pure‑bred bovine animals intended for breeding, excluding cattle and buffalo (e.g., breeding bison or yak).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "breeding bison",
+      "stud yak",
+      "pure-bred bovine"
+    ],
+    "synonyms": [
+      "pure-bred bovine breeding animals (not cattle/buffalo)",
+      "bovine breeding stock (other species)"
+    ],
+    "original_description": "Bovine pure-bred breeding animals (excl. cattle and buffalo)"
+  },
+  {
+    "id": "0102909900",
+    "commodity_code": "0102909900",
+    "description": "Live bovine animals excluding cattle, buffalo, pure‑bred breeding animals and domestic species (other non-domestic/wild bovines).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "wild bovines",
+      "non-domestic bovine"
+    ],
+    "synonyms": [
+      "non-domestic live bovines",
+      "live wild bovine animals"
+    ],
+    "original_description": "Live bovine animals (excl. cattle, buffalo, pure-bred for breeding and domestic species)"
+  },
+  {
+    "id": "0103100000",
+    "commodity_code": "0103100000",
+    "description": "Pure‑bred swine (pigs) kept for breeding purposes (breeding stock / stud animals).",
+    "known_brands": [
+      "Large White",
+      "Landrace",
+      "Duroc",
+      "Berkshire"
+    ],
+    "colloquial_terms": [
+      "breeding pigs",
+      "stud pigs",
+      "purebred sows/boars"
+    ],
+    "synonyms": [
+      "pure-bred breeding swine",
+      "pig breeding stock"
+    ],
+    "original_description": "Pure-bred breeding swine"
+  },
+  {
+    "id": "0103911000",
+    "commodity_code": "0103911000",
+    "description": "Domestic pigs (excluding pure‑bred breeding stock) weighing less than 50 kg — typically weaners or growers for meat production.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "weaners",
+      "growers",
+      "market pigs",
+      "young pigs"
+    ],
+    "synonyms": [
+      "domestic swine <50kg",
+      "pigs under 50 kg (not breeding stock)"
+    ],
+    "original_description": "Domestic swine, weighing < 50 kg (excl. pure-bred for breeding)"
+  },
+  {
+    "id": "0103919000",
+    "commodity_code": "0103919000",
+    "description": "Live non‑domestic swine (wild or feral pigs) weighing less than 50 kg.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "wild boar",
+      "feral hog",
+      "young wild pig"
+    ],
+    "synonyms": [
+      "non-domestic swine <50kg",
+      "wild swine under 50 kg"
+    ],
+    "original_description": "Live non-domestic swine, weighing < 50 kg"
+  },
+  {
+    "id": "0103921100",
+    "commodity_code": "0103921100",
+    "description": "Domestic sows that have farrowed at least once (parity ≥1), weighing 160 kg or more, excluding pure‑bred breeding stock — often cull or slaughter sows.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "sows",
+      "brood sows",
+      "cull sows"
+    ],
+    "synonyms": [
+      "sows ≥160kg (having farrowed)",
+      "domestic sows ≥160 kg (not pure-bred for breeding)"
+    ],
+    "original_description": "Live domestic sows, having farrowed at least once, weighing >= 160 kg (excl. pure-bred for breeding)"
+  },
+  {
+    "id": "0103921900",
+    "commodity_code": "0103921900",
+    "description": "Live domestic pigs (Sus scrofa domesticus) weighing 50 kg or more — excludes sows that have farrowed at least once and weigh 160 kg or more, and excludes pure-bred breeding animals.",
+    "known_brands": [
+      "PIC (Pig Improvement Company)",
+      "Topigs Norsvin",
+      "Hypor",
+      "Genus/CRV"
+    ],
+    "colloquial_terms": [
+      "pigs",
+      "hogs",
+      "finishers",
+      "market pigs",
+      "growers"
+    ],
+    "synonyms": [
+      "live pigs >=50 kg",
+      "market hogs",
+      "finishing pigs",
+      "domestic swine >50 kg"
+    ],
+    "original_description": "Live domestic swine, weighing >= 50 kg (excl. sows having farrowed at least once and weighing >= 160 kg, and those pure-bred for breeding)"
+  },
+  {
+    "id": "0103929000",
+    "commodity_code": "0103929000",
+    "description": "Live non-domestic swine (wild or feral pigs/boar) weighing 50 kg or more.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "wild boar",
+      "feral pigs",
+      "boar"
+    ],
+    "synonyms": [
+      "live wild boar >=50 kg",
+      "non-domestic swine >=50 kg",
+      "feral swine"
+    ],
+    "original_description": "Live non-domestic swine, weighing >= 50 kg"
+  },
+  {
+    "id": "0104101000",
+    "commodity_code": "0104101000",
+    "description": "Pure-bred sheep kept for breeding purposes (stud animals).",
+    "known_brands": [
+      "Texel",
+      "Suffolk",
+      "Merino",
+      "Romney"
+    ],
+    "colloquial_terms": [
+      "breeding sheep",
+      "stud sheep",
+      "stud rams",
+      "breeding ewes"
+    ],
+    "synonyms": [
+      "pure-bred breeding sheep",
+      "stud sheep (purebred)"
+    ],
+    "original_description": "Pure-bred sheep for breeding"
+  },
+  {
+    "id": "0104103000",
+    "commodity_code": "0104103000",
+    "description": "Live lambs — sheep up to one year old — excluding pure-bred breeding animals.",
+    "known_brands": [
+      "Dorper",
+      "Hampshire",
+      "Cheviot",
+      "Charollais"
+    ],
+    "colloquial_terms": [
+      "lambs",
+      "weaners",
+      "suckling lambs",
+      "yearling lambs"
+    ],
+    "synonyms": [
+      "young sheep up to 1 year",
+      "live lambs (not pure-bred breeding stock)"
+    ],
+    "original_description": "Live lambs \"sheep up to a year old\" (excl. purebred breeding animals)"
+  },
+  {
+    "id": "0104108000",
+    "commodity_code": "0104108000",
+    "description": "Live sheep — adult animals excluding lambs (under 1 year) and pure-bred breeding animals.",
+    "known_brands": [
+      "Suffolk",
+      "Texel",
+      "Blackface",
+      "Romney"
+    ],
+    "colloquial_terms": [
+      "sheep",
+      "ewes (female)",
+      "rams (male)",
+      "store sheep",
+      "market sheep"
+    ],
+    "synonyms": [
+      "live adult sheep",
+      "market sheep (excl. lambs and pure-bred breeders)"
+    ],
+    "original_description": "Live sheep (excl. lambs and pure-bred breeding animals)"
+  },
+  {
+    "id": "0104201000",
+    "commodity_code": "0104201000",
+    "description": "Pure-bred goats kept for breeding (stud/top-quality breeding stock).",
+    "known_brands": [
+      "Boer",
+      "Saanen",
+      "Nubian",
+      "Anglo-Nubian"
+    ],
+    "colloquial_terms": [
+      "breeding goats",
+      "stud goats",
+      "does (female)",
+      "bucks (male)"
+    ],
+    "synonyms": [
+      "pure-bred breeding goats",
+      "stud goats (purebred)"
+    ],
+    "original_description": "Pure-bred breeding goats"
+  },
+  {
+    "id": "0104209000",
+    "commodity_code": "0104209000",
+    "description": "Live goats for general purposes (meat, milk, pets, etc.), excluding pure-bred breeding animals.",
+    "known_brands": [
+      "Boer",
+      "Kiko",
+      "Saanen",
+      "Nubian"
+    ],
+    "colloquial_terms": [
+      "goats",
+      "kids (young)",
+      "nanny (female)",
+      "billy (male)"
+    ],
+    "synonyms": [
+      "live goats (non pure-bred)",
+      "market goats",
+      "commercial goats"
+    ],
+    "original_description": "Live goats (excl. pure-bred for breeding)"
+  },
+  {
+    "id": "0105111100",
+    "commodity_code": "0105111100",
+    "description": "Grandparent and parent female chicks of domestic fowl (Gallus domesticus) intended as laying-breed stock, each chick weighing up to 185 g (female GP/parent layer chicks).",
+    "known_brands": [
+      "Hy-Line",
+      "Lohmann",
+      "ISA",
+      "Hendrix Genetics",
+      "Novogen"
+    ],
+    "colloquial_terms": [
+      "grandparent chicks",
+      "parent stock chicks",
+      "breeder female chicks",
+      "GP/parent layer chicks"
+    ],
+    "synonyms": [
+      "female GP/parent layer chicks <=185 g",
+      "layer grandparent/parent female chicks"
+    ],
+    "original_description": "Grandparent and parent female chicks of fowls of the species Gallus domesticus laying stocks of a weight of <= 185 g"
+  },
+  {
+    "id": "0105111900",
+    "commodity_code": "0105111900",
+    "description": "Grandparent and parent female chicks of domestic fowl (Gallus domesticus) weighing up to 185 g — excludes chicks that are specifically 'laying stocks' (i.e., these are GP/parent chicks for non-layer lines, e.g., broiler breeders).",
+    "known_brands": [
+      "Cobb",
+      "Ross (Aviagen)",
+      "Aviagen",
+      "Hubbard",
+      "Hendrix Genetics"
+    ],
+    "colloquial_terms": [
+      "GP chicks",
+      "parent stock chicks",
+      "breeder chicks",
+      "grandparent chicks"
+    ],
+    "synonyms": [
+      "grandparent/parent female chicks <=185 g (non-laying lines)",
+      "breeder female chicks (GP/parent)"
+    ],
+    "original_description": "Grandparent and parent female chicks fowls of the species Gallus domesticus of a weight of <= 185 g (excl. laying stocks)"
+  },
+  {
+    "id": "0105119100",
+    "commodity_code": "0105119100",
+    "description": "Laying stock (young fowls of the species Gallus domesticus intended for egg-laying flocks) each weighing up to 185 g — excludes grandparent and parent female chicks.",
+    "known_brands": [
+      "Hy-Line",
+      "Lohmann",
+      "ISA",
+      "Novogen",
+      "Hendrix Genetics"
+    ],
+    "colloquial_terms": [
+      "layers",
+      "layer pullets",
+      "laying stock chicks",
+      "layer chicks"
+    ],
+    "synonyms": [
+      "laying stock chicks <=185 g",
+      "layer breeder chicks (not GP/parent)"
+    ],
+    "original_description": "Laying stock \"fowls of the species Gallus domesticus\" of a weight of <= 185 g (excl. grandparent and parent female chicks)"
+  },
+  {
+    "id": "0105119900",
+    "commodity_code": "0105119900",
+    "description": "Live chickens (Gallus domesticus) weighing 185 g or less — typically day‑old or very young chicks. Note: excludes grandparent and parent female chicks and laying (point‑of‑lay) stocks as specified.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "chicks",
+      "day‑old chicks",
+      "broiler chicks",
+      "poultry chicks",
+      "young chickens"
+    ],
+    "synonyms": [
+      "live chickens",
+      "young fowl",
+      "live poultry",
+      "baby chickens"
+    ],
+    "original_description": "Live fowls of the species Gallus domesticus of a weight of <= 185 g (excl. grandparent and parent female chicks and laying stocks)"
+  },
+  {
+    "id": "0105120000",
+    "commodity_code": "0105120000",
+    "description": "Live domestic turkeys weighing 185 g or less — typically turkey poults or day‑old turkeys (very young birds).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "poults",
+      "turkey poults",
+      "day‑old turkeys",
+      "baby turkeys"
+    ],
+    "synonyms": [
+      "live turkeys",
+      "young turkeys",
+      "turkey chicks"
+    ],
+    "original_description": "Live domestic turkeys, weighing <= 185 g"
+  },
+  {
+    "id": "0105130000",
+    "commodity_code": "0105130000",
+    "description": "Live domestic ducks weighing 185 g or less — typically ducklings or day‑old ducks (very young birds).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "ducklings",
+      "day‑old ducks",
+      "baby ducks"
+    ],
+    "synonyms": [
+      "live ducks",
+      "young ducks",
+      "duck chicks"
+    ],
+    "original_description": "Live domestic ducks, weighing <= 185 g"
+  },
+  {
+    "id": "0105140000",
+    "commodity_code": "0105140000",
+    "description": "Live domestic geese weighing 185 g or less — typically goslings or very young geese (day‑old to young birds).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "goslings",
+      "day‑old geese",
+      "baby geese"
+    ],
+    "synonyms": [
+      "live geese",
+      "young geese",
+      "goose chicks"
+    ],
+    "original_description": "Live domestic geese, weighing <= 185 g"
+  },
+  {
+    "id": "0105150000",
+    "commodity_code": "0105150000",
+    "description": "Live domestic guinea fowls weighing 185 g or less — typically keets (young guinea fowl) or day‑old chicks.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "keets",
+      "guinea fowl chicks",
+      "baby guinea fowl"
+    ],
+    "synonyms": [
+      "live guinea fowls",
+      "young guinea fowl"
+    ],
+    "original_description": "Live domestic guinea fowls, weighing <= 185 g"
+  },
+  {
+    "id": "0105940000",
+    "commodity_code": "0105940000",
+    "description": "Live chickens (Gallus domesticus) weighing more than 185 g — includes older chicks, pullets, adult hens and roosters (general live chickens above the small/very‑young weight threshold).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "chickens",
+      "hens",
+      "roosters",
+      "pullets",
+      "point‑of‑lay"
+    ],
+    "synonyms": [
+      "live chickens",
+      "live fowl",
+      "poultry"
+    ],
+    "original_description": "Live fowls of the species Gallus domesticus, weighing > 185"
+  },
+  {
+    "id": "0105991000",
+    "commodity_code": "0105991000",
+    "description": "Live domestic ducks weighing more than 185 g — includes older ducklings, adult ducks and breeding stock.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "ducks",
+      "adult ducks",
+      "breeding ducks"
+    ],
+    "synonyms": [
+      "live ducks",
+      "mature ducks",
+      "waterfowl"
+    ],
+    "original_description": "Live domestic ducks, weighing > 185 g"
+  },
+  {
+    "id": "0105992000",
+    "commodity_code": "0105992000",
+    "description": "Live domestic geese weighing more than 185 g — includes goslings beyond the very‑young stage, adult geese and breeding birds.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "geese",
+      "adult geese",
+      "breeding geese"
+    ],
+    "synonyms": [
+      "live geese",
+      "mature geese"
+    ],
+    "original_description": "Live domestic geese, weighing > 185 g"
+  },
+  {
+    "id": "0105993000",
+    "commodity_code": "0105993000",
+    "description": "Live domestic turkeys weighing more than 185 g — includes older poults, growing turkeys and adult/breeding turkeys.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "turkeys",
+      "adult turkeys",
+      "growing turkeys"
+    ],
+    "synonyms": [
+      "live turkeys",
+      "mature turkeys"
+    ],
+    "original_description": "Live domestic turkeys, weighing > 185 g"
+  },
+  {
+    "id": "0105995000",
+    "commodity_code": "0105995000",
+    "description": "Live domestic guinea fowls weighing more than 185 g — includes older keets and adult guinea fowl used for meat or breeding.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "guinea fowl",
+      "adult guinea fowls",
+      "grown keets"
+    ],
+    "synonyms": [
+      "live guinea fowls",
+      "mature guinea fowl"
+    ],
+    "original_description": "Live domestic guinea fowls, weighing > 185 g"
+  },
+  {
+    "id": "0106110000",
+    "commodity_code": "0106110000",
+    "description": "Live primates — live members of the order Primates (monkeys, apes) kept for research, zoos, breeding or as pets.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "monkeys",
+      "apes",
+      "primates",
+      "simians"
+    ],
+    "synonyms": [
+      "primates",
+      "monkeys and apes",
+      "order Primates"
+    ],
+    "original_description": "Live primates"
+  },
+  {
+    "id": "0106120000",
+    "commodity_code": "0106120000",
+    "description": "Live marine and aquatic mammals — whales, dolphins and porpoises (order Cetacea); manatees and dugongs (order Sirenia); seals, sea lions and walruses (Pinnipedia).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "whales",
+      "dolphins",
+      "porpoises",
+      "manatees",
+      "dugongs",
+      "sea cows",
+      "seals",
+      "sea lions",
+      "walruses",
+      "cetaceans",
+      "pinnipeds"
+    ],
+    "synonyms": [
+      "cetaceans",
+      "sirenian (Sirenia)",
+      "pinnipeds",
+      "marine mammals",
+      "whales and dolphins"
+    ],
+    "original_description": "Live whales, dolphins and porpoises (mammals of the order Cetacea); manatees and dugongs (mammals of the order Sirenia); seals, sea lions and walruses (mammals of the suborder Pinnipedia)"
+  },
+  {
+    "id": "0106130000",
+    "commodity_code": "0106130000",
+    "description": "Live camels and other camelids (family Camelidae) — includes camels, llamas, alpacas, vicuñas and guanacos.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "camels",
+      "llamas",
+      "alpacas",
+      "camelids"
+    ],
+    "synonyms": [
+      "camelids",
+      "Camelidae",
+      "camels and camelids"
+    ],
+    "original_description": "Live camels and other camelids [Camelidae]"
+  },
+  {
+    "id": "0106141000",
+    "commodity_code": "0106141000",
+    "description": "Live domestic rabbits — pet or farm rabbits (domesticated Oryctolagus cuniculus).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "pet rabbits",
+      "bunnies",
+      "domestic rabbits",
+      "rabbits"
+    ],
+    "synonyms": [
+      "domestic rabbit",
+      "Oryctolagus cuniculus (domestic)"
+    ],
+    "original_description": "Live domestic rabbits"
+  },
+  {
+    "id": "0106149000",
+    "commodity_code": "0106149000",
+    "description": "Live rabbits and hares (excluding domestic rabbits) — wild or non-domesticated lagomorphs such as hares and jackrabbits.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "hares",
+      "wild rabbits",
+      "jackrabbits"
+    ],
+    "synonyms": [
+      "hares and wild rabbits",
+      "lagomorphs (non-domestic)"
+    ],
+    "original_description": "Live rabbits and hares (excl. domestic rabbits)"
+  },
+  {
+    "id": "0106190000",
+    "commodity_code": "0106190000",
+    "description": "Live mammals not specified elsewhere — other live mammal species excluded from the listed categories (not primates, cetaceans, sirenians, pinnipeds, camelids, rabbits/hares, horses, bovines, pigs, sheep or goats).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "other mammals",
+      "miscellaneous mammals",
+      "small mammals"
+    ],
+    "synonyms": [
+      "other live mammals",
+      "miscellaneous live mammals"
+    ],
+    "original_description": "Live mammals (excl. primates, whales, dolphins and porpoises, manatees and dugongs, seals, sea lions and walruses, camels and other camelids, rabbits and hares, horses, asses, mules, hinnies, bovines, pigs, sheep and goats)"
+  },
+  {
+    "id": "0106200000",
+    "commodity_code": "0106200000",
+    "description": "Live reptiles — includes snakes, turtles, alligators, caimans, iguanas, gavials and lizards (live specimens of reptile species).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "snakes",
+      "turtles",
+      "alligators",
+      "caimans",
+      "iguanas",
+      "gavials",
+      "lizards",
+      "reptiles"
+    ],
+    "synonyms": [
+      "reptiles",
+      "squamates (snakes and lizards)",
+      "testudines (turtles)",
+      "Crocodylia (alligators, gavials, caimans)"
+    ],
+    "original_description": "Live reptiles \"e.g. snakes, turtles, alligators, caymans, iguanas, gavials and lizards\""
+  },
+  {
+    "id": "0106310000",
+    "commodity_code": "0106310000",
+    "description": "Live birds of prey — raptors such as eagles, hawks, falcons, kites, owls and vultures kept live for falconry, zoos, breeding or conservation.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "raptors",
+      "birds of prey",
+      "predatory birds",
+      "eagles",
+      "hawks",
+      "falcons",
+      "owls"
+    ],
+    "synonyms": [
+      "raptors",
+      "birds of prey",
+      "predatory birds"
+    ],
+    "original_description": "Live birds of prey"
+  },
+  {
+    "id": "0106320000",
+    "commodity_code": "0106320000",
+    "description": "Live Psittaciformes — parrots and related species, including parrots, parakeets, macaws, cockatoos and budgerigars (psittacines).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "parrots",
+      "parakeets",
+      "budgies",
+      "macaws",
+      "cockatoos",
+      "psittacines"
+    ],
+    "synonyms": [
+      "psittaciformes",
+      "psittacines",
+      "parrots and parakeets"
+    ],
+    "original_description": "Live psittaciformes \"incl. parrots, parrakeets, macaws and cockatoos\""
+  },
+  {
+    "id": "0106330000",
+    "commodity_code": "0106330000",
+    "description": "Live ostriches and emus — ratite birds such as ostriches and emus (Dromaius novaehollandiae).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "ostriches",
+      "emus",
+      "ratites"
+    ],
+    "synonyms": [
+      "ratites",
+      "ostriches and emus",
+      "Dromaius novaehollandiae (emu)"
+    ],
+    "original_description": "Live ostriches, and emus [Dromaius novaehollandiae]"
+  },
+  {
+    "id": "0106391000",
+    "commodity_code": "0106391000",
+    "description": "Live pigeons (domestic/feral rock doves), including homing/racing and young pigeons (squabs).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "pigeon",
+      "rock dove",
+      "squab",
+      "homing pigeon",
+      "carrier pigeon",
+      "fancy pigeon"
+    ],
+    "synonyms": [
+      "Columba livia",
+      "domestic pigeon",
+      "live pigeon"
+    ],
+    "original_description": "Live pigeons"
+  },
+  {
+    "id": "0106398000",
+    "commodity_code": "0106398000",
+    "description": "Live birds other than birds of prey, parrots/psittaciformes, ostriches, emus and pigeons — e.g. poultry, songbirds, finches, canaries, quail, ducks, geese, turkeys.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "other live birds",
+      "domestic birds",
+      "poultry",
+      "songbirds"
+    ],
+    "synonyms": [
+      "live birds (other than listed species)",
+      "various live birds"
+    ],
+    "original_description": "Live birds (excl. birds of prey, psittaciformes, parrots, parrakeets, macaws, cockatoos, ostriches, emus and pigeons)"
+  },
+  {
+    "id": "0106410000",
+    "commodity_code": "0106410000",
+    "description": "Live bees (e.g., honeybees, bumblebees) used for pollination, honey production or breeding — includes colonies, queens and workers.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "honeybees",
+      "bumblebees",
+      "apiary bees",
+      "bee colonies"
+    ],
+    "synonyms": [
+      "Apis (honeybee)",
+      "live bees",
+      "live apicultural insects"
+    ],
+    "original_description": "Live bees"
+  },
+  {
+    "id": "0106490000",
+    "commodity_code": "0106490000",
+    "description": "Live insects other than bees — e.g., crickets, mealworms, waxworms, larvae and other live insects used for feed, bait, research or biological control.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "feed insects",
+      "live bait",
+      "crickets",
+      "mealworms",
+      "waxworms"
+    ],
+    "synonyms": [
+      "live non-bee insects",
+      "entomological specimens"
+    ],
+    "original_description": "Live insects (excl. bees)"
+  },
+  {
+    "id": "2811110000",
+    "commodity_code": "2811110000",
+    "description": "Hydrogen fluoride in aqueous solution (commonly called hydrofluoric acid), a highly corrosive chemical (formula HF) used in glass etching and metal processing.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "HF",
+      "hydrofluoric acid"
+    ],
+    "synonyms": [
+      "hydrogen fluoride",
+      "hydrofluoric acid (aqueous)",
+      "HF (aqueous)"
+    ],
+    "original_description": "Hydrogen fluoride \"hydrofluoric acid\""
+  },
+  {
+    "id": "2811120000",
+    "commodity_code": "2811120000",
+    "description": "Hydrogen cyanide (also called hydrocyanic or prussic acid), a highly toxic chemical gas or solution (formula HCN).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "HCN",
+      "prussic acid",
+      "hydrocyanic acid"
+    ],
+    "synonyms": [
+      "hydrogen cyanide",
+      "hydrocyanic acid (HCN)"
+    ],
+    "original_description": "Hydrogen cyanide \"hydrocyanic acid\""
+  },
+  {
+    "id": "2811191000",
+    "commodity_code": "2811191000",
+    "description": "Hydrogen bromide gas or its aqueous solution (hydrobromic acid), a corrosive inorganic acid (formula HBr).",
+    "known_brands": [],
+    "colloquial_terms": [
+      "HBr",
+      "hydrobromic acid"
+    ],
+    "synonyms": [
+      "hydrogen bromide",
+      "hydrobromic acid (aqueous)",
+      "HBr (aqueous)"
+    ],
+    "original_description": "Hydrogen bromide \"hydrobromic acid\""
+  },
+  {
+    "id": "2811210000",
+    "commodity_code": "2811210000",
+    "description": "Carbon dioxide (CO2), a colorless gas used in beverages, refrigeration (solid form = dry ice), fire suppression and various industrial processes.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "CO2",
+      "carbonic gas",
+      "dry ice"
+    ],
+    "synonyms": [
+      "carbon dioxide",
+      "CO2 gas"
+    ],
+    "original_description": "Carbon dioxide"
+  },
+  {
+    "id": "2811290500",
+    "commodity_code": "2811290500",
+    "description": "Sulphur dioxide (SO2), a pungent gas used as a preservative and bleaching agent and produced by burning sulfur; also written 'sulfur dioxide'.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "SO2",
+      "sulphur dioxide",
+      "sulfur dioxide"
+    ],
+    "synonyms": [
+      "sulphur dioxide",
+      "sulfur dioxide",
+      "SO2 gas"
+    ],
+    "original_description": "Sulphur dioxide"
+  },
+  {
+    "id": "2811293000",
+    "commodity_code": "2811293000",
+    "description": "Nitrogen oxides (NOx) — a group of gases including nitric oxide (NO) and nitrogen dioxide (NO2), common combustion by-products and air pollutants.",
+    "known_brands": [],
+    "colloquial_terms": [
+      "NOx",
+      "nitrogen oxides",
+      "NO2",
+      "nitric oxide"
+    ],
+    "synonyms": [
+      "nitrogen oxides (NOx)",
+      "NO, NO2"
+    ],
+    "original_description": "Nitrogen oxides"
+  },
+  {
+    "id": "8703101100",
+    "commodity_code": "8703101100",
+    "description": "Petrol (internal combustion piston) vehicles specially built to travel on snow for carrying fewer than 10 passengers — includes snowmobiles and small passenger snowcats (new/unspecified condition).",
+    "known_brands": [
+      "Ski-Doo (BRP)",
+      "Polaris",
+      "Arctic Cat",
+      "Yamaha"
+    ],
+    "colloquial_terms": [
+      "snowmobile",
+      "skidoo",
+      "snowcat",
+      "sled"
+    ],
+    "synonyms": [
+      "over-snow vehicle",
+      "tracked snow vehicle",
+      "snow groomer (larger types)",
+      "snow scooter"
+    ],
+    "original_description": "Vehicles specially designed for travelling on snow, for the transport of \\u003c10 persons, with internal combustion piston engine"
+  },
+  {
+    "id": "8703101800",
+    "commodity_code": "8703101800",
+    "description": "Vehicles for carrying fewer than 10 people on snow that do not use an internal combustion piston engine — typically electric or battery-powered snow/golf carts and similar low-speed utility vehicles.",
+    "known_brands": [
+      "E-Z-GO",
+      "Club Car",
+      "Yamaha",
+      "Garia"
+    ],
+    "colloquial_terms": [
+      "golf cart",
+      "electric cart",
+      "buggy",
+      "battery-powered sled"
+    ],
+    "synonyms": [
+      "electric golf car",
+      "battery utility vehicle",
+      "electric snow vehicle",
+      "low-speed vehicle (LSV)"
+    ],
+    "original_description": "Vehicles for the transport of \\u003c10 persons on snow, not with internal combustion piston engine; golf cars and similar vehicles"
+  },
+  {
+    "id": "8703211000",
+    "commodity_code": "8703211000",
+    "description": "New petrol-powered passenger cars (including station wagons and racing cars) designed for fewer than 10 people, with spark-ignition piston engines up to and including 1,000 cm³ (excludes snow vehicles and other special over-snow vehicles).",
+    "known_brands": [
+      "Suzuki",
+      "Fiat",
+      "Toyota",
+      "Hyundai",
+      "Mitsubishi"
+    ],
+    "colloquial_terms": [
+      "city car",
+      "microcar",
+      "kei car",
+      "small hatchback",
+      "subcompact"
+    ],
+    "synonyms": [
+      "micro car",
+      "small passenger car",
+      "compact hatchback",
+      "city hatch"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of \\u003c10 persons, incl. station wagons and racing cars, with only spark-ignition internal combustion reciprocating piston engine of a cylinder capacity \\u003c= 1.000 cm\\u00b3, new (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703219000",
+    "commodity_code": "8703219000",
+    "description": "Used petrol passenger cars (including station wagons and racing cars) for fewer than 10 people with spark-ignition piston engines up to and including 1,000 cm³ (excludes snow vehicles and other specially designed over-snow vehicles).",
+    "known_brands": [
+      "Suzuki",
+      "Fiat",
+      "Toyota",
+      "Hyundai",
+      "Mitsubishi"
+    ],
+    "colloquial_terms": [
+      "used city car",
+      "used microcar",
+      "used hatchback",
+      "second-hand small car"
+    ],
+    "synonyms": [
+      "used small passenger car",
+      "second-hand microcar",
+      "preowned city car"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of \\u003c10 persons, incl. station wagons and racing cars, with only spark-ignition internal combustion reciprocating piston engine of a cylinder capacity \\u003c= 1.000 cm\\u00b3, used (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703221000",
+    "commodity_code": "8703221000",
+    "description": "New petrol passenger cars (including station wagons and racing cars) for fewer than 10 people with spark-ignition piston engines over 1,000 cm³ and up to 1,500 cm³ (excludes snow vehicles and similar specially designed vehicles).",
+    "known_brands": [
+      "Volkswagen",
+      "Ford",
+      "Renault",
+      "Honda",
+      "Peugeot"
+    ],
+    "colloquial_terms": [
+      "supermini",
+      "subcompact",
+      "compact",
+      "small family car",
+      "hatchback"
+    ],
+    "synonyms": [
+      "compact car",
+      "small sedan",
+      "small estate (station wagon)",
+      "C-segment/supermini"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of \\u003c10 persons, incl. station wagons and racing cars, with only spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity \\u003e 1.000 cm\\u00b3 but \\u003c= 1.500 cm\\u00b3, new (excl. vehicles for travelling on snow and similar vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703229000",
+    "commodity_code": "8703229000",
+    "description": "Used petrol passenger cars (including station wagons and racing cars) for fewer than 10 people with spark-ignition piston engines over 1,000 cm³ and up to 1,500 cm³ (excludes snow vehicles and other specially designed vehicles).",
+    "known_brands": [
+      "Volkswagen",
+      "Ford",
+      "Renault",
+      "Honda",
+      "Peugeot"
+    ],
+    "colloquial_terms": [
+      "used compact",
+      "used supermini",
+      "second-hand hatchback",
+      "preowned small car"
+    ],
+    "synonyms": [
+      "used compact car",
+      "preowned small family car",
+      "second-hand subcompact"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of \\u003c10 persons, incl. station wagons and racing cars, with only spark-ignition internal combustion reciprocating piston engine of a cylinder capacity \\u003e 1.000 cm\\u00b3 but \\u003c= 1.500 cm\\u00b3, used (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703231100",
+    "commodity_code": "8703231100",
+    "description": "New motor caravans (motorhomes/campervans) with petrol spark-ignition piston engines over 1,500 cm³ and up to 3,000 cm³ — self-propelled RVs designed for living/overnight accommodation.",
+    "known_brands": [
+      "Hymer",
+      "Winnebago",
+      "Adria",
+      "Swift",
+      "Fiat (Ducato chassis)"
+    ],
+    "colloquial_terms": [
+      "motorhome",
+      "campervan",
+      "RV",
+      "camper",
+      "motor caravan"
+    ],
+    "synonyms": [
+      "recreational vehicle",
+      "self-contained camper",
+      "living van",
+      "motor caravan"
+    ],
+    "original_description": "Motor caravans with only spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity \\u003e 1.500 cm\\u00b3 but \\u003c= 3.000 cm\\u00b3, new"
+  },
+  {
+    "id": "8703231900",
+    "commodity_code": "8703231900",
+    "description": "New petrol passenger cars (including station wagons and racing cars) for fewer than 10 people with spark-ignition piston engines over 1,500 cm³ and up to 3,000 cm³ — excludes snow vehicles and motor caravans.",
+    "known_brands": [
+      "BMW",
+      "Mercedes-Benz",
+      "Audi",
+      "Toyota",
+      "Ford"
+    ],
+    "colloquial_terms": [
+      "mid-size car",
+      "saloon",
+      "sedan",
+      "estate",
+      "station wagon"
+    ],
+    "synonyms": [
+      "passenger car",
+      "mid-size sedan",
+      "family car",
+      "medium engine car"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of \\u003c10 persons, incl. station wagons and racing cars, with only spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity \\u003e 1.500 cm\\u00b3 but \\u003c= 3.000 cm\\u00b3, new (excl. those of subheading 8703.10 and motor caravans)"
+  },
+  {
+    "id": "8703239000",
+    "commodity_code": "8703239000",
+    "description": "Used petrol passenger cars (including station wagons and racing cars) for fewer than 10 people with spark-ignition piston engines over 1,500 cm³ and up to 3,000 cm³ (excludes snow vehicles and other specially designed vehicles).",
+    "known_brands": [
+      "BMW",
+      "Mercedes-Benz",
+      "Audi",
+      "Toyota",
+      "Ford"
+    ],
+    "colloquial_terms": [
+      "used mid-size",
+      "second-hand sedan",
+      "used estate",
+      "preowned family car"
+    ],
+    "synonyms": [
+      "used passenger car",
+      "preowned mid-size car",
+      "second-hand family car"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of \\u003c10 persons, incl. station wagons and racing cars, with only spark-ignition internal combustion reciprocating piston engine of a cylinder capacity \\u003e 1.500 cm\\u00b3 but \\u003c= 3.000 cm\\u00b3, used (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703241000",
+    "commodity_code": "8703241000",
+    "description": "New petrol passenger cars (including station wagons and racing cars) designed for fewer than 10 people with spark-ignition piston engines of cylinder capacity over 3,000 cm³ — typically large-displacement, luxury or high-performance cars (excludes snow vehicles and other specially designed vehicles).",
+    "known_brands": [
+      "Mercedes-AMG",
+      "BMW M",
+      "Audi (RS)",
+      "Porsche",
+      "Lexus"
+    ],
+    "colloquial_terms": [
+      "large-engine car",
+      "performance car",
+      "luxury saloon",
+      "muscle car",
+      "big V6/V8"
+    ],
+    "synonyms": [
+      "high-capacity engine car",
+      "luxury car",
+      "high-performance vehicle",
+      "large displacement passenger car"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of \\u003c10 persons, incl. station wagons and racing cars, with only spark-ignition internal combustion reciprocating piston engine of a cylinder capacity \\u003e 3.000 cm\\u00b3, new (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703249000",
+    "commodity_code": "8703249000",
+    "description": "Used passenger cars (for fewer than 10 people), including station wagons and racing cars, powered only by a spark-ignition (gasoline/petrol) piston engine with cylinder capacity greater than 3,000 cm³.",
+    "known_brands": [
+      "Mercedes-Benz",
+      "BMW",
+      "Audi",
+      "Porsche",
+      "Lexus",
+      "Jaguar",
+      "Ferrari",
+      "Lamborghini",
+      "Bentley"
+    ],
+    "colloquial_terms": [
+      "used petrol car",
+      "big petrol car",
+      "3.0L+ car",
+      "V6/V8/V12",
+      "luxury car"
+    ],
+    "synonyms": [
+      "used automobile",
+      "used passenger car",
+      "used gasoline car",
+      "used petrol vehicle",
+      "large-engined car"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars, with only spark-ignition internal combustion reciprocating piston engine of a cylinder capacity > 3.000 cm³, used (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703311000",
+    "commodity_code": "8703311000",
+    "description": "New passenger cars (for fewer than 10 people), including station wagons and racing cars, powered only by a diesel engine with cylinder capacity up to and including 1,500 cm³.",
+    "known_brands": [
+      "Volkswagen",
+      "Ford",
+      "Peugeot",
+      "Renault",
+      "Fiat",
+      "Toyota",
+      "Hyundai",
+      "Kia",
+      "Opel/Vauxhall"
+    ],
+    "colloquial_terms": [
+      "new small diesel",
+      "1.5L diesel",
+      "compact diesel",
+      "city diesel"
+    ],
+    "synonyms": [
+      "new diesel car",
+      "small diesel automobile",
+      "compact diesel vehicle",
+      "subcompact diesel"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars, with only diesel engine of a cylinder capacity <= 1.500 cm³, new (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703319000",
+    "commodity_code": "8703319000",
+    "description": "Used passenger cars (for fewer than 10 people), including station wagons and racing cars, powered only by a diesel engine with cylinder capacity up to and including 1,500 cm³.",
+    "known_brands": [
+      "Volkswagen",
+      "Ford",
+      "Peugeot",
+      "Renault",
+      "Fiat",
+      "Toyota",
+      "Hyundai",
+      "Kia",
+      "Opel/Vauxhall"
+    ],
+    "colloquial_terms": [
+      "used small diesel",
+      "1.5L diesel",
+      "compact diesel",
+      "used diesel hatchback"
+    ],
+    "synonyms": [
+      "used diesel car",
+      "small used diesel vehicle",
+      "used compact diesel"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars, with only diesel engine of a cylinder capacity <= 1.500 cm³, used (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703321100",
+    "commodity_code": "8703321100",
+    "description": "New motor caravans (motorhomes) with a diesel engine having cylinder capacity greater than 1,500 cm³ but up to and including 2,500 cm³.",
+    "known_brands": [
+      "Hymer",
+      "Winnebago",
+      "Adria",
+      "Dethleffs",
+      "Swift",
+      "Bailey",
+      "Knaus",
+      "Coachmen"
+    ],
+    "colloquial_terms": [
+      "motorhome",
+      "campervan",
+      "RV",
+      "camper",
+      "new motor caravan"
+    ],
+    "synonyms": [
+      "new motorhome",
+      "new campervan",
+      "diesel motor caravan (1.5–2.5L)",
+      "recreational vehicle (new)"
+    ],
+    "original_description": "Motor caravans with only diesel engine of a cylinder capacity > 1.500 cm³ but <= 2.500 cm³, new"
+  },
+  {
+    "id": "8703321900",
+    "commodity_code": "8703321900",
+    "description": "New passenger cars (for fewer than 10 people), including station wagons, powered only by a diesel engine with cylinder capacity greater than 1,500 cm³ but up to and including 2,500 cm³ (excludes motor caravans and snow/special vehicles).",
+    "known_brands": [
+      "Volkswagen",
+      "BMW",
+      "Mercedes-Benz",
+      "Audi",
+      "Peugeot",
+      "Renault",
+      "Ford",
+      "Skoda"
+    ],
+    "colloquial_terms": [
+      "mid-size diesel",
+      "2.0L diesel",
+      "family diesel",
+      "diesel estate",
+      "diesel saloon"
+    ],
+    "synonyms": [
+      "new diesel car",
+      "mid-size diesel vehicle",
+      "diesel passenger car (1.5–2.5L)"
+    ],
+    "original_description": "Motor cars and other motor vehicles, principally designed for the transport of <10 persons, incl. station wagons, with only diesel engine of a cylinder capacity > 1.500 cm³ but <= 2.500 cm³, new (excl. motor caravans and vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703329000",
+    "commodity_code": "8703329000",
+    "description": "Used passenger cars (for fewer than 10 people), including station wagons and racing cars, powered only by a diesel engine with cylinder capacity greater than 1,500 cm³ but up to and including 2,500 cm³ (excludes specially designed snow vehicles).",
+    "known_brands": [
+      "Volkswagen",
+      "BMW",
+      "Mercedes-Benz",
+      "Audi",
+      "Peugeot",
+      "Renault",
+      "Ford",
+      "Skoda"
+    ],
+    "colloquial_terms": [
+      "used mid-size diesel",
+      "2.0L diesel used",
+      "used diesel estate",
+      "used diesel saloon"
+    ],
+    "synonyms": [
+      "used diesel car",
+      "used mid-size diesel vehicle",
+      "second-hand diesel passenger car"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars, with only diesel engine of a cylinder capacity > 1.500 cm³ but <= 2.500 cm³, used (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703331100",
+    "commodity_code": "8703331100",
+    "description": "New motor caravans (motorhomes) with a diesel engine having cylinder capacity greater than 2,500 cm³.",
+    "known_brands": [
+      "Hymer",
+      "Morelo",
+      "Concorde",
+      "Winnebago",
+      "Thor",
+      "Fleetwood",
+      "Dethleffs"
+    ],
+    "colloquial_terms": [
+      "large motorhome",
+      "luxury motorhome",
+      "RV",
+      "coachbuilt",
+      "luxury camper"
+    ],
+    "synonyms": [
+      "new large motorhome",
+      "new diesel motor caravan (>2.5L)",
+      "premium RV"
+    ],
+    "original_description": "Motor caravans with only diesel engine of a cylinder capacity > 2.500 cm³, new"
+  },
+  {
+    "id": "8703331900",
+    "commodity_code": "8703331900",
+    "description": "New passenger cars (for fewer than 10 people), including station wagons and racing cars, powered only by a diesel engine with cylinder capacity greater than 2,500 cm³ (excludes motor caravans and specially designed snow vehicles).",
+    "known_brands": [
+      "Mercedes-Benz",
+      "BMW",
+      "Audi",
+      "Land Rover",
+      "Toyota",
+      "Jeep",
+      "Nissan"
+    ],
+    "colloquial_terms": [
+      "large diesel",
+      "3.0L+ diesel",
+      "diesel SUV",
+      "diesel 4x4",
+      "heavy-duty diesel"
+    ],
+    "synonyms": [
+      "new large diesel car",
+      "new diesel SUV",
+      "diesel passenger vehicle (>2.5L)"
+    ],
+    "original_description": "Motor cars and other motor vehicles, principally designed for the transport of <10 persons, incl. station wagons, with only diesel engine of a cylinder capacity > 2.500 cm³, new (excl. motor caravans and vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703339000",
+    "commodity_code": "8703339000",
+    "description": "Used passenger cars (for fewer than 10 people), including station wagons and racing cars, powered only by a diesel engine with cylinder capacity greater than 2,500 cm³ (excludes specially designed snow vehicles).",
+    "known_brands": [
+      "Mercedes-Benz",
+      "BMW",
+      "Audi",
+      "Land Rover",
+      "Toyota",
+      "Jeep",
+      "Nissan"
+    ],
+    "colloquial_terms": [
+      "used large diesel",
+      "3.0L+ used diesel",
+      "used diesel SUV",
+      "used diesel 4x4"
+    ],
+    "synonyms": [
+      "used large diesel car",
+      "second-hand diesel SUV",
+      "used diesel passenger vehicle (>2.5L)"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars, with only diesel engine of a cylinder capacity > 2.500 cm³, used (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703500000",
+    "commodity_code": "8703500000",
+    "description": "Passenger cars (for fewer than 10 people), including station wagons and racing cars, that use both a diesel engine and an electric motor for propulsion (diesel-electric hybrids). Excludes plug-in hybrids and specially designed snow vehicles.",
+    "known_brands": [
+      "Peugeot",
+      "Citroën",
+      "Mercedes-Benz",
+      "Volvo",
+      "BMW",
+      "Land Rover"
+    ],
+    "colloquial_terms": [
+      "diesel hybrid",
+      "diesel-electric hybrid",
+      "non-plug-in hybrid",
+      "self-charging hybrid"
+    ],
+    "synonyms": [
+      "diesel-electric car",
+      "non-plug-in hybrid car",
+      "hybrid diesel vehicle",
+      "self-charging diesel hybrid"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars, with both diesel engine and electric motor as motors for propulsion (excl. vehicles for travelling on snow, other specially designed vehicles of subheading 8703.10 and plug-in hybrids)"
+  },
+  {
+    "id": "8703700000",
+    "commodity_code": "8703700000",
+    "description": "Passenger cars (under 10 seats) with both a diesel engine and an electric motor that can be recharged from an external power source — i.e., diesel plug-in hybrid passenger vehicles (includes station wagons and racing cars; excludes snow/special-purpose vehicles).",
+    "known_brands": [
+      "Peugeot",
+      "Citroën",
+      "Mercedes-Benz",
+      "Volvo",
+      "Land Rover",
+      "Volkswagen",
+      "BMW"
+    ],
+    "colloquial_terms": [
+      "diesel plug-in hybrid",
+      "diesel PHEV",
+      "plug-in hybrid",
+      "PHEV (diesel-electric)"
+    ],
+    "synonyms": [
+      "plug-in hybrid vehicle (diesel + electric)",
+      "rechargeable diesel hybrid",
+      "diesel-electric plug-in car"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars, with both diesel engine and electric motor as motors for propulsion, capable of being charged by plugging to external source of electric power (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703809000",
+    "commodity_code": "8703809000",
+    "description": "Used passenger cars (under 10 seats) propelled only by an electric motor — battery-electric vehicles (BEVs), second-hand/used electric cars (includes station wagons and racing cars; excludes snow/special-purpose vehicles).",
+    "known_brands": [
+      "Tesla",
+      "Nissan",
+      "Renault",
+      "BMW",
+      "Hyundai",
+      "Kia",
+      "Volkswagen",
+      "Chevrolet"
+    ],
+    "colloquial_terms": [
+      "electric car",
+      "EV",
+      "used EV",
+      "second-hand electric vehicle",
+      "battery-electric car"
+    ],
+    "synonyms": [
+      "battery electric vehicle (BEV)",
+      "electric-only car",
+      "all-electric passenger car",
+      "zero-emission vehicle"
+    ],
+    "original_description": "Motor cars and other motor vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars, with only electric motor for propulsion, used (excl. vehicles for travelling on snow and other specially designed vehicles of subheading 8703.10)"
+  },
+  {
+    "id": "8703900000",
+    "commodity_code": "8703900000",
+    "description": "Passenger cars (under 10 seats) powered by engines other than conventional piston internal-combustion engines or standard electric motors — e.g., rotary (Wankel) engines, gas-turbine or steam propulsion and other unconventional engine types (includes station wagons and racing cars; excludes snow/special-purpose vehicles).",
+    "known_brands": [
+      "Mazda",
+      "Chrysler",
+      "Rover",
+      "Stanley (historic steam cars)",
+      "Doble (historic steam cars)"
+    ],
+    "colloquial_terms": [
+      "rotary engine car",
+      "Wankel car",
+      "turbine car",
+      "steam car",
+      "alternative-propulsion car"
+    ],
+    "synonyms": [
+      "non-piston-engine passenger car",
+      "alternative propulsion vehicle",
+      "rotary/turbine/steam-powered car"
+    ],
+    "original_description": "Motor cars and other vehicles principally designed for the transport of <10 persons, incl. station wagons and racing cars, with engines other than internal combustion piston engine or electric motor (excl. vehicles for the transport of persons on snow and other specially designed vehicles of subheading 8703.10)"
+  }
+]

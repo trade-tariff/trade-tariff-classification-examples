@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   root 'homepage#index'
 
+  get '/search_commodities', to: 'search_commodities#show', as: :search_commodities_get
+  post '/search_commodities', to: 'search_commodities#show', as: :search_commodities
+
   resources :basic_sessions, only: %i[new create]
 
   match '/400', to: 'errors#bad_request', via: :all

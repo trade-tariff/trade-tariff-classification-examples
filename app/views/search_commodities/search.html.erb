@@ -1,0 +1,9 @@
+<%= govuk_back_link(href: root_path) %>
+
+<%= render "form" %>
+
+<% if results.present? %>
+  <p class="govuk-body">Based on the information you've provided, this is the closest match.</p>
+
+  <%= render_commodity_accordion(results, max_score) %>
+<% end %>
