@@ -34,25 +34,23 @@ class OpenaiClient
     end
   end
 
-  class << self
-    def instrument
-      start_time = Time.zone.now
-      yield
-    ensure
-      end_time = Time.zone.now
-      duration = end_time - start_time
-      Rails.logger.info "OpenAIClient call took #{duration.round(2)} seconds"
-    end
+  def self.instrument
+    start_time = Time.zone.now
+    yield
+  ensure
+    end_time = Time.zone.now
+    duration = end_time - start_time
+    Rails.logger.info "OpenAIClient call took #{duration.round(2)} seconds"
+  end
 
-    def client
-      @client ||= Faraday.new(url: "https://api.openai.com") do |faraday|
-        faraday.adapter Faraday.default_adapter
-        faraday.headers["Accept"] = "application/json"
-        faraday.headers["Content-Type"] = "application/json"
-        faraday.headers["Authorization"] = "Bearer #{TradeTariffClassificationExamples.openai_api_key}"
-        faraday.headers["User-Agent"] = "TradeTariffClassificationExamples/#{TradeTariffClassificationExamples.revision}"
-        faraday.response :json, content_type: /\bjson$/
-      end
+  def self.client
+    @client ||= Faraday.new(url: "https://api.openai.com") do |faraday|
+      faraday.adapter Faraday.default_adapter
+      faraday.headers["Accept"] = "application/json"
+      faraday.headers["Content-Type"] = "application/json"
+      faraday.headers["Authorization"] = "Bearer #{TradeTariffClassificationExamples.openai_api_key}"
+      faraday.headers["User-Agent"] = "TradeTariffClassificationExamples/#{TradeTariffClassificationExamples.revision}"
+      faraday.response :json, content_type: /\bjson$/
     end
   end
 end
