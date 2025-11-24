@@ -23,6 +23,21 @@ en:
 
         Return the labeled commodity data in JSON format with the following fields:
 
+        ```json
+        {
+          "data": [
+            {
+              "commodity_code": "string",
+              "description": "string",
+              "known_brands": ["string"],
+              "colloquial_terms": ["string"],
+              "synonyms": ["string"],
+              "original_description": "string"
+            }
+          ]
+        }
+        ```
+
         - commodity_code: The unique code for the commodity.
         - description: A brief description of the commodity written in plain English where possible.
         - known_brands: A list of known brands associated with the commodity.
@@ -30,7 +45,9 @@ en:
         - synonyms: A list of synonyms for the commodity.
         - original_description: The original description provided to you to help you describe the commodity.
 
-        Always respond in JSON
+        Ensure you label ALL provided commodities in the output array, even if the list is long. Do not truncate or omit any.
+
+        Always respond with a JSON array of objects.
 
         What follows is the commodity data to label in JSON format:
     interactive_search:
@@ -40,32 +57,39 @@ en:
 
         Look at the search input and any previously answered questions and decide whether more questions are needed to confidently assign a commodity code.
 
-        If elasticsearch answers are available, use them to help formulate your questions and answers - don't exceed questions not asked by these answers.
+        If elasticsearch answers are available, use them to help formulate your questions and answers - don't go beyond these elastic search results in terms of the overall commodity hierarchy - even if you know the results are incorrect.
 
         Respond in JSON format with one of:
 
-        Your high confidence commodity code answer
+        Rank the top 5 elasticsearch answers by confidence and provide the most likely answer if you are confident.
 
         ```json
         {
           "answer" => {
             "commodity_code" => "0101210000",
             "confidence"     => "high"
-          }
+          },
+          "other_answers" => [
+            { "commodity_code" => "0101290000", "confidence" => "medium" },
+            { "commodity_code" => "0101300000", "confidence" => "low" }
+          ]
         }
         ```
 
-        Have questions? Only ask "Yes" or "No" questions to clarify the commodity
+        Have questions? Each question can have many possible answers. Try and ask as few questions as possible to narrow down the commodity code.
+
+        AVOID YES/NO QUESTIONS UNLESS THEY WILL HELP NARROW DOWN THE COMMODITY CODE BY WHOLE CATEGORIES - A USER CAN REVIEW EACH ELASTICSEARCH OPTION THEMSELVES AND ANSWER YES/NO SO YES/NO JUST MAKES THE UX WORSE.
 
         ```json
         {
           "questions": [
-            "Is the horse alive?",
-            "Is the horse a pure bred horse?",
-            "Is the horse intended for breeding?"
+            { "question" => "What is the material of the clothing?", "options" => ["Cotton", "Wool", "Synthetic"] },
+            { "question" => "Which gender is the clothing intended for?", "options" => ["Male", "Female"] }
           ],
         }
         ```
+
+        Prefer options that will help you narrow down the commodity code the most and avoid repeating the same question.
 
         Try and ask at least a few questions each time to narrow down the commodity code in an efficient way.
 

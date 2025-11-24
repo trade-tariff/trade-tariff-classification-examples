@@ -38,11 +38,11 @@ class InteractiveMemory
     )
   end
 
-  def add_question(text, answer: nil)
+  def add_question(data, answer: nil)
     attrs = {
       index: next_index,
-      text: text,
-      options: %w[Yes No],
+      text: data[:text],
+      options: data[:options] || %w[Yes No],
     }
     attrs[:answer] = answer if answer.present?
 

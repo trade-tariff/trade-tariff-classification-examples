@@ -6,10 +6,10 @@ require 'json'
 require_relative '../config/environment'
 require_relative '../app/services/fetch_records'
 
-result = FetchRecords.new.call
+result = FetchRecords.call
 
 date = Time.zone.now.strftime("%Y-%m-%d")
-model = GeminiShellClient::MODEL
+model = TradeTariffClassificationExamples.ai_client::MODEL
 
 File.write(
   Rails.root.join("data/labelled_commodities_#{model}_#{date}.json"),

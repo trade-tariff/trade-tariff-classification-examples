@@ -90,12 +90,13 @@ class SearchCommodity
   def validate_answers
     @questions.each do |question|
       if question.answer.blank?
-        errors.add("question_#{question.index}", "can't be blank")
+        errors.add(:"question_#{question.index}", "can't be blank")
       end
+
       next if question.valid?
 
-      question.errors.each_value do |message|
-        errors.add("question_#{question.index}", message)
+      question.errors.each do |error|
+        errors.add(:"question_#{question.index}", error.message)
       end
     end
   end
@@ -104,9 +105,13 @@ class SearchCommodity
     @questions || []
   end
 
-  def answered_questions; end
+  def answered_questions
+    questions.select(&:answered?)
+  end
 
-  def unanswered_questions; end
+  def unanswered_questions
+    questions.reject(&:answered?)
+  end
 
   def persisted?
     false

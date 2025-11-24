@@ -1,8 +1,8 @@
 class SearchCommoditiesController < ApplicationController
-  before_action :results, :search_commodity
-
   def show
+    search_commodity
     search_commodity.valid? if query?
+    results
 
     render :search
   end
@@ -19,24 +19,24 @@ private
   end
 
   def interactive_results
-    if query?
-      @interactive_memory = InteractiveSearch.new(interactive_memory).call
-      @search_commodity.assign_questions(@interactive_memory.questions)
+    return [] unless query?
 
-      if @search_commodity.save
-        Rails.logger.info "SearchCommodity saved to session with questions: #{@interactive_memory.questions.map(&:as_json)}"
-      else
-        Rails.logger.error "Failed to save SearchCommodity to session: #{@search_commodity.errors.full_messages.join(', ')}"
-      end
-
-      if @interactive_memory.final_answer?
-        @interactive_memory.final_answer
-      else
-        []
-      end
-    else
-      []
+    if @search_commodity.unanswered_questions.any?
+      @search_commodity.validate_answers
+      return []
     end
+
+    @interactive_memory = InteractiveSearch.new(interactive_memory).call
+    @search_commodity.assign_questions(@interactive_memory.questions)
+
+    unless @search_commodity.save
+      flash.now[:alert] = "Encountered an error saving your answers. Please try again."
+      return []
+    end
+
+    return [] unless @interactive_memory.final_answer?
+
+    @interactive_memory.final_answer
   end
 
   def non_interactive_results
@@ -89,5 +89,9 @@ private
     )
   end
 
-  helper_method :results, :max_score, :search_type, :interactive_memory
+  helper_method :results,
+                :max_score,
+                :search_type,
+                :interactive_memory,
+                :search_commodity
 end

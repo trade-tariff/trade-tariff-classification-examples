@@ -16,6 +16,7 @@ module SearchCommoditiesHelper
             legend: { text: question.text, size: "m" },
             hint: { text: "" },
             include_hidden: true,
+            form_group: { id: "search-commodity-question-#{question.index}-field-error" },
           )
         end
       end

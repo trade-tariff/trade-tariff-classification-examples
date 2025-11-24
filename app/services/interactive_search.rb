@@ -60,20 +60,35 @@ private
     questions = []
     questions_aliases = %w[questions extra_questions]
     question_aliases = %w[question extra_question text]
+    option_aliases = %w[options option_choices choices]
     questions_aliases.each do |alias_name|
       next unless result.key?(alias_name) && result[alias_name].is_a?(Array)
 
       result[alias_name].each do |question|
         case question
         when Hash
+          text = ""
           question_aliases.each do |q_alias|
             if question.key?(q_alias)
-              questions << question[q_alias]
+              text = question[q_alias]
               break
             end
           end
+          options = []
+          option_aliases.each do |o_alias|
+            if question.key?(o_alias) && question[o_alias].is_a?(Array)
+              options = question[o_alias].map(&:to_s)
+              break
+            end
+          end
+
+          if options.empty?
+            options = %w[Yes No]
+          end
+
+          questions << { text: text, options: options }
         when String
-          questions << question
+          questions << { text: question, options: %w[Yes No] }
         end
       end
     end

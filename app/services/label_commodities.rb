@@ -8,12 +8,22 @@ class LabelCommodities
     context += "\n\n"
     context += commodities.to_json
 
-    result = GeminiShellClient.call(context)
+    result = TradeTariffClassificationExamples.ai_client.call(context)
 
     begin
-      parsed_result = Array.wrap(JSON.parse(result))
+      parsed = ExtractBottomJson.new.call(result)
+      if parsed.is_a?(Hash)
+        aliased_nested_keys = %w[data commodities items results labels]
+        aliased_nested_keys.each do |key|
+          if parsed.try(:[], key)
+            parsed = parsed[key]
+            break
+          end
+        end
+      end
+      parsed = Array.wrap(parsed)
 
-      parsed_result.map { |item|
+      parsed.map { |item|
         {
           id: item.fetch("commodity_code", ""),
           commodity_code: item.fetch("commodity_code", ""),
@@ -28,7 +38,7 @@ class LabelCommodities
           Rails.logger.info "Warning: Expected #{commodities.size} items but got #{items.size} items"
         end
 
-        Rails.logger.info "Successfully augmented #{items.size} commodities"
+        Rails.logger.info "Successfully labelled #{items.size} commodities"
       end
     rescue JSON::ParserError
       Rails.logger.info "Failed to parse JSON response: #{result}"

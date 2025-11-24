@@ -8,12 +8,20 @@ class Question
             presence: true,
             numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
-  validates :answer, inclusion: { in: %w[Yes No] }, allow_blank: true
+  validate :validate_answer
 
   attribute :index, :integer
   attribute :text, :string
   attribute :answer, :string, default: ""
   attribute :options, array: true, default: %w[Yes No]
+
+  def validate_answer
+    return if answer.blank?
+
+    unless options.include?(answer)
+      errors.add(:answer, "is not included in the available options")
+    end
+  end
 
   def answered?
     answer.present?
