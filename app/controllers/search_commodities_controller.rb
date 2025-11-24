@@ -55,6 +55,14 @@ private
     end
   end
 
+  def classic_results
+    if query?
+      ClassicSearch.new(query).call
+    else
+      []
+    end
+  end
+
   def search_commodity
     @search_commodity ||= if query?
                             SearchCommodity.build(params, session)
