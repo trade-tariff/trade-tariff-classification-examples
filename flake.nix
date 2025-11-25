@@ -38,6 +38,8 @@
           "--with-libyaml-include=${libyaml.dev}/include"
           "--with-libyaml-lib=${libyaml.out}/lib"
         ];
+
+        init = pkgs.writeScriptBin "init" ''cd terraform && terraform init -backend=false'';
       in
       {
         devShells.default = pkgs.mkShell {
@@ -54,6 +56,8 @@
           buildInputs = [
             lint
             ruby
+            init
+            pkgs.terraform
           ];
         };
       }

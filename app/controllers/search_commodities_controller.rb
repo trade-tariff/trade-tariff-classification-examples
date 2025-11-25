@@ -92,13 +92,13 @@ private
   def interactive_memory
     InteractiveMemory.new(
       search_input: query,
-      elasticsearch_answers: non_interactive_results,
+      opensearch_answers: non_interactive_results,
       questions: search_commodity.questions,
     )
   end
 
   def short_list
-    interactive_memory.elasticsearch_answers.sort_by { |c| -c.score }.first(10)
+    interactive_memory.opensearch_answers.sort_by { |c| -c.score }.first(10)
   end
 
   helper_method :results,

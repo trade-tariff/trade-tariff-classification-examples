@@ -9,7 +9,7 @@ class BuildIndex
 
     search_client.drop_index(index)
     search_client.create_index(index)
-    elasticsearch_client.bulk(
+    opensearch_client.bulk(
       body: serialize_for(
         :index,
         index,
@@ -33,5 +33,5 @@ private
     end
   end
 
-  delegate :search_client, :elasticsearch_client, to: TradeTariffClassificationExamples
+  delegate :search_client, :opensearch_client, to: TradeTariffClassificationExamples
 end

@@ -20,7 +20,7 @@ gem "ruby-progressbar"
 gem "govuk-components"
 gem "govuk_design_system_formbuilder"
 
-gem "elasticsearch"
+gem "opensearch-ruby"
 
 gem "bootsnap", require: false
 

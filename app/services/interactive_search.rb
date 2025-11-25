@@ -32,7 +32,7 @@ private
   def search_context
     I18n.t(
       "contexts.interactive_search.instructions",
-      answers_elasticsearch: interactive_memory.elasticsearch_answers.to_json,
+      answers_opensearch: interactive_memory.opensearch_answers.to_json,
       questions: interactive_memory.questions.sort_by(&:index).to_json,
       search_input: interactive_memory.search_input,
     ).tap do |context|

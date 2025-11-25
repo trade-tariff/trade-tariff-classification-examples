@@ -40,13 +40,13 @@ module TradeTariffClassificationExamples
 
     def search_client
       @search_client ||= SearchClient.new(
-        elasticsearch_client,
+        opensearch_client,
         indexes: search_indexes,
       )
     end
 
-    def elasticsearch_client
-      @elasticsearch_client ||= Elasticsearch::Client.new(elasticsearch_configuration)
+    def opensearch_client
+      @opensearch_client ||= OpenSearch::Client.new(opensearch_configuration)
     end
 
     def search_indexes
@@ -69,19 +69,19 @@ module TradeTariffClassificationExamples
 
   private
 
-    def elasticsearch_configuration
+    def opensearch_configuration
       {
-        host: elasticsearch_url,
-        log: elasticsearch_debug,
+        host: opensearch_url,
+        log: opensearch_debug,
       }
     end
 
-    def elasticsearch_url
-      ENV.fetch("ELASTICSEARCH_URL", "http://host.docker.internal:9200")
+    def opensearch_url
+      ENV.fetch("OPENSEARCH_URL", "http://host.docker.internal:9200")
     end
 
-    def elasticsearch_debug
-      ENV.fetch("ELASTICSEARCH_DEBUG", "false") == "true"
+    def opensearch_debug
+      ENV.fetch("OPENSEARCH_DEBUG", "false") == "true"
     end
   end
 end
