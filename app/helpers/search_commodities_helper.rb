@@ -80,12 +80,29 @@ private
 
   def commodity_confidence(commodity, max_score)
     text = if commodity.confidence.present?
-             "#{commodity.confidence.to_s.upcase} confidence"
+             "#{commodity.confidence.to_s.upcase} AI confidence"
            else
-             level = max_score.to_f.positive? ? ((commodity.score.to_f / max_score) * 100).round : 0
-             "#{level}% confidence"
+             score_to_text(commodity.score, max_score)
            end
 
     govuk_tag(text: text, colour: "blue")
+  end
+
+  def score_to_text(score, max_score)
+    # OpenSearch scores are relative. We map the score to a qualitative
+    # label based on its ratio to the highest score in the result set.
+    # These labels are intended to give a general sense of relevance.
+    ratio = max_score.to_f.positive? ? score.to_f / max_score : 0
+
+    case ratio
+    when 0.8..1.0
+      "Strong match"
+    when 0.5..0.8
+      "Good match"
+    when 0.2..0.5
+      "Possible match"
+    else
+      "Related"
+    end
   end
 end

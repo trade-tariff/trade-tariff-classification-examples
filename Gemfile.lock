@@ -101,14 +101,6 @@ GEM
       dotenv (= 3.1.8)
       railties (>= 6.1)
     drb (2.2.3)
-    elastic-transport (8.4.1)
-      faraday (< 3)
-      multi_json
-    elasticsearch (9.2.0)
-      elastic-transport (~> 8.3)
-      elasticsearch-api (= 9.2.0)
-    elasticsearch-api (9.2.0)
-      multi_json
     erb (6.0.0)
     erubi (1.13.1)
     factory_bot (6.5.6)
@@ -201,6 +193,9 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.10-x86_64-linux-musl)
       racc (~> 1.4)
+    opensearch-ruby (3.4.0)
+      faraday (>= 1.0, < 3)
+      multi_json (>= 1.0)
     ostruct (0.6.3)
     pagy (9.4.0)
     parallel (1.27.0)
@@ -391,7 +386,6 @@ DEPENDENCIES
   brakeman
   csv
   dotenv-rails
-  elasticsearch
   factory_bot_rails
   faraday
   govuk-components
@@ -400,6 +394,7 @@ DEPENDENCIES
   importmap-rails
   lograge
   logstash-event
+  opensearch-ruby
   ostruct
   propshaft
   pry-rails

@@ -57,11 +57,11 @@ en:
 
         Look at the search input and any previously answered questions and decide whether more questions are needed to confidently assign a commodity code.
 
-        If elasticsearch answers are available, use them to help formulate your questions and answers - don't go beyond these elastic search results in terms of the overall commodity hierarchy - even if you know the results are incorrect.
+        If opensearch answers are available, use them to help formulate your questions and answers - don't go beyond these elastic search results in terms of the overall commodity hierarchy - even if you know the results are incorrect.
 
         Respond in JSON format with one of:
 
-        Rank the top 5 elasticsearch answers by confidence and provide the most likely answer if you are confident.
+        Rank the top 5 opensearch answers by confidence and provide the most likely answer if you are confident.
 
         ```json
         {
@@ -75,7 +75,7 @@ en:
 
         Have questions? Each question can have many possible answers. Try and ask as few questions as possible to narrow down the commodity code.
 
-        AVOID YES/NO QUESTIONS UNLESS THEY WILL HELP NARROW DOWN THE COMMODITY CODE BY WHOLE CATEGORIES - A USER CAN REVIEW EACH ELASTICSEARCH OPTION THEMSELVES AND ANSWER YES/NO SO YES/NO JUST MAKES THE UX WORSE.
+        AVOID YES/NO QUESTIONS UNLESS THEY WILL HELP NARROW DOWN THE COMMODITY CODE BY WHOLE CATEGORIES - A USER CAN REVIEW EACH OPENSEARCH OPTION THEMSELVES AND ANSWER YES/NO SO YES/NO JUST MAKES THE UX WORSE.
 
         Keep to one question per commodity code search.
 
@@ -99,7 +99,7 @@ en:
         }
         ```
 
-        Below are the sections for the search input, the answers returned by an elasticsearch index and the historic questions and answers which you will need for context
+        Below are the sections for the search input, the answers returned by an opensearch index and the historic questions and answers which you will need for context
 
         Always respond in JSON as per the three examples above and never try and code anything up. Always structure questions so they have yes/no answers.
 
@@ -109,8 +109,8 @@ en:
         %{search_input}
         --------------------------------------------
 
-        ---------ANSWERS_ELASTICSEARCH--------------
-        %{answers_elasticsearch}
+        ---------ANSWERS_OPENSEARCH--------------
+        %{answers_opensearch}
         --------------------------------------------
 
         ---------QUESTIONS_AND_ANSWERS--------------

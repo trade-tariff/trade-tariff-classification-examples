@@ -5,7 +5,7 @@ class InteractiveMemory
   validates :search_input, presence: true
 
   attribute :search_input
-  attribute :elasticsearch_answers, default: []
+  attribute :opensearch_answers, default: []
   attribute :questions, default: []
   attribute :final_answers, default: []
 
@@ -24,7 +24,7 @@ class InteractiveMemory
     final_answers.each_with_object([]) do |answer, acc|
       code = answer[:commodity_code]
       description = lookup_description(code)
-      elasticsearch_commodity = elasticsearch_answers.find do |result|
+      opensearch_commodity = opensearch_answers.find do |result|
         result.commodity_code == code
       end
 
@@ -32,10 +32,10 @@ class InteractiveMemory
         commodity_code: answer[:commodity_code],
         description: description || "",
         score: nil,
-        known_brands: elasticsearch_commodity&.known_brands || [],
-        colloquial_terms: elasticsearch_commodity&.colloquial_terms || [],
-        synonyms: elasticsearch_commodity&.synonyms || [],
-        original_description: elasticsearch_commodity&.original_description || "",
+        known_brands: opensearch_commodity&.known_brands || [],
+        colloquial_terms: opensearch_commodity&.colloquial_terms || [],
+        synonyms: opensearch_commodity&.synonyms || [],
+        original_description: opensearch_commodity&.original_description || "",
         confidence: answer[:confidence] || "unknown",
       )
     end
