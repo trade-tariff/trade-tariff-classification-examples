@@ -27,14 +27,3 @@ jobs:
     secrets:
       slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
       ssh-key: ${{ secrets.PRIVATE_SSH_KEY }}
-
-  start-services:
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      contains(github.event.pull_request.labels.*.name, 'needs-deployment')
-    runs-on: ubuntu-latest
-    steps:
-      - uses: trade-tariff/trade-tariff-tools/.github/actions/start-services@main
-        with:
-          service-names: examples
-          environment: development
