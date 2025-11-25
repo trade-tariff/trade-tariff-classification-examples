@@ -36,14 +36,14 @@ private
       questions: interactive_memory.questions.sort_by(&:index).to_json,
       search_input: interactive_memory.search_input,
     ).tap do |context|
-      File.write(Rails.root.join("log/interactive_search_context_#{Time.zone.now.strftime('%Y%m%d%H%M%S')}.txt"), context)
+      File.write("log/interactive_search_context_#{Time.zone.now.strftime('%Y%m%d%H%M%S')}.txt", context) if Rails.env.development?
     end
   end
 
   def handle_result(result)
     result["search_input"] = interactive_memory.search_input
     timestamp = Time.zone.now.strftime("%Y%m%d%H%M%S")
-    File.write(Rails.root.join("log/interactive_search_#{timestamp}.json"), JSON.pretty_generate(result))
+    File.write("log/interactive_search_#{timestamp}.json", JSON.pretty_generate(result)) if Rails.env.development?
     questions = extract_questions(result)
 
     questions.each { |text| interactive_memory.add_question(text) } if questions.present?
