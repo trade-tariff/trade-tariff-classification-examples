@@ -16,6 +16,8 @@ repos:
         args:
           - "--disable"
           - "MD013"
+          - "--ignore"
+          - terraform
           - "--fix"
 
   - repo: https://github.com/mattlqx/pre-commit-ruby
