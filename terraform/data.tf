@@ -16,7 +16,7 @@ data "aws_subnets" "private" {
 }
 
 data "aws_lb_target_group" "this" {
-  name = "hub"
+  name = "examples"
 }
 
 data "aws_security_group" "this" {
