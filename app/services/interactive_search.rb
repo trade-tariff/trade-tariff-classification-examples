@@ -46,7 +46,9 @@ private
     File.write("log/interactive_search_#{timestamp}.json", JSON.pretty_generate(result)) if Rails.env.development?
     questions = extract_questions(result)
 
-    questions.each { |text| interactive_memory.add_question(text) } if questions.present?
+    # NOTE: We only ask one question at a time
+    question = questions.first
+    interactive_memory.add_question(question) if question.present?
 
     answers = result.fetch("answers", {})
 
