@@ -23,7 +23,7 @@ jobs:
     with:
       app-name: tariff-examples
       environment: development
-      test-flavour: fpo
+      test-flavour: none
     secrets:
       slack-webhook: ${{ secrets.SLACK_WEBHOOK }}
       ssh-key: ${{ secrets.PRIVATE_SSH_KEY }}
