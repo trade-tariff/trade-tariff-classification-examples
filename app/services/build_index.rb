@@ -7,7 +7,7 @@ class BuildIndex
   def call
     return true if @entries.empty?
 
-    search_client.drop_index(index)
+    search_client.drop_index(index) if search_client.index_exists?(index)
     search_client.create_index(index)
     opensearch_client.bulk(
       body: serialize_for(
