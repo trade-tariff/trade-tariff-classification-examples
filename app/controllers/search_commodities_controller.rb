@@ -19,6 +19,10 @@ private
   end
 
   def interactive_results
+    if query.to_s.match?(/\A\d+\z/)
+      return NonInteractiveSearch.new(query, limit: 10).call
+    end
+
     return [] unless query?
 
     if @search_commodity.unanswered_questions.any?
@@ -46,7 +50,8 @@ private
 
   def non_interactive_results
     if query?
-      NonInteractiveSearch.new(query).call
+      limit = search_type.interactive? ? 100 : 20
+      NonInteractiveSearch.new(query, limit: limit).call
     else
       []
     end
