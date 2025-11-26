@@ -19,7 +19,7 @@ class Question
     return if answer.blank?
 
     unless options.include?(answer)
-      errors.add(:answer, "is not included in the available options")
+      errors.add(:answer, :inclusion)
     end
   end
 

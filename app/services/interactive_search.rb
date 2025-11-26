@@ -1,11 +1,13 @@
 class InteractiveSearch
   def initialize(interactive_memory)
     @interactive_memory = interactive_memory
+    @attempts = 0
   end
 
   def call
     while needs_more_questions?
       result = TradeTariffClassificationExamples.ai_client.call(search_context)
+      @attempts += 1
 
       begin
         parsed_result = ExtractBottomJson.new.call(result)
@@ -26,6 +28,10 @@ private
     return false if interactive_memory.final_answer?
     return false if interactive_memory.questions_unanswered?
 
+    if @attempts >= TradeTariffClassificationExamples.interactive_search_max_attempts
+      interactive_memory.search_commodity_form.errors.add(:query, :max_attempts_reached)
+      return false
+    end
     true
   end
 

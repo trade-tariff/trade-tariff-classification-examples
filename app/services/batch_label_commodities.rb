@@ -2,13 +2,13 @@
 
 class BatchLabelCommodities
   class << self
-    def call
-      instrument { new.call }
+    def call(dry_run: false)
+      instrument(dry_run:) { |**args| new.call(**args) }
     end
 
-    def instrument
+    def instrument(dry_run: false)
       start_time = Time.zone.now
-      yield
+      yield(dry_run:)
     ensure
       end_time = Time.zone.now
       duration = end_time - start_time
@@ -16,20 +16,32 @@ class BatchLabelCommodities
     end
   end
 
-  def call
-    commodities_to_label.each_slice(batch_size) do |batch|
-      LabellingCommoditiesJob.perform_later(batch)
+  def call(dry_run: false)
+    if dry_run
+      Rails.logger.info "Dry run: #{commodities_to_label.size} commodities to be labelled in batches of #{batch_size}"
+
+      commodities_to_label.each_slice(batch_size) do |batch|
+        Rails.logger.info "Dry run: would label batch of #{batch.size} commodities"
+      end
+    else
+      Rails.logger.info "Labelling #{commodities_to_label.size} commodities in batches of #{batch_size}"
+      commodities_to_label.each_slice(batch_size) do |batch|
+        # LabellingCommoditiesJob.perform_later(batch)
+      end
     end
   end
 
 private
 
   def commodities_to_label
-    all_commodities = FetchRecords::COMMODITIES
+    @commodities_to_label ||=
+      begin
+        all_commodities = FetchRecords::COMMODITIES
 
-    all_commodities.reject do |commodity|
-      search_client.exists?(CommodityIndex.new.name, commodity[:goods_nomenclature_item_id])
-    end
+        all_commodities.reject do |commodity|
+          search_client.exists?(CommodityIndex.new.name, commodity[:goods_nomenclature_item_id])
+        end
+      end
   end
 
   delegate :search_client, :batch_size, to: TradeTariffClassificationExamples

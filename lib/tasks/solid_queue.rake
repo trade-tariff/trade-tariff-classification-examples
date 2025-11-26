@@ -78,4 +78,39 @@ namespace :solid_queue do
       sleep 5
     end
   end
+
+  desc "Retry all failed jobs"
+  task retry_failed: :environment do
+    SolidQueue::FailedExecution.all.find_each do |failed_execution|
+      Rails.logger.info "Retrying job #{failed_execution.job_id}"
+      failed_execution.retry
+    end
+  end
+
+  desc "Debug failed jobs"
+  task debug_failed: :environment do
+    puts "Failed Job Debugger"
+    puts "==================="
+    puts
+
+    failed_executions = SolidQueue::FailedExecution.all
+
+    if failed_executions.any?
+      failed_executions.each do |failed_execution|
+        job = failed_execution.job
+
+        puts "--------------------------------------------------"
+        puts "Job ID: #{job.id}"
+        puts "Arguments: #{job.arguments.inspect}"
+        puts "Error: #{failed_execution.error['class']}"
+        puts "Message: #{failed_execution.error['message']}"
+        puts "Backtrace:"
+        puts failed_execution.error["backtrace"].first(5).join("\n")
+        puts "--------------------------------------------------"
+        puts
+      end
+    else
+      puts "No failed jobs found."
+    end
+  end
 end

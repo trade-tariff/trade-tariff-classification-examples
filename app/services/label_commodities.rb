@@ -1,6 +1,9 @@
 class LabelCommodities
   def initialize(batch)
-    @commodities = batch
+    @commodities = batch.map do |commodity|
+      commodity["description"] = commodity["description"].to_s
+      commodity
+    end
   end
 
   def call

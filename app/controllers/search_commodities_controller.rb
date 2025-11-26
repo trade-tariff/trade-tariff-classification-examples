@@ -92,6 +92,7 @@ private
   def interactive_memory
     InteractiveMemory.new(
       search_input: query,
+      search_commodity_form: search_commodity,
       opensearch_answers: non_interactive_results,
       questions: search_commodity.questions,
     )

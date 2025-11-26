@@ -3,8 +3,10 @@ class InteractiveMemory
   include ActiveModel::Attributes
 
   validates :search_input, presence: true
+  validates :search_commodity_form, presence: true
 
   attribute :search_input
+  attribute :search_commodity_form
   attribute :opensearch_answers, default: []
   attribute :questions, default: []
   attribute :final_answers, default: []

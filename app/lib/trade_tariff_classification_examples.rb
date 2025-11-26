@@ -71,6 +71,10 @@ module TradeTariffClassificationExamples
       @openai_user ||= ENV["OPENAI_USER"]
     end
 
+    def interactive_search_max_attempts
+      @interactive_search_max_attempts ||= ENV.fetch("INTERACTIVE_SEARCH_MAX_ATTEMPTS", 2).to_i
+    end
+
   private
 
     def opensearch_configuration
