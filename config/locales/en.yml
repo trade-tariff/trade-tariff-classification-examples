@@ -6,10 +6,17 @@ en:
           attributes:
             password:
               inclusion: Incorrect password
+        question:
+          attributes:
+            answer:
+              inclusion: Not a valid choice
         search_commodity:
+          no_commodities_found: No commodities found. Please try a more descriptive search term.
+          blank: You must answer this question
           attributes:
             query:
               blank: Please enter a search term
+              max_attempts_reached: "Maximum number of attempts reached without a final answer. Try being more verbose."
   contexts:
     label_commodity:
       title: Label Commodity Data

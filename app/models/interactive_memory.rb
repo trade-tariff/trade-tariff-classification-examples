@@ -3,8 +3,10 @@ class InteractiveMemory
   include ActiveModel::Attributes
 
   validates :search_input, presence: true
+  validates :search_commodity_form, presence: true
 
   attribute :search_input
+  attribute :search_commodity_form
   attribute :opensearch_answers, default: []
   attribute :questions, default: []
   attribute :final_answers, default: []
@@ -67,9 +69,7 @@ class InteractiveMemory
 private
 
   def lookup_description(code)
-    FetchRecords::ALL_GOODS_NOMENCLATURES.find { |g|
-      g[:goods_nomenclature_item_id].include?(code)
-    }.try(:[], :description)
+    FetchRecords::COMMODITIES_HASH.dig(code, :description)
   end
 
   def next_index

@@ -10,7 +10,11 @@ class NonInteractiveSearch
         query: {
           multi_match: {
             query: query,
-            fields: ["commodity_code^2", "searchable_description"],
+            fields: [
+              "commodity_code^4",
+              "original_description^3",
+              "searchable_description",
+            ],
           },
         },
         size: 10,

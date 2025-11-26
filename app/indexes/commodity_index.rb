@@ -31,6 +31,7 @@ class CommodityIndex
     {
       mappings: {
         properties: {
+          original_description: { type: "text", analyzer: "snowball" },
           searchable_description: { type: "text", analyzer: "snowball" },
           commodity_code: {
             type: "text",
@@ -44,7 +45,6 @@ class CommodityIndex
             search_analyzer: "lowercase_analyzer",
           },
           description: { enabled: false },
-          original_description: { enabled: false },
           known_brands: { enabled: false },
           colloquial_terms: { enabled: false },
           synonyms: { enabled: false },

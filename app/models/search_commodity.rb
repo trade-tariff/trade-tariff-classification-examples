@@ -4,6 +4,7 @@ class SearchCommodity
   SESSION_KEY = :search_commodity
 
   include ActiveModel::Model
+  include ActiveModel::Attributes
 
   attr_accessor :query,
                 :search_type,
@@ -90,7 +91,7 @@ class SearchCommodity
   def validate_answers
     @questions.each do |question|
       if question.answer.blank?
-        errors.add(:"question_#{question.index}", "can't be blank")
+        errors.add(:"question_#{question.index}", :blank)
       end
 
       next if question.valid?

@@ -51,9 +51,7 @@ private
   attr_reader :query
 
   def lookup_description(code)
-    FetchRecords::ALL_GOODS_NOMENCLATURES.find { |g|
-      g[:goods_nomenclature_item_id].include?(code)
-    }.try(:[], :description)
+    FetchRecords::COMMODITIES_HASH.dig(code, :description)
   end
 
   class << self

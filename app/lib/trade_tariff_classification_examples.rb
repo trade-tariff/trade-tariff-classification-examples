@@ -49,6 +49,10 @@ module TradeTariffClassificationExamples
       @opensearch_client ||= OpenSearch::Client.new(opensearch_configuration)
     end
 
+    def batch_size
+      ENV.fetch("BATCH_LABEL_SIZE", 10).to_i
+    end
+
     def search_indexes
       [
         CommodityIndex.new,
@@ -65,6 +69,10 @@ module TradeTariffClassificationExamples
 
     def openai_user
       @openai_user ||= ENV["OPENAI_USER"]
+    end
+
+    def interactive_search_max_attempts
+      @interactive_search_max_attempts ||= ENV.fetch("INTERACTIVE_SEARCH_MAX_ATTEMPTS", 2).to_i
     end
 
   private

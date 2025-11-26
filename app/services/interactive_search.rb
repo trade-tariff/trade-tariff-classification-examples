@@ -1,11 +1,13 @@
 class InteractiveSearch
   def initialize(interactive_memory)
     @interactive_memory = interactive_memory
+    @attempts = 0
   end
 
   def call
     while needs_more_questions?
       result = TradeTariffClassificationExamples.ai_client.call(search_context)
+      @attempts += 1
 
       begin
         parsed_result = ExtractBottomJson.new.call(result)
@@ -23,9 +25,31 @@ private
   attr_reader :interactive_memory
 
   def needs_more_questions?
+    if interactive_memory.opensearch_answers.one?
+      commodity = interactive_memory.opensearch_answers.first
+      answer = {
+        "commodity_code" => commodity.commodity_code,
+        "confidence" => commodity.confidence,
+      }
+
+      add_answers(Array.wrap(answer))
+
+      return false
+    end
+
+    if interactive_memory.opensearch_answers.empty?
+      interactive_memory.search_commodity_form.errors.add(:query, :no_commodities_found)
+
+      return false
+    end
+
     return false if interactive_memory.final_answer?
     return false if interactive_memory.questions_unanswered?
 
+    if @attempts >= TradeTariffClassificationExamples.interactive_search_max_attempts
+      interactive_memory.search_commodity_form.errors.add(:query, :max_attempts_reached)
+      return false
+    end
     true
   end
 
@@ -52,14 +76,7 @@ private
 
     answers = result.fetch("answers", {})
 
-    if answers.any?
-      interactive_memory.final_answers = answers.map do |answer|
-        {
-          commodity_code: answer["commodity_code"],
-          confidence: answer["confidence"].to_s.downcase,
-        }
-      end
-    end
+    add_answers(answers) if answers.any?
   end
 
   def extract_questions(result)
@@ -116,9 +133,12 @@ private
     end
   end
 
-  def lookup_description(code)
-    FetchRecords::ALL_GOODS_NOMENCLATURES.find { |g|
-      g[:goods_nomenclature_item_id].include?(code)
-    }.try(:[], :description)
+  def add_answers(answers)
+    interactive_memory.final_answers = answers.map do |answer|
+      {
+        commodity_code: answer["commodity_code"],
+        confidence: answer["confidence"].to_s.downcase,
+      }
+    end
   end
 end

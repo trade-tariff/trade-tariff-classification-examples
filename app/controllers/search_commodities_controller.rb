@@ -27,6 +27,11 @@ private
     end
 
     @interactive_memory = InteractiveSearch.new(interactive_memory).call
+
+    if search_commodity.errors.any?
+      return short_list
+    end
+
     @search_commodity.assign_questions(@interactive_memory.questions)
 
     unless @search_commodity.save
@@ -92,6 +97,7 @@ private
   def interactive_memory
     InteractiveMemory.new(
       search_input: query,
+      search_commodity_form: search_commodity,
       opensearch_answers: non_interactive_results,
       questions: search_commodity.questions,
     )

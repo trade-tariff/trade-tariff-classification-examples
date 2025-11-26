@@ -5,10 +5,10 @@ module SearchCommoditiesHelper
     if form.object.questions.present?
       question_radios = form.object.questions.map do |question|
         if question.answer.present?
-          form.hidden_field "question_#{question.index}", value: question.answer
+          form.hidden_field :"question_#{question.index}", value: question.answer
         else
           form.govuk_collection_radio_buttons(
-            "question_#{question.index}",
+            :"question_#{question.index}",
             question.question_options,
             :id,
             :name,
@@ -16,7 +16,6 @@ module SearchCommoditiesHelper
             legend: { text: question.text, size: "m" },
             hint: { text: "" },
             include_hidden: true,
-            form_group: { id: "search-commodity-question-#{question.index}-field-error" },
           )
         end
       end
@@ -24,7 +23,7 @@ module SearchCommoditiesHelper
     end
   end
 
-  def render_commodity_accordion(results, max_score)
+  def render_commodity_table(results, max_score)
     govuk_table do |table|
       table.with_head do |head|
         head.with_row do |row|
@@ -35,10 +34,11 @@ module SearchCommoditiesHelper
       end
 
       table.with_body do |body|
-        results.each_with_index do |commodity, index|
-          body.with_row do |row|
+        results.each do |commodity|
+          original_description = FetchRecords::COMMODITIES_HASH.dig(commodity.commodity_code, :description)
+          body.with_row(html_attributes: { id: "commodity-#{commodity.commodity_code}-score-#{commodity.score}" }) do |row|
             row.with_cell(text: commodity_confidence(commodity, max_score))
-            row.with_cell(text: commodity.description)
+            row.with_cell(text: original_description.presence || commodity.description)
             row.with_cell(text: govuk_button_link_to("Select", "https://trade-tariff.service.gov.uk/commodities/#{commodity.commodity_code}", class: "govuk-!-float-right", target: "_blank", rel: "noopener"))
           end
         end

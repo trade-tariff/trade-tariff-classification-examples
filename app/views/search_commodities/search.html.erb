@@ -3,5 +3,5 @@
 <% if results.present? %>
   <p class="govuk-body">Based on the information you've provided, this is the closest match.</p>
 
-  <%= render_commodity_accordion(results, max_score) %>
+  <%= render_commodity_table(results, max_score) %>
 <% end %>
