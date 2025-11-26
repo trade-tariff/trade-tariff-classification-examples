@@ -28,12 +28,14 @@ class FetchRecords
     next if goods_nomenclature_item_id.match?(NON_COMMODITY_CODE_REGEX)
     next if pls != "80"
 
-    next unless INITIAL_COMMODITIES.include?(goods_nomenclature_item_id)
-
     acc << {
       goods_nomenclature_item_id: goods_nomenclature_item_id,
       description: entry[:description],
     }
+  end
+
+  COMMODITIES_HASH = COMMODITIES.index_by do |commodity|
+    commodity[:goods_nomenclature_item_id]
   end
 
   BATCH_SIZE = 10

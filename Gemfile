@@ -15,6 +15,8 @@ gem "propshaft"
 gem "puma"
 gem "rack-cors"
 gem "ruby-progressbar"
+gem "solid_queue"
+gem "sqlite3"
 
 # GovUK
 gem "govuk-components"

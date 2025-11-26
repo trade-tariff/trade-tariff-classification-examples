@@ -76,5 +76,12 @@ class SearchClient < SimpleDelegator
       id: model_id,
     })
   end
+
+  def exists?(index_name, model_id)
+    __getobj__.exists({
+      index: index_name,
+      id: model_id,
+    })
+  end
 end
 # rubocop:enable Rails/SaveBang
