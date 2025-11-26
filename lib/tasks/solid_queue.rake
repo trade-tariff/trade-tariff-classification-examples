@@ -33,6 +33,18 @@ namespace :solid_queue do
     end
     puts
 
+    puts "Global Stats"
+    puts "------------"
+    claimed_executions = SolidQueue::ClaimedExecution.all
+    if claimed_executions.any?
+      durations = claimed_executions.map { |execution| Time.zone.now - execution.created_at }
+      average_time = durations.sum / durations.size
+      puts "- Average time of running jobs: #{average_time.round(2)}s"
+    else
+      puts "- No jobs are currently running."
+    end
+    puts
+
     puts "Queues"
     puts "------"
     queue_names = SolidQueue::Job.distinct.pluck(:queue_name)
@@ -44,19 +56,16 @@ namespace :solid_queue do
       puts "  - Failed: #{SolidQueue::FailedExecution.joins(:job).where(solid_queue_jobs: { queue_name: queue_name }).count}"
       finished_jobs = SolidQueue::Job.where(queue_name: queue_name).where.not(finished_at: nil)
       puts "  - Finished: #{finished_jobs.count}"
-      next unless finished_jobs.any?
-
-      durations = finished_jobs.includes(:claimed_execution).map { |job|
-        next unless job.claimed_execution
-
-        job.finished_at - job.claimed_execution.created_at
-      }.compact
-
-      if durations.any?
-        average_time = durations.sum / durations.size
-        puts "  - Average execution time: #{average_time.round(2)}s"
-      end
     end
+    puts
+
+    puts "Queue State Legend"
+    puts "------------------"
+    puts "- Jobs: Total number of jobs in the queue."
+    puts "- Ready: Jobs waiting to be picked up by a worker."
+    puts "- Claimed: Jobs currently being processed by a worker."
+    puts "- Failed: Jobs that have failed."
+    puts "- Finished: Jobs that have completed successfully."
   end
 
   desc "Watch Solid Queue statistics, refreshing every 5 seconds"
