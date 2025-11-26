@@ -38,10 +38,6 @@ class Commodity
     }
   end
 
-  def confidence
-    super.presence || score_to_text(score, nil)
-  end
-
 private
 
   def score_to_text(score, max_score)
