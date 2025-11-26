@@ -75,8 +75,9 @@ namespace :search do
 
     File.foreach(file_path) do |line|
       data = JSON.parse(line)
-      id = data["commodity_code"]
+      data["original_description"] = FetchRecords::COMMODITIES_HASH.dig(data["commodity_code"], :description) || data["description"]
 
+      id = data["commodity_code"]
       batch << { index: { _index: index_name, _id: id } }
       batch << data
 
