@@ -35,9 +35,10 @@ module SearchCommoditiesHelper
 
       table.with_body do |body|
         results.each do |commodity|
+          original_description = FetchRecords::COMMODITIES_HASH.dig(commodity.commodity_code, :description)
           body.with_row(html_attributes: { id: "commodity-#{commodity.commodity_code}-score-#{commodity.score}" }) do |row|
             row.with_cell(text: commodity_confidence(commodity, max_score))
-            row.with_cell(text: commodity.description)
+            row.with_cell(text: original_description.presence || commodity.description)
             row.with_cell(text: govuk_button_link_to("Select", "https://trade-tariff.service.gov.uk/commodities/#{commodity.commodity_code}", class: "govuk-!-float-right", target: "_blank", rel: "noopener"))
           end
         end
