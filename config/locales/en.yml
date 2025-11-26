@@ -11,6 +11,7 @@ en:
             answer:
               inclusion: Not a valid choice
         search_commodity:
+          no_commodities_found: No commodities found. Please try a more descriptive search term.
           blank: You must answer this question
           attributes:
             query:

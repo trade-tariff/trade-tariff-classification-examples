@@ -25,6 +25,24 @@ private
   attr_reader :interactive_memory
 
   def needs_more_questions?
+    if interactive_memory.opensearch_answers.one?
+      commodity = interactive_memory.opensearch_answers.first
+      answer = {
+        "commodity_code" => commodity.commodity_code,
+        "confidence" => commodity.confidence,
+      }
+
+      add_answers(Array.wrap(answer))
+
+      return false
+    end
+
+    if interactive_memory.opensearch_answers.empty?
+      interactive_memory.search_commodity_form.errors.add(:query, :no_commodities_found)
+
+      return false
+    end
+
     return false if interactive_memory.final_answer?
     return false if interactive_memory.questions_unanswered?
 
@@ -58,14 +76,7 @@ private
 
     answers = result.fetch("answers", {})
 
-    if answers.any?
-      interactive_memory.final_answers = answers.map do |answer|
-        {
-          commodity_code: answer["commodity_code"],
-          confidence: answer["confidence"].to_s.downcase,
-        }
-      end
-    end
+    add_answers(answers) if answers.any?
   end
 
   def extract_questions(result)
@@ -119,6 +130,15 @@ private
 
     if result.key?("answer") && result["answer"].is_a?(Hash)
       extract_code(result["answer"])
+    end
+  end
+
+  def add_answers(answers)
+    interactive_memory.final_answers = answers.map do |answer|
+      {
+        commodity_code: answer["commodity_code"],
+        confidence: answer["confidence"].to_s.downcase,
+      }
     end
   end
 end
