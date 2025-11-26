@@ -121,10 +121,4 @@ private
       extract_code(result["answer"])
     end
   end
-
-  def lookup_description(code)
-    FetchRecords::ALL_GOODS_NOMENCLATURES.find { |g|
-      g[:goods_nomenclature_item_id].include?(code)
-    }.try(:[], :description)
-  end
 end
