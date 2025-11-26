@@ -46,7 +46,8 @@ private
 
   def non_interactive_results
     if query?
-      NonInteractiveSearch.new(query).call
+      limit = search_type.interactive? ? 100 : 20
+      NonInteractiveSearch.new(query, limit: limit).call
     else
       []
     end

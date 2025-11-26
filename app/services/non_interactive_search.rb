@@ -1,6 +1,7 @@
 class NonInteractiveSearch
-  def initialize(query)
+  def initialize(query, limit: 10)
     @query = query
+    @limit = limit
   end
 
   def call
@@ -17,7 +18,7 @@ class NonInteractiveSearch
             ],
           },
         },
-        size: 10,
+        size: limit,
         from: 0,
         sort: [],
       },
@@ -30,5 +31,5 @@ class NonInteractiveSearch
 
 private
 
-  attr_reader :query
+  attr_reader :query, :limit
 end
