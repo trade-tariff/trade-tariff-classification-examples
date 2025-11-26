@@ -57,7 +57,7 @@ en:
 
         Look at the search input and any previously answered questions and decide whether more questions are needed to confidently assign a commodity code.
 
-        If opensearch answers are available, use them to help formulate your questions and answers - don't go beyond these elastic search results in terms of the overall commodity hierarchy - even if you know the results are incorrect.
+        If answers are available, use them to help formulate your questions and answers - don't go beyond these search results in terms of the overall commodity hierarchy - even if you know the results are incorrect.
 
         Respond in JSON format with one of:
 
@@ -66,9 +66,9 @@ en:
         ```json
         {
           "answers" => [
-            { "commodity_code" => "0101210000", "confidence" => "high" },
-            { "commodity_code" => "0101290000", "confidence" => "medium" },
-            { "commodity_code" => "0101300000", "confidence" => "low" }
+            { "commodity_code" => "0101210000", "confidence" => "Strong" },
+            { "commodity_code" => "0101290000", "confidence" => "Good" },
+            { "commodity_code" => "0101300000", "confidence" => "Possible" }
           ]
         }
         ```
@@ -87,7 +87,7 @@ en:
         }
         ```
 
-        Prefer options that will help you narrow down the commodity code the most and avoid repeating the same question.
+        Prefer questions and options that will help you narrow down the commodity code the most and avoid repeating the same question.
 
         Try and ask at least a few questions each time to narrow down the commodity code in an efficient way.
 
