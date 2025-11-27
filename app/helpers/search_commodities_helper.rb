@@ -29,6 +29,7 @@ module SearchCommoditiesHelper
         head.with_row do |row|
           row.with_cell(text: "Confidence")
           row.with_cell(text: "Description")
+          row.with_cell(text: "Code")
           row.with_cell
         end
       end
@@ -39,6 +40,7 @@ module SearchCommoditiesHelper
           body.with_row(html_attributes: { id: "commodity-#{commodity.commodity_code}-score-#{commodity.score}" }) do |row|
             row.with_cell(text: commodity_confidence(commodity, max_score))
             row.with_cell(text: original_description.presence || commodity.description)
+            row.with_cell(text: commodity.commodity_code)
             row.with_cell(text: govuk_button_link_to("Select", "https://trade-tariff.service.gov.uk/commodities/#{commodity.commodity_code}", class: "govuk-!-float-right", target: "_blank", rel: "noopener"))
           end
         end
