@@ -24,6 +24,8 @@ class InteractiveMemory
 
   def final_commodities
     final_answers.each_with_object([]) do |answer, acc|
+      HashWithIndifferentAccess.new(answer)
+
       code = answer[:commodity_code]
       description = lookup_description(code)
       opensearch_commodity = opensearch_answers.find do |result|
@@ -69,7 +71,15 @@ class InteractiveMemory
 private
 
   def lookup_description(code)
+    self_texts_description(code).presence || opensearch_description(code)
+  end
+
+  def self_texts_description(code)
     FetchRecords::COMMODITIES_HASH.dig(code, :description)
+  end
+
+  def opensearch_description(code)
+    TradeTariffClassificationExamples.search_client.get(index: CommodityIndex.new.name, id: code).dig("_source", "description")
   end
 
   def next_index

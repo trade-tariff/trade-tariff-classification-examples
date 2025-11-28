@@ -11,9 +11,14 @@ class LabellingCommoditiesJob < ApplicationJob
     entries = LabelCommodities.new(commodities).call
 
     entries = entries.map do |entry|
+      entry = HashWithIndifferentAccess.new(entry)
       Commodity.new(entry).tap do |commodity|
         commodity.id = commodity.commodity_code
-        commodity.original_description = find_original_description(commodity.commodity_code, commodities)
+
+        original_description = commodity.original_description.presence || commodities.find { |c| c["goods_nomenclature_item_id"] == commodity.commodity_code }["original_description"]
+        original_description ||= find_original_description(commodity.commodity_code, commodities)
+
+        commodity.original_description = original_description
       end
     end
 

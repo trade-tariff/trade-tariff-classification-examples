@@ -16,7 +16,7 @@ class GoodsNomenclatureClient
 
   def self.client
     @client ||= Faraday.new(
-      url: "https://www.trade-tariff.service.gov.uk",
+      url: "https://staging.trade-tariff.service.gov.uk",
       headers: {
         "Accept" => "application/json",
         "Content-Type" => "application/json",
@@ -39,6 +39,7 @@ private
     normalised_code = is_heading ? code[0, 4] : code
 
     response = safe_get("/api/v2/search?q=#{normalised_code}")
+    Rails.logger.info("Status: #{response.status}")
 
     unless response.success? && response.body.dig("data", "type") == "exact_search"
       normalised_code = code[0, 6]
@@ -57,17 +58,20 @@ private
     id       = entry["id"]
 
     response = self.class.client.get("/api/v2/#{endpoint}/#{id}")
+    Rails.logger.info("Status: #{response.status}")
 
     raise "Not found" unless response.success?
 
+    parsed = Hashie::Mash.new(TariffJsonapiParser.new(response.body).parse)
     result = Hashie::Mash.new("_source" => response.body.dig("data", "attributes"))
     result._source.commodity_code = result._source.goods_nomenclature_item_id
-    matching_selftexts = FetchRecords::ALL_GOODS_NOMENCLATURES.find do |g|
-      code = result._source.goods_nomenclature_item_id
-      pls = result._source.producline_suffix
-      g[:goods_nomenclature_item_id] == "#{code}-#{pls}"
-    end
-    result._source.description = matching_selftexts[:description] if matching_selftexts.present?
+
+    original_description = "#{parsed.ancestors.map(&:description).join(' > ')} > #{parsed.description}"
+
+    description = FetchRecords::COMMODITIES_HASH.dig(result._source.goods_nomenclature_item_id, :description)
+    result._source.description = description if description.present?
+    result._source.original_description = original_description if original_description.present?
+    result._source.id = result._source.goods_nomenclature_item_id
 
     Commodity.wrap(result)
   end
