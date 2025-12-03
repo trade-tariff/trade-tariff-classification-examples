@@ -35,7 +35,14 @@ class SearchCommodity
       data = session.try(:[], SESSION_KEY)
 
       return search_commodity if data.blank?
-      return search_commodity.tap { |sc| clear_session(sc.session) } if data["query"] != query || data["search_type"] != search_type
+
+      if data["query"] != query || data["search_type"] != search_type
+        return search_commodity.tap do |sc|
+          clear_session(sc.session)
+          search_commodity.expanded_query = nil
+          search_commodity.expand_query!
+        end
+      end
 
       questions = data["questions"].map do |question_data|
         Question.new(
