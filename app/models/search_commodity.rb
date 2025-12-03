@@ -135,7 +135,7 @@ class SearchCommodity
 
   def expand_query!
     return if expanded_query.present?
-    return if query.to_s.match?(/\d+\z/)
+    return if query.to_s.match?(/\A\d+\z/)
     return if search_type != "interactive"
 
     self.expanded_query = ExpandSearchQuery.new(query).call if expanded_query.blank?
