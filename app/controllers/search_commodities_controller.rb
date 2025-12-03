@@ -1,6 +1,7 @@
 class SearchCommoditiesController < ApplicationController
   def show
     search_commodity
+
     search_commodity.valid? if query?
     results
 
@@ -51,7 +52,7 @@ private
   def non_interactive_results
     if query?
       limit = search_type.interactive? ? 100 : 20
-      NonInteractiveSearch.new(query, limit: limit).call
+      NonInteractiveSearch.new(search_commodity.presented_query, limit: limit).call
     else
       []
     end
@@ -59,7 +60,7 @@ private
 
   def neural_net_results
     if query?
-      NeuralNetSearch.new(query).call
+      NeuralNetSearch.new(search_commodity.presented_query).call
     else
       []
     end
@@ -67,7 +68,7 @@ private
 
   def classic_results
     if query?
-      ClassicSearch.new(query).call
+      ClassicSearch.new(search_commodity.presented_query).call
     else
       []
     end
@@ -101,7 +102,7 @@ private
 
   def interactive_memory
     InteractiveMemory.new(
-      search_input: query,
+      search_input: search_commodity.presented_query,
       search_commodity_form: search_commodity,
       opensearch_answers: non_interactive_results,
       questions: search_commodity.questions,

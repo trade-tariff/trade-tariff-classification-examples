@@ -8,7 +8,8 @@ class SearchCommodity
 
   attr_accessor :query,
                 :search_type,
-                :session
+                :session,
+                :expanded_query
 
   validates :query, presence: true
   validates :search_type, inclusion: { in: %w[interactive non_interactive neural_net classic] }
@@ -20,12 +21,16 @@ class SearchCommodity
 
       query = params[:query]
       search_type = params[:search_type]
+      expanded_query = params[:expanded_query]
 
       search_commodity = SearchCommodity.new(
         query: query,
         search_type: search_type,
+        expanded_query: expanded_query,
         session: session,
       )
+
+      search_commodity.expand_query!
 
       data = session.try(:[], SESSION_KEY)
 
@@ -33,13 +38,12 @@ class SearchCommodity
       return search_commodity.tap { |sc| clear_session(sc.session) } if data["query"] != query || data["search_type"] != search_type
 
       questions = data["questions"].map do |question_data|
-        question = Question.new(
+        Question.new(
           index: question_data["index"],
           text: question_data["text"],
           answer: question_data["answer"],
           options: question_data["options"],
         )
-        question
       end
       answers = params.permit(*questions.map { |q| "question_#{q.index}" })
       unanswered_questions = questions.reject(&:answered?)
@@ -118,10 +122,23 @@ class SearchCommodity
     false
   end
 
+  def presented_query
+    [query, expanded_query].compact.join(" ")
+  end
+
+  def expand_query!
+    return if expanded_query.present?
+    return if query.to_s.match?(/\d+\z/)
+    return if search_type != "interactive"
+
+    self.expanded_query = ExpandSearchQuery.new(query).call if expanded_query.blank?
+  end
+
   def as_json(*)
     {
       query: query,
       search_type: search_type,
+      expanded_query: expanded_query,
       questions: questions.map(&:as_json),
     }
   end

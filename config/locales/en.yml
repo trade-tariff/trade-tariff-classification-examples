@@ -123,3 +123,32 @@ en:
         ---------QUESTIONS_AND_ANSWERS--------------
         %{questions}
         --------------------------------------------
+    expand_search_query:
+      title: Expand Search Query
+      instructions: >
+        You are an expert in trade tariff classification and search queries.
+        Your task is to rephrase and expand a given search query to improve its effectiveness when searching an OpenSearch index for trade commodities.
+        The goal is to generate a query that is more likely to match relevant documents, especially considering that the original query might not use the exact terminology found in the tariff data.
+        Provide only the rephrased and expanded search query as plain text, without any additional formatting or explanation.
+
+        Original search query: %{search_query}
+
+        Return the expanded search query in the following json format:
+
+        ```json
+        {
+          "expanded_query": "string"
+          "reason": "string"
+        }
+        ```
+
+        The reason for the expansion should briefly explain why the changes were made to improve search effectiveness.
+
+        An example response to the search_query "laptop" could be:
+
+        ```json
+        {
+          "expanded_query": "Portable automatic data-processing machines",
+          "reason": "The term 'laptop' is a common colloquial term, but the official tariff classification uses more formal terminology."
+        }
+        ```
