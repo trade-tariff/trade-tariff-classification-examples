@@ -32,6 +32,7 @@
           <%= form.govuk_text_field :query, label: nil, hint: { text: 'Enter the description of the goods or commodity code' } %>
           <%= questions_for(search_type, form) %>
           <%= form.hidden_field :search_type, value: search_type %>
+          <%= form.hidden_field :expanded_query %>
 
 
           <%= form.govuk_submit 'Search for commodity' %>
