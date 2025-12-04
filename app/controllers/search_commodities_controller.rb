@@ -58,6 +58,14 @@ private
     end
   end
 
+  def vector_results
+    if query?
+      VectorSearch.call(search_commodity.presented_query, limit: 10)
+    else
+      []
+    end
+  end
+
   def neural_net_results
     if query?
       NeuralNetSearch.new(search_commodity.presented_query).call
