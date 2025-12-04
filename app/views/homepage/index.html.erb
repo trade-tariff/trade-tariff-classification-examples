@@ -13,11 +13,11 @@
         <%= tag.strong("Enhanced Interactive Search") %> – Search using a standard elastic search backend enhanced with AI-generated labels whilst answering AI-generated questions.
       <% end %>
       <%= tag.li do %>
-        <%= tag.strong("Enhanced Non-Interactive Vector Search") %> – Search using a vector search backend to find the most relevant 8 digit commodity codes.
+        <%= tag.strong("Enhanced Interactive Vector Search") %> – Search using a vector search backend to find the most relevant 8 digit commodity codes whilst answering AI-generated questions.
       <% end %>
-      <%= tag.li do %>
-        <%= tag.strong("Enhanced Non-Interactive Search") %> – Search using a standard elastic search backend enhanced with AI-generated labels.
-      <% end %>
+      <!-- <%= tag.li do %> -->
+      <!--   <%= tag.strong("Enhanced Non-Interactive Search") %> – Search using a standard elastic search backend enhanced with AI-generated labels. -->
+      <!-- <% end %> -->
       <%= tag.li do %>
         <%= tag.strong("FPO Neural Net Search") %> – Search for a 6 or 8 digit commodity code using a standard search interface backed by a neural net.
       <% end %>
@@ -43,40 +43,44 @@
 
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-    <h3 class="govuk-heading-m">Enhanced Non-Interactive Vector Search</h3>
+    <h3 class="govuk-heading-m">Enhanced Interactive Vector Search</h3>
 
 
     <p class="govuk-body">
       This search experiment uses a vector database to find the closest relevant 8 digit commodity codes based on semantic similarity.
     </p>
 
-    <%= govuk_start_button(text: "Start now", href: search_commodities_path(search_type: "vector")) %>
-
-    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-    <h3 class="govuk-heading-m">Enhanced Non-Interactive Search</h3>
-
-
     <p class="govuk-body">
-      Uses elastic search with AI labels to improve search flexibility, including:
+      The data source includes self-texts and everything in a Foundation Model's corpus.
     </p>
 
-    <%= govuk_list type: :bullet  do %>
-      <%= tag.li do %>
-        Human comprehensible descriptions
-      <% end %>
-      <%= tag.li do %>
-        Known brands
-      <% end %>
-      <%= tag.li do %>
-        Colloquial terms
-      <% end %>
-      <%= tag.li do %>
-        Synonyms
-      <% end %>
-    <% end %>
+    <%= govuk_start_button(text: "Start now", href: search_commodities_path(search_type: "vector")) %>
 
-    <%= govuk_start_button(text: "Start now", href: search_commodities_path(search_type: "non_interactive")) %>
+    <!-- <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"> -->
+    <!---->
+    <!-- <h3 class="govuk-heading-m">Enhanced Non-Interactive Search</h3> -->
+    <!---->
+    <!---->
+    <!-- <p class="govuk-body"> -->
+    <!--   Uses elastic search with AI labels to improve search flexibility, including: -->
+    <!-- </p> -->
+    <!---->
+    <!-- <%#= govuk_list type: :bullet  do %> -->
+    <!--   <%#= tag.li do %> -->
+    <!--     Human comprehensible descriptions -->
+    <!--   <%# end %> -->
+    <!--   <%#= tag.li do %> -->
+    <!--     Known brands -->
+    <!--   <%# end %> -->
+    <!--   <%#= tag.li do %> -->
+    <!--     Colloquial terms -->
+    <!--   <%# end %> -->
+    <!--   <%#= tag.li do %> -->
+    <!--     Synonyms -->
+    <!--   <%# end %> -->
+    <!-- <%# end %> -->
+    <!---->
+    <!-- <%#= govuk_start_button(text: "Start now", href: search_commodities_path(search_type: "non_interactive")) %> -->
 
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 

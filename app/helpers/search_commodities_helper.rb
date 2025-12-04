@@ -1,6 +1,6 @@
 module SearchCommoditiesHelper
   def questions_for(search_type, form)
-    return unless search_type.interactive?
+    return unless search_type.interactive? || search_type.vector?
 
     if form.object.questions.present?
       question_radios = form.object.questions.map do |question|

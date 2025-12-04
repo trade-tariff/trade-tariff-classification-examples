@@ -4,9 +4,6 @@ class VectorSearch
     @limit = limit
   end
 
-  # curl --location 'https://ott-poc-vector-search-bbcxdpc2ebcrfpgp.uksouth-01.azurewebsites.net/api/search_commodities?code=YveeZFmHDHe06Zt77Mz7nOY7kOZlKV1uh0oaNj9Q1xcWAzFuV-uxKw%3D%3D' \
-  # --header 'Content-Type: application/json' \
-  # --data '{"query_text": "knitted scarf", "k": 25}'
   class << self
     def call(query, limit: 10)
       instrument do
@@ -46,12 +43,12 @@ class VectorSearch
 
     if response.success?
       results = response.body
-      results.map do |item|
+      results.map { |item|
         code = item["id"]
-        score = item["score"].to_f * 100.0
+        score = item["score"]
 
         commodity_for(code, score)
-      end
+      }.compact
     else
       []
     end
@@ -70,8 +67,12 @@ private
         score: score,
       )
     else
-      GoodsNomenclatureClient.new.call(code).first.tap do |c|
-        c.score = item["score"].to_f * 100.0
+      begin
+        GoodsNomenclatureClient.new.call(code).first.tap do |c|
+          c.score = item["score"].to_f * 100.0
+        end
+      rescue StandardError
+        nil
       end
     end
   end
