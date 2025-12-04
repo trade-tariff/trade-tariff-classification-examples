@@ -12,7 +12,7 @@ class SearchCommodity
                 :expanded_query
 
   validates :query, presence: true
-  validates :search_type, inclusion: { in: %w[interactive non_interactive neural_net classic] }
+  validates :search_type, inclusion: { in: %w[interactive non_interactive neural_net classic vector] }
   validates :search_type, presence: true
 
   class << self

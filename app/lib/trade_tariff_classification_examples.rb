@@ -59,6 +59,10 @@ module TradeTariffClassificationExamples
       ]
     end
 
+    def vector_search_code
+      @vector_search_code ||= ENV["VECTOR_SEARCH_CODE"]
+    end
+
     def fpo_search_api_key
       @fpo_search_api_key ||= ENV["FPO_SEARCH_API_KEY"]
     end
