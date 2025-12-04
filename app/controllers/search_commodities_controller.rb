@@ -58,6 +58,50 @@ private
     end
   end
 
+  def vector_results
+    if query.to_s.match?(/\A\d+\z/)
+      return non_interactive_vector_results
+    end
+
+    return [] unless query?
+
+    if @search_commodity.unanswered_questions.any?
+      @search_commodity.validate_answers
+      return short_list
+    end
+
+    @interactive_memory = InteractiveMemory.new(
+      search_input: search_commodity.presented_query,
+      search_commodity_form: search_commodity,
+      opensearch_answers: non_interactive_vector_results,
+      questions: search_commodity.questions,
+    )
+    @interactive_memory = InteractiveSearch.new(@interactive_memory).call
+
+    if search_commodity.errors.any?
+      return short_list
+    end
+
+    @search_commodity.assign_questions(@interactive_memory.questions)
+
+    unless @search_commodity.save
+      flash.now[:alert] = "Encountered an error saving your answers. Please try again."
+      return short_list
+    end
+
+    return short_list unless @interactive_memory.final_answer?
+
+    @interactive_memory.final_commodities
+  end
+
+  def non_interactive_vector_results
+    if query?
+      VectorSearch.call(search_commodity.presented_query, limit: 100)
+    else
+      []
+    end
+  end
+
   def neural_net_results
     if query?
       NeuralNetSearch.new(search_commodity.presented_query).call
