@@ -11,12 +11,16 @@
       </div>
     <% end %>
 
+    
+
     <%= govuk_form_for @search_commodity, method: :post, url: search_commodities_path do |form| %>
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds-from-desktop">
-          <h1 class="govuk-heading-xl">
-            Search for a commodity
-          </h1>
+        <div class="">
+          <% if search_type == "interactive" %>
+            <h1 class="govuk-heading-xl">Concept A - Search for a commodity</h1>
+          <% elsif search_type == "vector" %>
+            <h1 class="govuk-heading-xl">Concept B - Search for a commodity</h1>
+          <% end %>
 
           <p class="govuk-body">
             When you search, include:
