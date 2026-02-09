@@ -19,7 +19,7 @@ module TradeTariffClassificationExamples
     end
 
     def cors_host
-      ENV.fetch("GOVUK_APP_DOMAIN", "*").sub(%r{https?://}, "")
+      ENV.fetch("GOVUK_APP_DOMAIN").sub(%r{https?://}, "")
     end
 
     def revision
