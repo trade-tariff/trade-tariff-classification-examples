@@ -39,7 +39,7 @@
           "--with-libyaml-lib=${libyaml.out}/lib"
         ];
 
-        init = pkgs.writeScriptBin "init" ''cd terraform && terraform init -backend=false'';
+        init = pkgs.writeShellScriptBin "init" ''cd terraform && terraform init -backend=false'';
       in
       {
         devShells.default = pkgs.mkShell {
