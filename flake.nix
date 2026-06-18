@@ -87,7 +87,7 @@
             rubocop = {
               enable = true;
               name = "rubocop";
-              entry = "bundle exec rubocop --autocorrect";
+              entry = "bundle exec rubocop --autocorrect --force-exclusion";
               files = "\\.rb$";
               stages = [ "pre-commit" ];
             };
