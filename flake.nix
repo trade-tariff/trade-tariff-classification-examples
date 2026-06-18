@@ -87,8 +87,18 @@
             rubocop = {
               enable = true;
               name = "rubocop";
-              entry = "bundle exec rubocop --autocorrect --force-exclusion";
-              files = "\\.rb$";
+              description = "Run RuboCop through Bundler on changed Ruby files";
+              entry = ''
+                bash -c '
+                  changed_files=$(git diff --name-only --diff-filter=ACM --merge-base main | grep -E "\\.(rb|rake)$|^(Gemfile|Rakefile|config\\.ru)$" || true)
+
+                  if [ -n "$changed_files" ]; then
+                    bundle exec rubocop --autocorrect --force-exclusion $changed_files
+                  fi
+                '
+              '';
+              files = "\\.(rb|rake)$|^(Gemfile|Rakefile|config\\.ru)$";
+              pass_filenames = false;
               stages = [ "pre-commit" ];
             };
             sort-file-contents = {
